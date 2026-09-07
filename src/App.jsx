@@ -12,11 +12,11 @@ function App() {
   return (
     <>
       <main>
-        {/* Can replace index with --- path="/" ---. This will make it function as default page as well (base url or base url + /) */}
-        {/* <Route path="/MultTable" element={<MultTable />} /> */}
-
         <Routes>
+          {/* Should use navigations to switch between pages */}
           <Route index element={<HomePage />} />
+          <Route path="/About" element={<AboutPage />} />
+          <Route path="/Location" element={<LocationPage />} />
         </Routes>
       </main>
       <footer></footer>

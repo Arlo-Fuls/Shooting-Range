@@ -1,0 +1,25 @@
+.hero {
+  // Styling for landing page container
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  // Styling for landing page background
+  background-image: url("../assets/clutter/Landing-Page.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+
+  // Styling for landing page navbar
+  &__nav {
+    ul {
+      list-style-type: none;
+      color: var(--white);
+    }
+
+    a:visited {
+      color: var(--white);
+    }
+  }
+}
