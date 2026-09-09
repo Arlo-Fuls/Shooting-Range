@@ -1,0 +1,30 @@
+.navMain {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  background-color: var(--green);
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--white);
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+
+    li {
+      float: left;
+      font-size: 1rem;
+    }
+  }
+
+  a,
+  a:visited,
+  a:active,
+  a:hover {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-right: 2rem;
+  }
+}

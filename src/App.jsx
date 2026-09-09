@@ -11,14 +11,12 @@ import LocationPage from "./pages/Location";
 function App() {
   return (
     <>
-      <main>
-        <Routes>
-          {/* Should use navigations to switch between pages */}
-          <Route index element={<HomePage />} />
-          <Route path="/About" element={<AboutPage />} />
-          <Route path="/Location" element={<LocationPage />} />
-        </Routes>
-      </main>
+      <Routes>
+        {/* Should use navigations to switch between pages */}
+        <Route index element={<HomePage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/Location" element={<LocationPage />} />
+      </Routes>
       <footer></footer>
     </>
   );

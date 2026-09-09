@@ -26,8 +26,8 @@
       }
     }
 
-    a:visited,
     a,
+    a:visited,
     a:active,
     a:hover {
       color: var(--white);
@@ -79,4 +79,13 @@
       font-size: 3rem;
     }
   }
+}
+
+.navMain__container {
+  background-color: var(--black);
+  padding: 2rem 0;
+}
+
+.pricing {
+  background-color: var(--black);
 }
