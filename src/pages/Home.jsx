@@ -6,9 +6,6 @@ function HomePage() {
     <>
       {/* Landing page */}
       <section className="hero">
-        {/* Replace h1 with svg */}
-        <h1>Assegai Shooting Range</h1>
-        <img className="hero__logo" alt="Buisness Logo" />
         <nav className="hero__nav">
           <ul>
             <li>
@@ -19,7 +16,15 @@ function HomePage() {
             </li>
           </ul>
         </nav>
-        <button className="hero__button">Book a session</button>
+
+        {/* Replace h1 with svg */}
+        <div className="hero__group">
+          <h1>Assegai Shooting Range</h1>
+          <button className="hero__button">
+            Book a session <span className="arrow">&rarr;</span>
+          </button>
+        </div>
+        {/* <img className="hero__logo" alt="Buisness Logo" /> */}
       </section>
     </>
   );
