@@ -39,7 +39,7 @@ function HomePage() {
           <div className="pricing__top clamped">
             <div className="pricing__text">
               <h2>Availability and Pricing</h2>
-              <text>Something amazing I guess</text>
+              <p>Something amazing I guess</p>
             </div>
             <img className="pricing__image" alt="Decorative Image" />
           </div>
@@ -80,7 +80,33 @@ function HomePage() {
         </section>
 
         {/* Image Gallery */}
-        <section className="gallery"></section>
+        <section className="gallery">
+          <div className="gallery__top clamped">
+            <h2>Gallery</h2>
+            <p>Take a look at the ranges</p>
+          </div>
+          <div className="gallery__middle clamped">
+            <div className="image-container"></div>
+            <div className="image-details">
+              <h3 className="image-title">Range 1</h3>
+              <p className="image-description">Nice looking</p>
+              <div className="gallery__buttons">
+                <button className="gallery__button" id="gallery__back">
+                  Previous
+                </button>
+                <button className="gallery__button" id="gallery__next">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="gallery__bottom clamped">
+            <p>Want to see more of the range?</p>
+            <p>
+              Take a look at our <Link>Range Guide</Link>!
+            </p>
+          </div>
+        </section>
       </main>
     </>
   );

@@ -124,6 +124,7 @@ main {
       width: 20%;
       height: 10rem; // Temp, replace with padding? Check that all cards are the same height
       margin-bottom: -3rem;
+      z-index: 2;
 
       &__top {
         display: flex;
@@ -135,5 +136,37 @@ main {
 
 .gallery {
   background-color: var(--white);
-  height: 20rem; ////
+  padding: 7rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // z-index: -1; // Bad for accessibility?
+
+  &__top {
+    // Intro to section
+    flex-direction: column;
+  }
+
+  &__middle {
+    // Selected image display and description + buttons
+    justify-content: space-between;
+
+    .image-container {
+      width: 20rem;
+      height: 20rem;
+      background-color: red; // Temp
+    }
+
+    .image-details {
+      display: flex;
+      flex-direction: column;
+
+      width: 30%; // Temp
+      align-items: flex-end;
+      .gallery__buttons {
+        margin-top: auto;
+      }
+    }
+  }
 }
