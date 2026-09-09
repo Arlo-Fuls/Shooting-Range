@@ -35,7 +35,52 @@ function HomePage() {
 
       <main>
         {/* Pricing and time */}
-        <section className="pricing"></section>
+        <section className="pricing">
+          <div className="pricing__top clamped">
+            <div className="pricing__text">
+              <h2>Availability and Pricing</h2>
+              <text>Something amazing I guess</text>
+            </div>
+            <img className="pricing__image" alt="Decorative Image" />
+          </div>
+
+          <div className="pricing__bottom clamped">
+            <div className="card">
+              <div className="card__top">
+                <h3>Price</h3>
+                <img />
+              </div>
+              <div className="card__bottom">Something amazing I guess</div>
+            </div>
+
+            <div className="card">
+              <div className="card__top">
+                <h3>Time</h3>
+                <img />
+              </div>
+              <div className="card__bottom">Something amazing I guess</div>
+            </div>
+
+            <div className="card">
+              <div className="card__top">
+                <h3>Holiday</h3>
+                <img />
+              </div>
+              <div className="card__bottom">Something amazing I guess</div>
+            </div>
+
+            <div className="card">
+              <div className="card__top">
+                <h3>Targets</h3>
+                <img />
+              </div>
+              <div className="card__bottom">Something amazing I guess</div>
+            </div>
+          </div>
+        </section>
+
+        {/* Image Gallery */}
+        <section className="gallery"></section>
       </main>
     </>
   );
