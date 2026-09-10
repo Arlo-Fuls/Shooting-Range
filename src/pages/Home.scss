@@ -141,7 +141,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // z-index: -1; // Bad for accessibility?
 
   &__top {
     // Intro to section
@@ -167,6 +166,50 @@ main {
       .gallery__buttons {
         margin-top: auto;
       }
+    }
+  }
+
+  &__bottom {
+    flex-direction: column;
+  }
+}
+
+.contact {
+  background-color: var(--black);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  min-height: 30rem;
+
+  // Define shape of container with x and y coord
+  // Order: Top L - Top R - Bottom R - Bottom L
+  // With Bottom L's y val smaller, an incline will be created
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    // Rough attempt to create staircase display
+    // Not right yet. Need to either fine tune values or use Pythagoras with parent's values to find good percentage values
+    .contact__card:nth-child(1) {
+      margin-bottom: 8rem;
+    }
+    .contact__card:nth-child(2) {
+      margin-bottom: 6rem;
+    }
+    .contact__card:nth-child(3) {
+      margin-bottom: 4rem;
     }
   }
 }

@@ -107,6 +107,34 @@ function HomePage() {
             </p>
           </div>
         </section>
+
+        {/* Contact Us */}
+        <section className="contact">
+          <div className="contact__top clamped">
+            <div className="contact__intro">
+              <h2>Contact Details</h2>
+              <p>Feel free to contact us on any of the following channels</p>
+            </div>
+            <div className="contact__rules">
+              <p>New to the range?</p>
+              <p>Check out our rules</p> {/* Add modal on rules */}
+            </div>
+          </div>
+          <div className="contact__bottom clamped">
+            <div className="contact__card">
+              <img />
+              <p>Tel: 8888888</p>
+            </div>
+            <div className="contact__card">
+              <img />
+              <p>Email: smthing@amzng.iguess</p>
+            </div>
+            <div className="contact__card">
+              <img />
+              <p>I don't remember</p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
