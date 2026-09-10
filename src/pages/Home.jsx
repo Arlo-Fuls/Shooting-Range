@@ -21,12 +21,13 @@ function HomePage() {
 
           {/* Replace h1 with svg */}
           <div className="hero__group">
-            <h1>Assegai Shooting Range</h1>
+            <img className="hero__title" alt="Assegai Shooting Range" src="src\assets\SVGs\Assegai Shooting Range.svg" />
             <button className="hero__button">
-              Book a session <span className="arrow">&rarr;</span>
+              Book a session <img className="arrow" alt="" src="src\assets\SVGs\Arrow.svg" />
             </button>
           </div>
-          {/* <img className="hero__logo" alt="Buisness Logo" /> */}
+          {/* Logo placed here as it will be animated outside of the flow */}
+          <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
         </section>
         <div className="navMain__container">
           <Navbar />
@@ -48,7 +49,7 @@ function HomePage() {
             <div className="card">
               <div className="card__top">
                 <h3>Price</h3>
-                <img />
+                <img className="icon" alt="" src="src\assets\SVGs\Money.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
@@ -56,15 +57,15 @@ function HomePage() {
             <div className="card">
               <div className="card__top">
                 <h3>Time</h3>
-                <img />
+                <img className="icon" alt="" src="src\assets\SVGs\Calender.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
 
             <div className="card">
               <div className="card__top">
-                <h3>Holiday</h3>
-                <img />
+                <h3>Firearms and amunition</h3>
+                <img className="icon" alt="" src="src\assets\SVGs\Gun.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
@@ -72,7 +73,7 @@ function HomePage() {
             <div className="card">
               <div className="card__top">
                 <h3>Targets</h3>
-                <img />
+                <img className="icon" alt="" src="src\assets\SVGs\Target.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>

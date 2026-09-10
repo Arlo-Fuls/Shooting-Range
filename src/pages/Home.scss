@@ -43,6 +43,16 @@
     flex-direction: column;
     padding-left: 1.5rem;
     gap: 2rem;
+
+    // Assegai header
+    .hero__title {
+      width: 30rem;
+    }
+  }
+
+  // Assegai logo
+  &__logo {
+    width: 5rem;
   }
 
   &__button {
@@ -76,7 +86,7 @@
     }
 
     .arrow {
-      font-size: 3rem;
+      height: 70%;
     }
   }
 }
@@ -97,6 +107,10 @@ main {
   width: 100%;
   display: flex;
   max-width: 75rem;
+}
+
+.icon {
+  height: 3rem;
 }
 
 .pricing {
@@ -193,6 +207,13 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    .contact__rules {
+      // Move element right to break flow
+      // NB: Check paddings to ensure that there is still enough space to prevent overflow
+      // Use conditionals here
+      margin-right: -7rem;
+    }
   }
 
   &__bottom {

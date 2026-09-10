@@ -8,6 +8,16 @@
   padding: 1rem;
   color: var(--white);
 
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .hero__logo {
+      height: 5rem;
+    }
+  }
+
   ul {
     list-style-type: none;
     overflow: hidden;
