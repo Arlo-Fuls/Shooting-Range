@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 209 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
+    <g transform="matrix(1,0,0,1,-0,-3424.235684)">
+        <g id="SVGs2" transform="matrix(0.108593,0,0,0.191939,213.928334,2803.695818)">
+            <rect x="-1970" y="3233" width="1920" height="1080" style="fill:none;"/>
+            <g id="Phone" transform="matrix(-11.608727,0,0,6.567842,18517.351778,-21038.211698)">
+                <path d="M1605.976,3827.771L1616.765,3837.635L1656.221,3797.562L1646.974,3787.082L1605.976,3827.771ZM1692.148,3742.039L1702.937,3751.903L1742.393,3711.83L1733.145,3701.35L1692.148,3742.039ZM1748.25,3720.153L1709.41,3759.609L1720.199,3770.706L1676.119,3816.327L1663.789,3804.613L1625.961,3843.342C1636.174,3849.82 1646.932,3854.483 1659.83,3853.974C1694.418,3852.609 1760.931,3779.204 1758.196,3751.903C1757.059,3740.556 1753.134,3730.108 1748.25,3720.153Z" style="fill:rgb(51,144,129);stroke:black;stroke-width:2.25px;"/>
+            </g>
+        </g>
+    </g>
+</svg>
