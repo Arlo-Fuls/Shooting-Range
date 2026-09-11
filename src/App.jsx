@@ -17,7 +17,27 @@ function App() {
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Location" element={<LocationPage />} />
       </Routes>
-      <footer></footer>
+      <footer>
+        <nav className="navFooter">
+          <div className="navFooter__header">
+            <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
+            <h1>Assegai Shooting Range</h1>
+          </div>
+
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/About">About Us</Link>
+            </li>
+            <li>
+              <Link to="/Location">Range Guide</Link>
+            </li>
+          </ul>
+        </nav>
+        <p>est 2008</p>
+      </footer>
     </>
   );
 }

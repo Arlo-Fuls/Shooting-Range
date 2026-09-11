@@ -36,7 +36,7 @@ function HomePage() {
 
       <main>
         {/* Pricing and time */}
-        <section className="pricing">
+        <section className="pricing mainSection">
           <div className="pricing__top clamped">
             <div className="pricing__text">
               <h2>Availability and Pricing</h2>
@@ -81,7 +81,7 @@ function HomePage() {
         </section>
 
         {/* Image Gallery */}
-        <section className="gallery">
+        <section className="gallery mainSection">
           <div className="gallery__top clamped">
             <h2>Gallery</h2>
             <p>Take a look at the ranges</p>
@@ -110,7 +110,7 @@ function HomePage() {
         </section>
 
         {/* Contact Us */}
-        <section className="contact">
+        <section className="contact mainSection">
           <div className="contact__top clamped">
             <div className="contact__intro">
               <h2>Contact Details</h2>
@@ -136,6 +136,34 @@ function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* Trainers */}
+        <section className="trainers mainSection">
+          <div className="trainers__header clamped">
+            <h2>Trainers</h2>
+            <p>Take a look at some of the training groups we work with</p>
+          </div>
+          <div className="trainers__body clamped">
+            <div className="trainers__description">
+              <p>Something amazing I guess</p>
+            </div>
+            <div className="trainers__logoContainer">
+              <div className="bgDIV"></div>
+              <div className="bgDIV"></div>
+              <div className="trainers__logos">
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="faq mainSection"></section>
       </main>
     </>
   );
