@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 117 1798" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
-    <g transform="matrix(1,0,0,1,-0,-3440.771396)">
-        <g id="SVGs2" transform="matrix(0.060885,0,0,1.664504,119.942519,-1940.568908)">
+<svg width="100%" height="100%" viewBox="0 0 115 1813" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;">
+    <g transform="matrix(1,0,0,1,0,-3239.816699)">
+        <g id="SVGs2" transform="matrix(0.059439,0,0,1.677969,117.095563,-2185.058107)">
             <rect x="-1970" y="3233" width="1920" height="1080" style="fill:none;"/>
-            <g id="Assegai" transform="matrix(16.424534,0,0,1.191653,5775.996144,-789.811209)">
+            <g id="Assegai" transform="matrix(16.823865,0,0,-1.18209,5940.984711,8299.194749)">
                 <g transform="matrix(1,0,0,0.504157,-1796.522619,1469.955217)">
                     <path d="M1366.521,4214.939C1364.461,4206.714 1346.242,4202.539 1346.118,4195.396C1344.142,4081.091 1351.005,3962.367 1368.294,3838.429C1371.175,3823.804 1376.126,3809.178 1382.024,3794.553C1387.382,3808.943 1391.923,3823.483 1394.91,3838.304C1415.509,3956.974 1423.633,4076.451 1420.151,4195.12C1419.975,4201.122 1403.36,4206.814 1401.383,4214.899L1366.521,4214.939Z" style="fill:rgb(56,156,140);stroke:black;stroke-width:2.83px;"/>
                 </g>
