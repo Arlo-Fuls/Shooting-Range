@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navMain">
       <div className="navMain__header">
-        {/* <img /> */}
+        <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
         <h1>Assegai Shooting Range</h1>
       </div>
 

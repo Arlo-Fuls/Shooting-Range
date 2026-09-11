@@ -21,12 +21,13 @@ function HomePage() {
 
           {/* Replace h1 with svg */}
           <div className="hero__group">
-            <h1>Assegai Shooting Range</h1>
+            <img className="hero__title" alt="Assegai Shooting Range" src="src\assets\SVGs\Assegai Shooting Range.svg" />
             <button className="hero__button">
-              Book a session <span className="arrow">&rarr;</span>
+              Book a session <img className="arrow" alt="" src="src\assets\SVGs\Arrow.svg" />
             </button>
           </div>
-          {/* <img className="hero__logo" alt="Buisness Logo" /> */}
+          {/* Logo placed here as it will be animated outside of the flow */}
+          <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
         </section>
         <div className="navMain__container">
           <Navbar />
@@ -35,7 +36,7 @@ function HomePage() {
 
       <main>
         {/* Pricing and time */}
-        <section className="pricing">
+        <section className="pricing mainSection">
           <div className="pricing__top clamped">
             <div className="pricing__text">
               <h2>Availability and Pricing</h2>
@@ -48,7 +49,7 @@ function HomePage() {
             <div className="card">
               <div className="card__top">
                 <h3>Price</h3>
-                <img />
+                <img className="icon" alt="" src="src\assets\SVGs\Money.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
@@ -56,15 +57,15 @@ function HomePage() {
             <div className="card">
               <div className="card__top">
                 <h3>Time</h3>
-                <img />
+                <img className="icon" alt="" src="src\assets\SVGs\Calender.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
 
             <div className="card">
               <div className="card__top">
-                <h3>Holiday</h3>
-                <img />
+                <h3>Firearms and amunition</h3>
+                <img className="icon" alt="" src="src\assets\SVGs\Gun.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
@@ -72,7 +73,7 @@ function HomePage() {
             <div className="card">
               <div className="card__top">
                 <h3>Targets</h3>
-                <img />
+                <img className="icon" alt="" src="src\assets\SVGs\Target.svg" />
               </div>
               <div className="card__bottom">Something amazing I guess</div>
             </div>
@@ -80,7 +81,7 @@ function HomePage() {
         </section>
 
         {/* Image Gallery */}
-        <section className="gallery">
+        <section className="gallery mainSection">
           <div className="gallery__top clamped">
             <h2>Gallery</h2>
             <p>Take a look at the ranges</p>
@@ -107,6 +108,62 @@ function HomePage() {
             </p>
           </div>
         </section>
+
+        {/* Contact Us */}
+        <section className="contact mainSection">
+          <div className="contact__top clamped">
+            <div className="contact__intro">
+              <h2>Contact Details</h2>
+              <p>Feel free to contact us on any of the following channels</p>
+            </div>
+            <div className="contact__rules">
+              <p>New to the range?</p>
+              <p>Check out our rules</p> {/* Add modal on rules */}
+            </div>
+          </div>
+          <div className="contact__bottom clamped">
+            <div className="contact__card">
+              <img />
+              <p>Tel: 8888888</p>
+            </div>
+            <div className="contact__card">
+              <img />
+              <p>Email: smthing@amzng.iguess</p>
+            </div>
+            <div className="contact__card">
+              <img />
+              <p>I don't remember</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Trainers */}
+        <section className="trainers mainSection">
+          <div className="trainers__header clamped">
+            <h2>Trainers</h2>
+            <p>Take a look at some of the training groups we work with</p>
+          </div>
+          <div className="trainers__body clamped">
+            <div className="trainers__description">
+              <p>Something amazing I guess</p>
+            </div>
+            <div className="trainers__logoContainer">
+              <div className="bgDIV"></div>
+              <div className="bgDIV"></div>
+              <div className="trainers__logos">
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+                <div className="trainers__logo"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="faq mainSection"></section>
       </main>
     </>
   );
