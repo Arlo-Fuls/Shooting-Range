@@ -163,7 +163,22 @@ function HomePage() {
         </section>
 
         {/* FAQ */}
-        <section className="faq mainSection"></section>
+        <section className="faq mainSection">
+          <div className="faq__container clamped">
+            <div className="faq__left">
+              <h2>Frequently Asked Questions</h2>
+              <div className="faq__content"></div>
+            </div>
+
+            {/* Assegai image */}
+            <img className="faq__assegai" src="src\assets\SVGs\Assegai.svg" alt="" />
+
+            <div className="faq__right">
+              <div className="faq__content"></div>
+              <div className="faq__img"></div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
