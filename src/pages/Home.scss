@@ -285,3 +285,55 @@ main {
     background-color: red;
   }
 }
+
+.faq {
+  // Contains entire faq section with parts split into left and right
+  // Should collapse parts on smaller screens to have a column flow
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0; // Padding between top section and footer
+    position: relative;
+
+    h2 {
+      padding-top: 2rem; // Offset header slightly
+    }
+  }
+
+  &__left,
+  &__right {
+    width: 48%; // Only for large screens
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__assegai {
+    // Should hide on small screens
+    // Check that size caps work correctly
+    // Will probably not be reliable, especially when an faq element is open
+    position: absolute;
+    width: 3%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__content {
+    // Temp, only to visualize
+    background-color: blue;
+    height: 20rem;
+    width: 100%;
+  }
+
+  &__img {
+    // Temp, only to visualize
+    background-color: red;
+    height: 5rem;
+    width: 100%;
+  }
+}
