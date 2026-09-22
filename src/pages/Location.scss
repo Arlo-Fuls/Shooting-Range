@@ -1,0 +1,38 @@
+.navMain__container--location {
+  padding: 2rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.rangerGuide__mainHeader {
+  min-height: 20rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .header__background {
+    // Define shape of container with x and y coord
+    // Order: Top L - Top R - Bottom R - Bottom L
+    // With Bottom L's y val smaller, an incline will be created
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--grey-light);
+    z-index: -1;
+    clip-path: polygon(0 0, 60% 0, 20% 100%, 0 100%);
+  }
+
+  .header__bottom {
+    justify-content: space-between;
+  }
+
+  .location__nextButton {
+    margin-top: auto;
+  }
+}
+
+.locationImage__container {
+  width: 100%;
+  min-height: 20rem;
+}

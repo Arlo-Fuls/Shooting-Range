@@ -3,20 +3,6 @@
   width: 100%;
 }
 
-.clamped {
-  // Add to first elements of each section to ensure correct clamping
-  width: 80%;
-  display: flex;
-  max-width: 75rem;
-}
-
-.mainSection {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .aboutRange {
   min-height: 30rem; // Make sure enough of the screen is used
   width: 100%;
