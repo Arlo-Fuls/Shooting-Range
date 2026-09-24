@@ -1,0 +1,123 @@
+.navMain__container--location {
+  padding: 2rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.rangerGuide__mainHeader {
+  min-height: 20rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .header__background {
+    // Define shape of container with x and y coord
+    // Order: Top L - Top R - Bottom R - Bottom L
+    // With Bottom L's y val smaller, an incline will be created
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--grey-light);
+    z-index: -1;
+    clip-path: polygon(0 0, 60% 0, 20% 100%, 0 100%);
+  }
+
+  .header__bottom {
+    justify-content: space-between;
+  }
+
+  .location__nextButton {
+    margin-top: auto;
+  }
+}
+
+.locationImage__container {
+  width: 100%;
+  min-height: 20rem;
+  background-color: red; // Temp
+}
+
+// To range
+.rangeGuide--1 {
+  gap: 3rem;
+
+  // Target all children to center align them
+  > *:has(.rangeGuide--1__text) {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  h3 {
+    justify-content: center;
+  }
+
+  &__img {
+    width: 20rem;
+    height: 10rem;
+  }
+
+  // Flip elements around on big screen
+  &__middle {
+    flex-direction: row-reverse;
+  }
+}
+
+.rangeGuide__sectionEnd {
+  // Final section text and next button
+  flex-direction: column;
+  align-items: center;
+}
+
+// Tuckshop
+.rangeGuide--2 {
+  gap: 10rem;
+
+  &__top {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__left {
+    width: 30%;
+  }
+
+  &__right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__extra {
+    // Image overlaying top
+    position: absolute;
+    bottom: -2rem;
+    left: 20%;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+
+    background-color: var(--grey-light);
+  }
+}
+
+// Office
+.rangeGuide--3 {
+  &__top {
+    flex-direction: column;
+    .rangeGuide--3__img--left {
+      width: 80%;
+    }
+
+    .rangeGuide--3__img--right {
+      width: 60%;
+      margin-left: auto;
+      margin-top: -10rem;
+    }
+  }
+}
