@@ -5,10 +5,10 @@ import "./Home.scss";
 function HomePage() {
   return (
     <>
-      <header>
+      <header className="hero">
         {/* Landing page */}
-        <section className="hero">
-          <nav className="hero__nav">
+
+        {/* <nav className="hero__nav">
             <ul>
               <li>
                 <Link to="/About">About Us</Link>
@@ -17,24 +17,39 @@ function HomePage() {
                 <Link to="/Location">Range Guide</Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
-          {/* Replace h1 with svg */}
-          <div className="hero__group">
-            <img className="hero__title" alt="Assegai Shooting Range" src="src\assets\SVGs\Assegai Shooting Range.svg" />
-            <button className="hero__button">
-              Book a session <img className="arrow" alt="" src="src\assets\SVGs\Arrow.svg" />
-            </button>
-          </div>
-          {/* Logo placed here as it will be animated outside of the flow */}
-          <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
-        </section>
-        <div className="navMain__container">
-          <Navbar />
+        {/* Replace h1 with svg */}
+        <div className="hero__group">
+          <img className="hero__title" alt="Assegai Shooting Range" src="src\assets\SVGs\Assegai Shooting Range.svg" />
+          <button className="hero__button">
+            Book a Session <img className="arrow" alt="" src="src\assets\SVGs\Arrow.svg" />
+          </button>
         </div>
+
+        {/* Background image -- UPDATE WHEN HAVE EDITED PHOTOS */}
+        <picture className="hero__bg-image">
+          {/*  Mobile Image  */}
+          <source media="(max-width: 600px)" srcSet="src/assets/clutter/Landing-Page.jpg" />
+          {/*  Desktop Image */}
+          <source media="(min-width: 601px)" srcSet="src/assets/clutter/Landing-Page.jpg" />
+          {/*  Fallback Image  */}
+          <img aria-hidden="true" decoding="async" src="src/assets/clutter/Landing-Page.jpg" alt="kitchen cabinets" width="1920" height="1280" />
+        </picture>
+
+        {/* Logo placed here as it will be animated outside of the flow */}
+        {/* <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" /> */}
+
       </header>
 
       <main>
+        {/* Nav bar header */}
+        <header className="navMain__container">
+          <Navbar />
+        </header>
+
+
+
         {/* Pricing and time */}
         <section className="pricing mainSection">
           <div className="pricing__top clamped">

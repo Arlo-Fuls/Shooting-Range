@@ -1,5 +1,6 @@
 :root {
-  --white: #f2f0ef;
+  // --white: #f2f0ef;
+  --white: #F2F0EF;
   --green: #4f5b37;
   --blue: #37505c;
   --yellow: #c29800;
@@ -8,6 +9,8 @@
   --grey-dark: #5a5a5a;
   --grey-med: #7a7a7a;
   --grey-light: #a5a5a5;
+
+  --teal-darker: #293F49;
 
   // color-scheme: light dark;
   // font-synthesis: none;
@@ -27,4 +30,26 @@ body,
 body {
   font-size: 100%;
   background-color: var(--white);
+}
+
+/* akshar-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/akshar-v17-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* akshar-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Akshar';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/akshar-v17-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

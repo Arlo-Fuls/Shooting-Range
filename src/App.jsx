@@ -17,6 +17,8 @@ function App() {
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Location" element={<LocationPage />} />
       </Routes>
+
+
       <footer>
         <nav className="navFooter">
           <div className="navFooter__header">
