@@ -3,41 +3,64 @@
 
   // added for gap
   top: 1rem;
-  margin-top: 1rem;
   z-index: 3;
 
-  width: 80%;
-  display: flex;
-  margin: auto;
-  background-color: var(--green);
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  color: var(--white);
+  width: 100%;
 
   transition: top 150ms ease-in-out;
 
+
   &--hidden {
     top: -100%;
+
+  }
+
+  &__container {
+    width: 80%;
+
+    display: flex;
+    margin: auto;
+
+    background-color: var(--green);
+    color: var(--white);
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+
+
+    @media screen and (max-width: 37.5rem) {
+      display: none;
+    }
+
   }
 
   &__header {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 
     .logo {
       height: 5rem;
     }
+
+    h1 {
+      font-family: 'Akshar', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.125rem;
+    }
   }
 
-  ul {
+  nav ul {
     list-style-type: none;
     overflow: hidden;
 
     li {
       float: left;
       font-size: 1rem;
+      font-family: 'BIZ UDPGothic', sans-serif;
+      font-weight: 700;
     }
   }
 
@@ -50,5 +73,47 @@
     display: block;
     text-align: center;
     padding-right: 2rem;
+  }
+
+  &__open-btn {
+    display: none;
+
+    // small screens, smaller than 600px
+    @media screen and (max-width: 37.5rem) {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--white);
+
+      padding: 0.5rem;
+
+    }
+  }
+
+  &__close-btn {
+    display: none;
+
+    // small screens, smaller than 600px
+    @media screen and (max-width: 37.5rem) {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--white);
+
+      padding: 0.5rem;
+
+    }
   }
 }
