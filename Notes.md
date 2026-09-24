@@ -4,3 +4,4 @@
 - [Optimizing page speed](https://codestitch.app/page-speed-handbook) - The goat, refer back for specific CSS.
 - [React hide nav on scroll](https://dev.to/biomathcode/navbar-hide-and-show-on-scroll-using-custom-react-hooks-1k98) - This was very helpful, though the comments had a lot of good fixes, used their advice.
 - [Style link for active page](https://stackoverflow.com/questions/8998574/css-style-for-links-pointing-to-the-current-page) - This works for different page navigation, but not for in page hrefs
+- [Favicon](https://favicon.io/tutorials/favicon-sizes/) - Explanation on favicon sizes and converter to use
