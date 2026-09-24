@@ -140,11 +140,17 @@
 //  MAIN
 //--------------------------------------
 
-main {
+.home-main {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  // Changed to use class instead of main tag, made bg colour default black to account for nav bar
+  background-color: var(--black);
+
+  // padding to give gap to navbar
+  padding-top: 1rem;
 }
 
 //--------------------------------------
@@ -190,6 +196,10 @@ main {
   }
 }
 
+//--------------------------------------
+//  GALLERY SECTION
+//--------------------------------------
+
 .gallery {
   background-color: var(--white);
   padding: 7rem 0;
@@ -227,6 +237,10 @@ main {
     flex-direction: column;
   }
 }
+
+//--------------------------------------
+//  CONTACT US SECTION
+//--------------------------------------
 
 .contact {
   background-color: var(--black);
@@ -274,7 +288,13 @@ main {
   }
 }
 
+//--------------------------------------
+//  TRAINERS SECTION
+//--------------------------------------
+
 .trainers {
+  background-color: var(--white);
+
   &__header {
     flex-direction: column;
   }
@@ -327,7 +347,12 @@ main {
   }
 }
 
+//--------------------------------------
+//  FAQ SECTION
+//--------------------------------------
+
 .faq {
+  background-color: var(--white);
 
   // Contains entire faq section with parts split into left and right
   // Should collapse parts on smaller screens to have a column flow

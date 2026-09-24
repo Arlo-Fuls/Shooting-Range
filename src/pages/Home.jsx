@@ -42,11 +42,10 @@ function HomePage() {
 
       </header>
 
-      <main>
+      <main className="home-main">
+        <Navbar />
         {/* Nav bar header */}
-        <header className="navMain__container">
-          <Navbar />
-        </header>
+
 
 
 

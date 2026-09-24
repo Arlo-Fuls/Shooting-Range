@@ -1,5 +1,12 @@
 .navMain {
-  width: 90%;
+  position: sticky;
+
+  // added for gap
+  top: 1rem;
+  margin-top: 1rem;
+  z-index: 3;
+
+  width: 80%;
   display: flex;
   margin: auto;
   background-color: var(--green);
@@ -7,6 +14,12 @@
   align-items: center;
   padding: 1rem;
   color: var(--white);
+
+  transition: top 150ms ease-in-out;
+
+  &--hidden {
+    top: -100%;
+  }
 
   &__header {
     display: flex;
