@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./Navbar.scss";
 
 import useScrollListener from "../hooks/useScroll";
@@ -141,13 +141,13 @@ function Navbar({ setPageInert }) {
         <nav className="navMain__menu">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink exact activeClassName='selected' to="/" >Home</NavLink>
             </li>
             <li>
-              <Link to="/About">About Us</Link>
+              <NavLink activeClassName='selected' to="/About" >About Us</NavLink>
             </li>
             <li>
-              <Link to="/Location">Range Guide</Link>
+              <NavLink activeClassName='selected' to="/Location" >Range Guide</NavLink>
             </li>
           </ul>
         </nav>

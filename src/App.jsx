@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route, Link } from "react-router";
+import { Routes, Route, Link, NavLink } from "react-router";
 import "./App.scss";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
