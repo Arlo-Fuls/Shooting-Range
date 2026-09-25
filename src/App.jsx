@@ -9,17 +9,21 @@ import LocationPage from "./pages/Location";
 // This makes changes faster as well
 
 function App() {
+
+  const [pageInert, setPageInert] = useState(false);
+
+
   return (
     <>
       <Routes>
         {/* Should use navigations to switch between pages */}
-        <Route index element={<HomePage />} />
-        <Route path="/About" element={<AboutPage />} />
-        <Route path="/Location" element={<LocationPage />} />
+        <Route index element={<HomePage pageInert={pageInert} setPageInert={setPageInert} />} />
+        <Route path="/About" element={<AboutPage pageInert={pageInert} setPageInert={setPageInert} />} />
+        <Route path="/Location" element={<LocationPage pageInert={pageInert} setPageInert={setPageInert} />} />
       </Routes>
 
 
-      <footer>
+      <footer inert={pageInert}>
         <nav className="navFooter">
           <div className="navFooter__header">
             <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />

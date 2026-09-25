@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Location.scss";
 
-function LocationPage() {
+function LocationPage({ pageInert, setPageInert }) {
   return (
     <>
       <header className="rangerGuide__mainHeader mainSection">

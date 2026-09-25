@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./About.scss";
 
-function AboutPage() {
+function AboutPage({ pageInert, setPageInert }) {
   return (
     <>
       <main>

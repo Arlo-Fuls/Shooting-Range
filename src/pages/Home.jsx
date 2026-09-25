@@ -3,9 +3,9 @@ import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Home.scss";
 
-function HomePage() {
+function HomePage({ pageInert, setPageInert }) {
 
-  const [pageInert, setPageInert] = useState(false);
+
 
   return (
     <>
