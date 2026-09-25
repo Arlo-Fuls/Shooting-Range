@@ -16,7 +16,10 @@ function Navbar() {
   // update scroll direction based on scroll
   useEffect(() => {
     // Remove first part if don't want delay for first scroll
-    scroll.y > 150 && scroll.y - scroll.lastY > 0 ? setDirection('down') : setDirection('up');
+    if (!isNarrowScreen) {
+      scroll.y > 150 && scroll.y - scroll.lastY > 0 ? setDirection('down') : setDirection('up');
+    }
+
   }, [scroll.y, scroll.lastY]);
 
 
@@ -115,7 +118,6 @@ function Navbar() {
 
   return (
     <header className={direction === 'up' ? "navMain" : "navMain navMain--hidden"}>
-
 
       {/* SHOWN ON SMALL SCREENS, HIDDEN BIG */}
       <button id="btnOpen" className="navMain__open-btn" aria-expanded={openButtonExpanded} aria-label="Open Navigation Menu" onClick={openMenu} ref={focusOpen}>

@@ -32,6 +32,10 @@ body {
   background-color: var(--white);
 }
 
+#root {
+  position: relative;
+}
+
 /* akshar-regular - latin */
 @font-face {
   font-display: swap;

@@ -72,7 +72,7 @@
 
     // Assegai header
     .hero__title {
-      width: 40rem;
+      width: clamp(20rem, 50%, 40rem);
     }
   }
 
