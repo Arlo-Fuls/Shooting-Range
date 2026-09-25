@@ -4,7 +4,7 @@ import "./Navbar.scss";
 
 import useScrollListener from "../hooks/useScroll";
 
-function Navbar() {
+function Navbar({ setPageInert }) {
 
   //--------------------------------------
   //  SCROLL UP AND DOWN CODE
@@ -45,7 +45,7 @@ function Navbar() {
       focusClose.current.focus();
     }, 500);
 
-    // setPageInert(true);             // make main page inert, everything except the nav page
+    setPageInert(true);             // make main page inert, everything except the nav page
 
   }
 
@@ -61,7 +61,7 @@ function Navbar() {
 
       focusOpen.current.focus();
 
-      // setPageInert(false);
+      setPageInert(false);
     }
 
   }

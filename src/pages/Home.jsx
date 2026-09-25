@@ -1,11 +1,15 @@
+import { useState } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Home.scss";
 
 function HomePage() {
+
+  const [pageInert, setPageInert] = useState(false);
+
   return (
     <>
-      <header className="hero">
+      <header className="hero" inert={pageInert}>
         {/* Landing page */}
 
         {/* <nav className="hero__nav">
@@ -43,14 +47,14 @@ function HomePage() {
       </header>
 
       <main className="home-main">
-        <Navbar />
+        <Navbar setPageInert={setPageInert} />
         {/* Nav bar header */}
 
 
 
 
         {/* Pricing and time */}
-        <section className="pricing mainSection">
+        <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
             <div className="pricing__text">
               <h2>Availability and Pricing</h2>
@@ -59,7 +63,7 @@ function HomePage() {
             <img className="pricing__image" alt="Decorative Image" />
           </div>
 
-          <div className="pricing__bottom clamped">
+          <div className="pricing__bottom clamped" >
             <div className="card">
               <div className="card__top">
                 <h3>Price</h3>
@@ -95,7 +99,7 @@ function HomePage() {
         </section>
 
         {/* Image Gallery */}
-        <section className="gallery mainSection">
+        <section className="gallery mainSection" inert={pageInert}>
           <div className="gallery__top clamped">
             <h2>Gallery</h2>
             <p>Take a look at the ranges</p>
@@ -124,7 +128,7 @@ function HomePage() {
         </section>
 
         {/* Contact Us */}
-        <section className="contact mainSection">
+        <section className="contact mainSection" inert={pageInert}>
           <div className="contact__top clamped">
             <div className="contact__intro">
               <h2>Contact Details</h2>
@@ -152,7 +156,7 @@ function HomePage() {
         </section>
 
         {/* Trainers */}
-        <section className="trainers mainSection">
+        <section className="trainers mainSection" inert={pageInert}>
           <div className="trainers__header clamped">
             <h2>Trainers</h2>
             <p>Take a look at some of the training groups we work with</p>
@@ -177,7 +181,7 @@ function HomePage() {
         </section>
 
         {/* FAQ */}
-        <section className="faq mainSection">
+        <section className="faq mainSection" inert={pageInert}>
           <div className="faq__container clamped">
             <div className="faq__left">
               <h2>Frequently Asked Questions</h2>
