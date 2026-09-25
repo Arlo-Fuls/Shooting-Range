@@ -1,11 +1,17 @@
+body:has(.inert) {
+  overflow: hidden;
+}
+
 .navMain {
   position: sticky;
 
   // added for gap
+  // top: 1rem;
   top: 1rem;
   z-index: 3;
 
   width: 100%;
+  height: 6rem;
 
   transition: top 150ms ease-in-out;
 
@@ -19,19 +25,14 @@
 
   }
 
-  body:has(.navMain) {
-    overflow: hidden;
-  }
-
 
   &--hidden {
     top: -100%;
-
   }
 
   &__container {
     width: 80%;
-    height: 6rem;
+    height: 100%;
 
     display: flex;
     margin: auto;
@@ -49,7 +50,6 @@
       flex-direction: column;
       justify-content: center;
       gap: 2rem;
-
 
       width: 100%;
       height: 100%;
@@ -91,7 +91,7 @@
 
   nav ul {
     list-style-type: none;
-    overflow: hidden;
+    // overflow: hidden;
 
     display: flex;
     // gap: 1rem;

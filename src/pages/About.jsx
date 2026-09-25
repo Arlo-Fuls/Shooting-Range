@@ -1,15 +1,19 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./About.scss";
 
 function AboutPage({ pageInert, setPageInert }) {
+  useEffect(() => {
+    setPageInert(false);
+  }, [])
   return (
     <>
-      <main>
+      <main className={pageInert ? "about-main inert" : "about-main"}>
         <section className="aboutRange mainSection">
           {/* Page specific navbar */}
           <div className="navMain__container--about">
-            <Navbar />
+            <Navbar setPageInert={setPageInert} />
           </div>
 
           {/* About range section */}

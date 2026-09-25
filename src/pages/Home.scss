@@ -69,10 +69,11 @@
     padding-top: 3rem;
     padding-left: 3rem;
     gap: 4rem;
+    width: 100%;
 
     // Assegai header
     .hero__title {
-      width: clamp(20rem, 50%, 40rem);
+      width: clamp(20rem, 10%, 30rem);
     }
   }
 
@@ -151,6 +152,8 @@
 
   // padding to give gap to navbar
   padding-top: 2rem;
+
+  // overflow: hidden;
 }
 
 //--------------------------------------

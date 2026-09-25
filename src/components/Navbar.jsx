@@ -141,7 +141,7 @@ function Navbar({ setPageInert }) {
         <nav className="navMain__menu">
           <ul>
             <li>
-              <NavLink exact activeClassName='selected' to="/" >Home</NavLink>
+              <NavLink activeClassName='selected' to="/" >Home</NavLink>
             </li>
             <li>
               <NavLink activeClassName='selected' to="/About" >About Us</NavLink>

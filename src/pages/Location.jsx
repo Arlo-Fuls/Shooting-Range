@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Location.scss";
 
 function LocationPage({ pageInert, setPageInert }) {
+
+  useEffect(() => {
+    setPageInert(false);
+  }, [])
+
   return (
     <>
       <header className="rangerGuide__mainHeader mainSection">
@@ -10,7 +16,7 @@ function LocationPage({ pageInert, setPageInert }) {
         <div className="header__background"></div>
         {/* Page specific navbar */}
         <div className="navMain__container--location">
-          <Navbar />
+          <Navbar setPageInert={setPageInert} />
         </div>
 
         {/* Bottom of header section */}
@@ -23,7 +29,7 @@ function LocationPage({ pageInert, setPageInert }) {
         </div>
       </header>
 
-      <main>
+      <main className={pageInert ? "location-main inert" : "location-main"}>
         {/* Image with nav buttons */}
         <div className="locationImage__container"></div>
 

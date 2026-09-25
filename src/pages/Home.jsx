@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Home.scss";
 
 function HomePage({ pageInert, setPageInert }) {
 
-
+  useEffect(() => {
+    setPageInert(false);
+  }, [])
 
   return (
     <>
@@ -46,11 +48,9 @@ function HomePage({ pageInert, setPageInert }) {
 
       </header>
 
-      <main className="home-main">
+      <main className={pageInert ? "home-main inert" : "home-main"}>
         <Navbar setPageInert={setPageInert} />
         {/* Nav bar header */}
-
-
 
 
         {/* Pricing and time */}
