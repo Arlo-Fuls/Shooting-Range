@@ -1,6 +1,7 @@
 :root {
   // --white: #f2f0ef;
   --white: #F2F0EF;
+  --white-2: #d4d1d0;
   --green: #4f5b37;
   --blue: #37505c;
   --yellow: #c29800;
@@ -78,5 +79,16 @@ body {
   font-style: normal;
   font-weight: 700;
   src: url('./assets/fonts/biz-udpgothic-v16-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* annie-use-your-telescope-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Annie Use Your Telescope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/annie-use-your-telescope-v20-latin-regular.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

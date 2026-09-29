@@ -49,51 +49,76 @@ function HomePage({ pageInert, setPageInert }) {
       </header>
 
       <main className={pageInert ? "home-main inert" : "home-main"}>
-        <Navbar setPageInert={setPageInert} />
         {/* Nav bar header */}
+        <Navbar setPageInert={setPageInert} />
 
 
         {/* Pricing and time */}
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
             <div className="pricing__text">
-              <h2>Availability and Pricing</h2>
-              <p>Something amazing I guess</p>
+              <h2>Welcome to the Assegai Shooting Range</h2>
+              <p>This family-run shooting range has been operating since 2008. We have 7 open-air ranges available for both training purposes and personal shooting, ranging between 25m and 100m.  </p>
             </div>
-            <img className="pricing__image" alt="Decorative Image" />
+
+            {/* Clutter image -- UPDATE WHEN HAVE EDITED PHOTOS */}
+            <picture className="pricing__image">
+              {/*  Mobile Image  */}
+              <source media="(max-width: 600px)" srcSet="src/assets/clutter/Bullets.jpg" />
+              {/*  Desktop Image */}
+              <source media="(min-width: 601px)" srcSet="src/assets/clutter/Bullets.jpg" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/clutter/Bullets.jpg" alt="Bullets aligned on an outdoor shooting table." />
+            </picture>
           </div>
 
           <div className="pricing__bottom clamped" >
+            {/* TIME */}
             <div className="card">
               <div className="card__top">
-                <h3>Price</h3>
-                <img className="icon" alt="" src="src\assets\SVGs\Money.svg" />
-              </div>
-              <div className="card__bottom">Something amazing I guess</div>
-            </div>
-
-            <div className="card">
-              <div className="card__top">
-                <h3>Time</h3>
+                <h3>Open Most Days</h3>
                 <img className="icon" alt="" src="src\assets\SVGs\Calender.svg" />
               </div>
-              <div className="card__bottom">Something amazing I guess</div>
+              <div className="card__bottom">
+                <p>Open Monday to Saturday from 8am to 4pm.</p>
+                <p>Closed Christian and Public Holidays.</p>
+              </div>
+
             </div>
 
+            {/* PRICE */}
             <div className="card">
               <div className="card__top">
-                <h3>Firearms and amunition</h3>
+                <h3>Only R150 per person</h3>
+                <img className="icon" alt="" src="src\assets\SVGs\Money.svg" />
+              </div>
+              <div className="card__bottom">
+                <p>Shoot for an entire day for only R150 per person.</p>
+                <p>Children under 18 shoot for free.</p>
+              </div>
+            </div>
+
+            {/* CARTONS */}
+            <div className="card">
+              <div className="card__top">
+                <h3>Targets available on site</h3>
+                <img className="icon--larger" alt="" src="src\assets\SVGs\Target.svg" />
+              </div>
+              <div className="card__bottom">
+                <p>Targets and cartons can be purchased for R15 and R11 respectively. </p>
+              </div>
+            </div>
+
+            {/* WEAPONS */}
+            <div className="card">
+              <div className="card__top">
+                <h3>Bring your own weapons</h3>
                 <img className="icon" alt="" src="src\assets\SVGs\Gun.svg" />
               </div>
-              <div className="card__bottom">Something amazing I guess</div>
-            </div>
-
-            <div className="card">
-              <div className="card__top">
-                <h3>Targets</h3>
-                <img className="icon" alt="" src="src\assets\SVGs\Target.svg" />
+              <div className="card__bottom">
+                <p>Weapons and ammunition are not for sale on the premises.</p>
+                <p>Please bring your own gear or sign up to a training group.</p>
               </div>
-              <div className="card__bottom">Something amazing I guess</div>
             </div>
           </div>
         </section>
