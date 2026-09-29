@@ -13,31 +13,45 @@ function HomePage({ pageInert, setPageInert }) {
   const [rangeImagesLarge, setRangeImagesLarge] = useState([
     {
       src: "src/assets/images/Range1.jpg",
-      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image."
+      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
+      head: "Range 1",
+      text: "Range 1 is used privately by the APSC."
     },
     {
       src: "src/assets/images/Range2.jpg",
-      alt: "A long open-aired range with 5 visible tables for shooters to stand."
+      alt: "A long open-aired range with 5 visible tables for shooters to stand.",
+      head: "Range 2",
+      text: "Range 2 has x amount of tables that can be used at once and is x meters long"
     },
     {
       src: "src/assets/images/Range3.jpg",
-      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees."
+      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
+      head: "Range 3",
+      text: "Range 3 has x amount of tables that can be used at once and is x meters long"
     },
     {
       src: "src/assets/images/Range4.jpg",
-      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance."
+      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
+      head: "Range 4",
+      text: "Range 4 has x amount of tables that can be used at once and is x meters long"
     },
     {
       src: "src/assets/images/Range5.jpg",
-      alt: "A wider range with 9 posts for targets visible behind 3 orange bins."
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
+      head: "Range 5",
+      text: "Range 5 has x amount of tables that can be used at once and is x meters long"
     },
     {
       src: "src/assets/images/Range6.jpg",
-      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups."
+      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
+      head: "Range 6",
+      text: "Range 6 has x amount of tables that can be used at once and is x meters long"
     },
     {
       src: "src/assets/images/Range7.jpg",
-      alt: "A longer range with a single table. There is a large tree providing shelter next to the table."
+      alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
+      head: "Range 7",
+      text: "Range 7 has x amount of tables that can be used at once and is x meters long"
     }
   ]);
   const [rangeImagesSmall, setRangeImagesSmall] = useState([
@@ -102,6 +116,28 @@ function HomePage({ pageInert, setPageInert }) {
   ]);
 
   const [galleryIndex, setGalleryIndex] = useState(0);
+
+  const nextImage = () => {
+    if (galleryIndex < 6) {
+      const temp = galleryIndex + 1;
+      setGalleryIndex(temp);
+    }
+    else {
+      const temp = 0;
+      setGalleryIndex(temp);
+    }
+  }
+
+  const prevImage = () => {
+    if (galleryIndex > 0) {
+      const temp = galleryIndex - 1;
+      setGalleryIndex(temp);
+    }
+    else {
+      const temp = 6;
+      setGalleryIndex(temp);
+    }
+  }
 
 
   return (
@@ -236,21 +272,21 @@ function HomePage({ pageInert, setPageInert }) {
             </picture>
 
             <div className="image-details">
-              <h3 className="image-title">Range 1</h3>
-              <p className="image-description">Nice looking</p>
+              <h3 className="image-title">{rangeImagesLarge[galleryIndex].head}</h3>
+              <p className="image-description">{rangeImagesLarge[galleryIndex].text}</p>
               <div className="gallery__buttons">
-                <button className="gallery__button" id="gallery__back">
+                <button className="gallery__button gallery__button--ghost" onClick={prevImage}>
                   Previous
                 </button>
-                <button className="gallery__button" id="gallery__next">
+                <button className="gallery__button" onClick={nextImage}>
                   Next
                 </button>
               </div>
             </div>
           </div>
           <div className="gallery__bottom clamped">
-            <p>Want to see more of the range?</p>
-            <p>
+            <p className="gallery__bottom-text gallery__bottom-text--decorative">Want to see more of the range?</p>
+            <p className="gallery__bottom-text">
               Take a look at our <Link>Range Guide</Link>!
             </p>
           </div>

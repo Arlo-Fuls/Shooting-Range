@@ -286,7 +286,7 @@
   padding: 7rem 0;
   flex-direction: column;
 
-  gap: 2rem;
+  gap: 2.5rem;
 
   &__top {
     // Intro to section
@@ -345,14 +345,87 @@
       width: 30%; // Temp
       align-items: flex-end;
 
+      h3 {
+        font-size: 2.25rem;
+        font-family: 'BIZ UDPGothic', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.0625rem;
+        padding-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        font-family: 'BIZ UDPGothic', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.0625rem;
+        text-align: end;
+      }
+
+      // group of buttons, move to bottom
       .gallery__buttons {
         margin-top: auto;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .gallery__button {
+        width: 7rem;
+        height: 2.75rem;
+
+        border-radius: 0;
+        border: none;
+        background-color: var(--blue);
+        color: var(--white);
+        font-family: 'BIZ UDPGothic', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+
+        transition: all 0.1s ease;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--yellow);
+        }
+
+        &--ghost {
+          border: 0.125rem solid var(--blue);
+          background-color: var(--white);
+          color: var(--blue);
+
+          &:hover {
+            cursor: pointer;
+            // box-shadow: 0.125rem 0.125rem var(--blue);
+            border: 0.125rem solid var(--yellow);
+            background-color: var(--white);
+            color: var(--yellow);
+
+          }
+        }
       }
     }
   }
 
   &__bottom {
     flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__bottom-text {
+    font-size: 1.125rem;
+    font-family: 'Akshar', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.0625rem;
+
+    &--decorative {
+      font-family: 'Annie Use Your Telescope', sans-serif;
+      font-size: 1.75rem;
+    }
+
+    a,
+    a:visited {
+      color: var(--yellow);
+      font-weight: 500;
+    }
   }
 }
 
