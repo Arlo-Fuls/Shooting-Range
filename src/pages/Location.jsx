@@ -4,10 +4,9 @@ import Navbar from "../components/Navbar.jsx";
 import "./Location.scss";
 
 function LocationPage({ pageInert, setPageInert }) {
-
   useEffect(() => {
     setPageInert(false);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -96,8 +95,20 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* Conditional Render 4 */}
         <section className="rangeGuide--4 mainSection">
           <h3>The Range</h3>
-          <div className="rangeGuide--4__top clamped"></div>
-          <div className="rangeGuide--4__bottom clamped"></div>
+          <div className="rangeGuide--4__top clamped">
+            <img className="rangeGuide--4__img--head" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
+            <p>Idk</p>
+          </div>
+          <div className="rangeGuide--4__bottom clamped">
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+            <div className="tile"></div>
+          </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>We hope you enjoy the range!</p>
             <button className="location__nextButton">Next</button>

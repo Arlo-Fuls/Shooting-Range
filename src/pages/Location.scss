@@ -121,3 +121,67 @@
     }
   }
 }
+
+// Range
+.rangeGuide--4 {
+  &__top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // Define bento grid
+  &__bottom {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-auto-rows: 3rem;
+  }
+
+  // Individual element of bento grid
+  .tile {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #3b82f6;
+
+    // Area taken up by each n-th child in order
+    &:nth-child(1) {
+      grid-column: 1 / 7;
+      grid-row: 1 / 6;
+    }
+
+    &:nth-child(2) {
+      grid-column: 7 / 17;
+      grid-row: 1 / 4;
+    }
+
+    &:nth-child(3) {
+      grid-column: 1 / 7;
+      grid-row: 6 / 11;
+    }
+
+    &:nth-child(4) {
+      grid-column: 7 / 12;
+      grid-row: 4 / 11;
+    }
+
+    &:nth-child(5) {
+      grid-column: 12 / 17;
+      grid-row: 4 / 9;
+    }
+
+    &:nth-child(6) {
+      grid-column: 12 / 17;
+      grid-row: 9 / 11;
+    }
+
+    &:nth-child(7) {
+      grid-column: 1 / 11;
+      grid-row: 11 / 15;
+    }
+
+    &:nth-child(8) {
+      grid-column: 11 / 17;
+      grid-row: 11 / 15;
+    }
+  }
+}
