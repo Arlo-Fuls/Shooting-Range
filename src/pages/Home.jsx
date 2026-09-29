@@ -9,6 +9,101 @@ function HomePage({ pageInert, setPageInert }) {
     setPageInert(false);
   }, [])
 
+  // UPDATE IMAGE ARRAYS FOR EDITED PHOTOS
+  const [rangeImagesLarge, setRangeImagesLarge] = useState([
+    {
+      src: "src/assets/images/Range1.jpg",
+      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image."
+    },
+    {
+      src: "src/assets/images/Range2.jpg",
+      alt: "A long open-aired range with 5 visible tables for shooters to stand."
+    },
+    {
+      src: "src/assets/images/Range3.jpg",
+      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees."
+    },
+    {
+      src: "src/assets/images/Range4.jpg",
+      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance."
+    },
+    {
+      src: "src/assets/images/Range5.jpg",
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins."
+    },
+    {
+      src: "src/assets/images/Range6.jpg",
+      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups."
+    },
+    {
+      src: "src/assets/images/Range7.jpg",
+      alt: "A longer range with a single table. There is a large tree providing shelter next to the table."
+    }
+  ]);
+  const [rangeImagesSmall, setRangeImagesSmall] = useState([
+    {
+      src: "src/assets/images/Range1.jpg",
+      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image."
+    },
+    {
+      src: "src/assets/images/Range2.jpg",
+      alt: "A long open-aired range with 5 visible tables for shooters to stand."
+    },
+    {
+      src: "src/assets/images/Range3.jpg",
+      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees."
+    },
+    {
+      src: "src/assets/images/Range4.jpg",
+      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance."
+    },
+    {
+      src: "src/assets/images/Range5.jpg",
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins."
+    },
+    {
+      src: "src/assets/images/Range6.jpg",
+      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups."
+    },
+    {
+      src: "src/assets/images/Range7.jpg",
+      alt: "A longer range with a single table. There is a large tree providing shelter next to the table."
+    }
+  ]);
+  const [rangeImagesFallback, setRangeImagesFallback] = useState([
+    {
+      src: "src/assets/images/Range1.jpg",
+      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image."
+    },
+    {
+      src: "src/assets/images/Range2.jpg",
+      alt: "A long open-aired range with 5 visible tables for shooters to stand."
+    },
+    {
+      src: "src/assets/images/Range3.jpg",
+      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees."
+    },
+    {
+      src: "src/assets/images/Range4.jpg",
+      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance."
+    },
+    {
+      src: "src/assets/images/Range5.jpg",
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins."
+    },
+    {
+      src: "src/assets/images/Range6.jpg",
+      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups."
+    },
+    {
+      src: "src/assets/images/Range7.jpg",
+      alt: "A longer range with a single table. There is a large tree providing shelter next to the table."
+    }
+  ]);
+
+  const [galleryIndex, setGalleryIndex] = useState(0);
+
+
   return (
     <>
       <header className="hero" inert={pageInert}>
@@ -68,7 +163,7 @@ function HomePage({ pageInert, setPageInert }) {
               {/*  Desktop Image */}
               <source media="(min-width: 601px)" srcSet="src/assets/clutter/Bullets.jpg" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/clutter/Bullets.jpg" alt="Bullets aligned on an outdoor shooting table." />
+              <img aria-hidden="true" decoding="async" loading="lazy" src="src/assets/clutter/Bullets.jpg" alt="Bullets aligned on an outdoor shooting table." />
             </picture>
           </div>
 
@@ -81,7 +176,7 @@ function HomePage({ pageInert, setPageInert }) {
               </div>
               <div className="card__bottom">
                 <p>Open Monday to Saturday from 8am to 4pm.</p>
-                <p>Closed Christian and Public Holidays.</p>
+                <p>Closed on Christian Holidays.</p>
               </div>
 
             </div>
@@ -126,11 +221,20 @@ function HomePage({ pageInert, setPageInert }) {
         {/* Image Gallery */}
         <section className="gallery mainSection" inert={pageInert}>
           <div className="gallery__top clamped">
-            <h2>Gallery</h2>
+            <h2>GALLERY</h2>
             <p>Take a look at the ranges</p>
           </div>
           <div className="gallery__middle clamped">
-            <div className="image-container"></div>
+
+            <picture className="image-container">
+              {/*  Mobile Image  */}
+              <source media="(max-width: 600px)" srcSet={rangeImagesLarge[galleryIndex].src} />
+              {/*  Desktop Image */}
+              <source media="(min-width: 601px)" srcSet={rangeImagesSmall[galleryIndex].src} />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" loading="lazy" src={rangeImagesFallback[galleryIndex].src} alt={rangeImagesLarge[galleryIndex].alt} />
+            </picture>
+
             <div className="image-details">
               <h3 className="image-title">Range 1</h3>
               <p className="image-description">Nice looking</p>
