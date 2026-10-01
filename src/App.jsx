@@ -4,14 +4,13 @@ import "./App.scss";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
 import LocationPage from "./pages/Location";
+import RulesPage from "./pages/Rules";
 
 // Can replace <a> with <Link> to go to url without reloading page. If used, href= must be replaced with to=
 // This makes changes faster as well
 
 function App() {
-
   const [pageInert, setPageInert] = useState(false);
-
 
   return (
     <>
@@ -20,8 +19,8 @@ function App() {
         <Route index element={<HomePage pageInert={pageInert} setPageInert={setPageInert} />} />
         <Route path="/About" element={<AboutPage pageInert={pageInert} setPageInert={setPageInert} />} />
         <Route path="/Location" element={<LocationPage pageInert={pageInert} setPageInert={setPageInert} />} />
+        <Route path="/Rules" element={<RulesPage pageInert={pageInert} setPageInert={setPageInert} />} />
       </Routes>
-
 
       <footer inert={pageInert}>
         <nav className="navFooter">
@@ -39,6 +38,9 @@ function App() {
             </li>
             <li>
               <Link to="/Location">Range Guide</Link>
+            </li>
+            <li>
+              <Link to="/Rules">Rules</Link>
             </li>
           </ul>
         </nav>
