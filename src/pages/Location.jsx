@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Location.scss";
@@ -7,6 +7,8 @@ function LocationPage({ pageInert, setPageInert }) {
   useEffect(() => {
     setPageInert(false);
   }, []);
+
+  const [sectionIndex, setSectionIndex] = useState(0);
 
   return (
     <>
@@ -30,10 +32,16 @@ function LocationPage({ pageInert, setPageInert }) {
 
       <main className={pageInert ? "location-main inert" : "location-main"}>
         {/* Image with nav buttons */}
-        <div className="locationImage__container"></div>
+        <div className="locationImage__container">
+          <button onClick={() => setSectionIndex(0)}>Section 1</button>
+          <button onClick={() => setSectionIndex(1)}>Section 2</button>
+          <button onClick={() => setSectionIndex(2)}>Section 3</button>
+          <button onClick={() => setSectionIndex(3)}>Section 4</button>
+        </div>
 
         {/* Conditional Render 1 */}
-        <section className="rangeGuide--1 mainSection">
+        {/* Also verify that screen readers update correctly when changing section visibility */}
+        <section className={sectionIndex === 0 ? "rangeGuide--1 mainSection" : "rangeGuide--1 mainSection hiddenSection"}>
           <h3>Getting to the range</h3>
           <div className="rangeGuide--1__top clamped">
             <img className="rangeGuide--1__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
@@ -54,7 +62,7 @@ function LocationPage({ pageInert, setPageInert }) {
         </section>
 
         {/* Conditional Render 2 */}
-        <section className="rangeGuide--2 mainSection">
+        <section className={sectionIndex === 1 ? "rangeGuide--2 mainSection" : "rangeGuide--2 mainSection hiddenSection"}>
           <h3>Tuckshop</h3> {/* ?? */}
           <div className="rangeGuide--2__top clamped">
             <div className="rangeGuide--2__left">
@@ -80,7 +88,7 @@ function LocationPage({ pageInert, setPageInert }) {
         </section>
 
         {/* Conditional Render 3 */}
-        <section className="rangeGuide--3 mainSection">
+        <section className={sectionIndex === 2 ? "rangeGuide--3 mainSection" : "rangeGuide--3 mainSection hiddenSection"}>
           <h3>Office</h3>
           <div className="rangeGuide--3__top clamped">
             <img className="rangeGuide--3__img--left" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
@@ -93,7 +101,7 @@ function LocationPage({ pageInert, setPageInert }) {
         </section>
 
         {/* Conditional Render 4 */}
-        <section className="rangeGuide--4 mainSection">
+        <section className={sectionIndex === 3 ? "rangeGuide--4 mainSection" : "rangeGuide--4 mainSection hiddenSection"}>
           <h3>The Range</h3>
           <div className="rangeGuide--4__top clamped">
             <img className="rangeGuide--4__img--head" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
