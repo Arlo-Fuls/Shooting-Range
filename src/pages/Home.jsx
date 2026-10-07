@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Home.scss";
@@ -139,6 +139,11 @@ function HomePage({ pageInert, setPageInert }) {
     }
   }
 
+  // SCROLL TO SECTION
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView()
+
 
   return (
     <>
@@ -159,7 +164,7 @@ function HomePage({ pageInert, setPageInert }) {
         {/* Replace h1 with svg */}
         <div className="hero__group">
           <img className="hero__title" alt="Assegai Shooting Range" src="src\assets\SVGs\Assegai Shooting Range.svg" />
-          <button className="hero__button">
+          <button className="hero__button" onClick={executeScroll}>
             Book a Session <img className="arrow" alt="" src="src\assets\SVGs\Arrow.svg" />
           </button>
         </div>
@@ -268,7 +273,8 @@ function HomePage({ pageInert, setPageInert }) {
               {/*  Desktop Image */}
               <source media="(min-width: 601px)" srcSet={rangeImagesSmall[galleryIndex].src} />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" loading="lazy" src={rangeImagesFallback[galleryIndex].src} alt={rangeImagesLarge[galleryIndex].alt} />
+              <img aria-hidden="true" decoding="async" src={rangeImagesFallback[galleryIndex].src} alt={rangeImagesLarge[galleryIndex].alt} />
+              {/* removed lazy loading since made weird issue when changed? */}
             </picture>
 
             <div className="image-details">
@@ -293,7 +299,7 @@ function HomePage({ pageInert, setPageInert }) {
         </section>
 
         {/* Contact Us */}
-        <section className="contact mainSection" inert={pageInert}>
+        <section className="contact mainSection" inert={pageInert} ref={myRef}>
           <div className="contact__top clamped-wider">
             <div className="contact__intro">
               <h2>CONTACT US</h2>
