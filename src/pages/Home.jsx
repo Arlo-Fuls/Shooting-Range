@@ -287,7 +287,7 @@ function HomePage({ pageInert, setPageInert }) {
           <div className="gallery__bottom clamped">
             <p className="gallery__bottom-text gallery__bottom-text--decorative">Want to see more of the range?</p>
             <p className="gallery__bottom-text">
-              Take a look at our <Link>Range Guide</Link>!
+              Take a look at our <Link to="/Location">Range Guide</Link>!
             </p>
           </div>
         </section>
