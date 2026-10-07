@@ -588,7 +588,7 @@
   &__container {
     display: grid;
     grid-template-columns: 35% 65%;
-    gap: 2rem;
+    gap: 6rem;
   }
 
 
@@ -625,50 +625,124 @@
   }
 
   &__body {
-    justify-content: space-between;
+    // justify-content: space-between;
 
-    .trainers__description {
-      width: 30%;
-    }
+    width: 100%;
+    padding-inline: 4rem;
+    // width: 40rem;
+    justify-self: center;
+    align-self: center;
   }
 
   &__logoContainer {
-    width: 50%;
-    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 
-    .bgDIV {
-      width: 70%;
-      height: 60%;
-      position: absolute;
 
-      &:nth-child(1) {
-        background-color: var(--grey-dark);
-        z-index: -1;
-        height: 70%;
-      }
 
-      &:nth-child(2) {
-        background-color: var(--grey-med);
-        z-index: -2;
-        right: 0;
-        bottom: 0;
-      }
-    }
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 3fr;
+    grid-template-rows: 5fr 7fr 5fr 5fr;
+
+    // gap: 2rem;
+    justify-items: center;
+    align-items: center;
+
+    grid-template-areas: "kmp kmp kmp kmp"
+      "platinum golden golden kukama"
+      "g4s bam bam g627"
+      "billy billy bullzeye bullzeye";
+
   }
 
-  &__logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem 1rem 1rem 4rem;
-  }
+  // &__logos {
+  //   // display: flex;
+  //   // flex-wrap: wrap;
+  //   // justify-content: center;
+  //   // gap: 2rem;
+  //   // padding: 2rem 1rem 1rem 4rem;
+  // }
 
   &__logo {
     // Temp
-    min-width: 5rem;
-    min-height: 5rem;
-    background-color: red;
+    // min-width: 5rem;
+    // min-height: 5rem;
+    // background-color: red;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    &:nth-child(1) {
+      grid-area: kmp;
+
+      width: 60%;
+      justify-self: center;
+      align-self: end;
+    }
+
+    &:nth-child(2) {
+      grid-area: platinum;
+
+      width: 70%;
+
+      justify-self: start;
+    }
+
+    &:nth-child(3) {
+      grid-area: golden;
+
+      width: 80%;
+    }
+
+    &:nth-child(4) {
+      grid-area: kukama;
+
+      width: 80%;
+
+      justify-self: end;
+    }
+
+    &:nth-child(5) {
+      grid-area: g4s;
+
+      width: 90%;
+
+      justify-self: start;
+    }
+
+    &:nth-child(6) {
+      grid-area: bam;
+
+      width: 70%;
+    }
+
+    &:nth-child(7) {
+      grid-area: g627;
+
+      justify-self: end;
+    }
+
+    &:nth-child(8) {
+      grid-area: billy;
+
+      width: 50%;
+      justify-self: end;
+      padding-right: 2rem;
+
+    }
+
+    &:nth-child(9) {
+      grid-area: bullzeye;
+      width: 50%;
+      justify-self: start;
+      padding-left: 2rem;
+
+    }
+
+
   }
 }
 
