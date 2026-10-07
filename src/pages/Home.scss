@@ -447,7 +447,23 @@
   // Define shape of container with x and y coord
   // Order: Top L - Top R - Bottom R - Bottom L
   // With Bottom L's y val smaller, an incline will be created
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+
+  position: relative;
+
+  // For the slant
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: var(--white);
+    clip-path: polygon(0 70%, 100% 100%, 100% 100%, 0 100%);
+
+  }
 
   &__top {
     display: flex;
