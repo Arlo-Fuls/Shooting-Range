@@ -1,9 +1,3 @@
-.rules__main {
-  position: relative;
-  // Should overflow to hide image overflow on the bottom right, but that causes one of the legend elements to also be cut off
-  // overflow: hidden;
-}
-
 .rules__mainHeader {
   min-height: 20rem;
   width: 100%;
@@ -86,6 +80,9 @@
 
 .rules__bottom {
   padding-bottom: 4rem;
+  position: relative;
+  // Won't crop well. Should crop original svg instead
+  // overflow: hidden;
   &__container {
     flex-direction: column;
 
@@ -99,6 +96,8 @@
   height: 15rem;
   position: absolute;
   z-index: -1;
+
+  // Should change original image instead and change these values to 0
   bottom: -1rem;
   right: -6rem;
 }
