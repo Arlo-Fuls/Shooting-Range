@@ -296,7 +296,7 @@ function HomePage({ pageInert, setPageInert }) {
         <section className="contact mainSection" inert={pageInert}>
           <div className="contact__top clamped-wider">
             <div className="contact__intro">
-              <h2>Contact Us</h2>
+              <h2>CONTACT US</h2>
               <p>Ready to get started? Book a session today!</p>
             </div>
             <div className="contact__rules">
@@ -331,27 +331,44 @@ function HomePage({ pageInert, setPageInert }) {
 
         {/* Trainers */}
         <section className="trainers mainSection" inert={pageInert}>
-          <div className="trainers__header clamped">
-            <h2>Trainers</h2>
-            <p>Take a look at some of the training groups we work with</p>
-          </div>
-          <div className="trainers__body clamped">
-            <div className="trainers__description">
-              <p>Something amazing I guess</p>
+          <div className="trainers__container clamped">
+            <div className="trainers__header ">
+              <div className="trainers__title">
+                <h2>TRAINERS</h2>
+                <p >Our Partnered Trainers</p>
+              </div>
+
+              <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
+
+              <picture className="trainers__image">
+                {/*  Mobile Image  */}
+                <source media="(max-width: 600px)" srcSet="src/assets/clutter/Billy-trees.jpg" />
+                {/*  Desktop Image */}
+                <source media="(min-width: 601px)" srcSet="src/assets/clutter/Billy-trees.jpg" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" loading="lazy" src="src/assets/clutter/Billy-trees.jpg" alt="Trees and cement-filled tires present on range 1." />
+              </picture>
             </div>
-            <div className="trainers__logoContainer">
-              <div className="bgDIV"></div>
-              <div className="bgDIV"></div>
-              <div className="trainers__logos">
-                <div className="trainers__logo"></div>
-                <div className="trainers__logo"></div>
-                <div className="trainers__logo"></div>
-                <div className="trainers__logo"></div>
-                <div className="trainers__logo"></div>
-                <div className="trainers__logo"></div>
+
+            <div className="trainers__body ">
+              <div className="trainers__description">
+                <p></p>
+              </div>
+              <div className="trainers__logoContainer">
+                <div className="bgDIV"></div>
+                <div className="bgDIV"></div>
+                <div className="trainers__logos">
+                  <div className="trainers__logo"></div>
+                  <div className="trainers__logo"></div>
+                  <div className="trainers__logo"></div>
+                  <div className="trainers__logo"></div>
+                  <div className="trainers__logo"></div>
+                  <div className="trainers__logo"></div>
+                </div>
               </div>
             </div>
           </div>
+
         </section>
 
         {/* FAQ */}
