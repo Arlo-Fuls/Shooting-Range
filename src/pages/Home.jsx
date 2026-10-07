@@ -294,28 +294,35 @@ function HomePage({ pageInert, setPageInert }) {
 
         {/* Contact Us */}
         <section className="contact mainSection" inert={pageInert}>
-          <div className="contact__top clamped">
+          <div className="contact__top clamped-wider">
             <div className="contact__intro">
-              <h2>Contact Details</h2>
-              <p>Feel free to contact us on any of the following channels</p>
+              <h2>Contact Us</h2>
+              <p>Ready to get started? Book a session today!</p>
             </div>
             <div className="contact__rules">
               <p>New to the range?</p>
-              <p>Check out our rules</p> {/* Add modal on rules */}
+              <p>Check out our <Link to="/Rules">rules</Link></p> {/* Add modal on rules */}
             </div>
           </div>
-          <div className="contact__bottom clamped">
+          <div className="contact__bottom clamped-wider">
             <div className="contact__card">
-              <img />
-              <p>Tel: 8888888</p>
+              <div className="contact__image-container">
+                <img src="src/assets/SVGs/Phone.svg" alt="" />
+              </div>
+
+              <p>(+27)69 581 0030</p>
             </div>
             <div className="contact__card">
-              <img />
-              <p>Email: smthing@amzng.iguess</p>
+              <div className="contact__image-container">
+                <img src="src/assets/SVGs/Mail.svg" alt="" />
+              </div>
+              <p><a href="mailto:assegaishootingrange@gmail.com">assegaishootingrange@gmail.com</a></p>
             </div>
             <div className="contact__card">
-              <img />
-              <p>I don't remember</p>
+              <div className="contact__image-container">
+                <img src="src/assets/SVGs/Pindrop.svg" alt="" />
+              </div>
+              <p><a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">Plot 94 Rietvlei Rd, Rustenburg, 0300</a></p>
             </div>
           </div>
         </section>
