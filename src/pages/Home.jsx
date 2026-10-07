@@ -325,6 +325,8 @@ function HomePage({ pageInert, setPageInert }) {
               <p><a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">Plot 94 Rietvlei Rd, Rustenburg, 0300</a></p>
             </div>
           </div>
+          <div className="contact__background"></div>
+
         </section>
 
         {/* Trainers */}
