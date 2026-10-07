@@ -4,10 +4,9 @@ import Navbar from "../components/Navbar.jsx";
 import "./Home.scss";
 
 function HomePage({ pageInert, setPageInert }) {
-
   useEffect(() => {
     setPageInert(false);
-  }, [])
+  }, []);
 
   // UPDATE IMAGE ARRAYS FOR EDITED PHOTOS
   const [rangeImagesLarge, setRangeImagesLarge] = useState([
@@ -15,104 +14,104 @@ function HomePage({ pageInert, setPageInert }) {
       src: "src/assets/images/Range1.jpg",
       alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
       head: "Range 1",
-      text: "Range 1 is used privately by the APSC."
+      text: "Range 1 is used privately by the APSC.",
     },
     {
       src: "src/assets/images/Range2.jpg",
       alt: "A long open-aired range with 5 visible tables for shooters to stand.",
       head: "Range 2",
-      text: "Range 2 has x amount of tables that can be used at once and is x meters long"
+      text: "Range 2 has x amount of tables that can be used at once and is x meters long",
     },
     {
       src: "src/assets/images/Range3.jpg",
       alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
       head: "Range 3",
-      text: "Range 3 has x amount of tables that can be used at once and is x meters long"
+      text: "Range 3 has x amount of tables that can be used at once and is x meters long",
     },
     {
       src: "src/assets/images/Range4.jpg",
       alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
       head: "Range 4",
-      text: "Range 4 has x amount of tables that can be used at once and is x meters long"
+      text: "Range 4 has x amount of tables that can be used at once and is x meters long",
     },
     {
       src: "src/assets/images/Range5.jpg",
       alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
       head: "Range 5",
-      text: "Range 5 has x amount of tables that can be used at once and is x meters long"
+      text: "Range 5 has x amount of tables that can be used at once and is x meters long",
     },
     {
       src: "src/assets/images/Range6.jpg",
       alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
       head: "Range 6",
-      text: "Range 6 has x amount of tables that can be used at once and is x meters long"
+      text: "Range 6 has x amount of tables that can be used at once and is x meters long",
     },
     {
       src: "src/assets/images/Range7.jpg",
       alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
       head: "Range 7",
-      text: "Range 7 has x amount of tables that can be used at once and is x meters long"
-    }
+      text: "Range 7 has x amount of tables that can be used at once and is x meters long",
+    },
   ]);
   const [rangeImagesSmall, setRangeImagesSmall] = useState([
     {
       src: "src/assets/images/Range1.jpg",
-      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image."
+      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
     },
     {
       src: "src/assets/images/Range2.jpg",
-      alt: "A long open-aired range with 5 visible tables for shooters to stand."
+      alt: "A long open-aired range with 5 visible tables for shooters to stand.",
     },
     {
       src: "src/assets/images/Range3.jpg",
-      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees."
+      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
     },
     {
       src: "src/assets/images/Range4.jpg",
-      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance."
+      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
     },
     {
       src: "src/assets/images/Range5.jpg",
-      alt: "A wider range with 9 posts for targets visible behind 3 orange bins."
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
     },
     {
       src: "src/assets/images/Range6.jpg",
-      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups."
+      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
     },
     {
       src: "src/assets/images/Range7.jpg",
-      alt: "A longer range with a single table. There is a large tree providing shelter next to the table."
-    }
+      alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
+    },
   ]);
   const [rangeImagesFallback, setRangeImagesFallback] = useState([
     {
       src: "src/assets/images/Range1.jpg",
-      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image."
+      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
     },
     {
       src: "src/assets/images/Range2.jpg",
-      alt: "A long open-aired range with 5 visible tables for shooters to stand."
+      alt: "A long open-aired range with 5 visible tables for shooters to stand.",
     },
     {
       src: "src/assets/images/Range3.jpg",
-      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees."
+      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
     },
     {
       src: "src/assets/images/Range4.jpg",
-      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance."
+      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
     },
     {
       src: "src/assets/images/Range5.jpg",
-      alt: "A wider range with 9 posts for targets visible behind 3 orange bins."
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
     },
     {
       src: "src/assets/images/Range6.jpg",
-      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups."
+      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
     },
     {
       src: "src/assets/images/Range7.jpg",
-      alt: "A longer range with a single table. There is a large tree providing shelter next to the table."
-    }
+      alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
+    },
   ]);
 
   const [galleryIndex, setGalleryIndex] = useState(0);
@@ -121,24 +120,21 @@ function HomePage({ pageInert, setPageInert }) {
     if (galleryIndex < 6) {
       const temp = galleryIndex + 1;
       setGalleryIndex(temp);
-    }
-    else {
+    } else {
       const temp = 0;
       setGalleryIndex(temp);
     }
-  }
+  };
 
   const prevImage = () => {
     if (galleryIndex > 0) {
       const temp = galleryIndex - 1;
       setGalleryIndex(temp);
-    }
-    else {
+    } else {
       const temp = 6;
       setGalleryIndex(temp);
     }
-  }
-
+  };
 
   return (
     <>
@@ -176,20 +172,18 @@ function HomePage({ pageInert, setPageInert }) {
 
         {/* Logo placed here as it will be animated outside of the flow */}
         {/* <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" /> */}
-
       </header>
 
       <main className={pageInert ? "home-main inert" : "home-main"}>
         {/* Nav bar header */}
         <Navbar setPageInert={setPageInert} />
 
-
         {/* Pricing and time */}
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
             <div className="pricing__text">
               <h2>Welcome to the Assegai Shooting Range</h2>
-              <p>This family-run shooting range has been operating since 2008. We have 7 open-air ranges available for both training purposes and personal shooting, ranging between 25m and 100m.  </p>
+              <p>This family-run shooting range has been operating since 2008. We have 7 open-air ranges available for both training purposes and personal shooting, ranging between 25m and 100m. </p>
             </div>
 
             {/* Clutter image -- UPDATE WHEN HAVE EDITED PHOTOS */}
@@ -203,7 +197,7 @@ function HomePage({ pageInert, setPageInert }) {
             </picture>
           </div>
 
-          <div className="pricing__bottom clamped" >
+          <div className="pricing__bottom clamped">
             {/* TIME */}
             <div className="card">
               <div className="card__top">
@@ -214,7 +208,6 @@ function HomePage({ pageInert, setPageInert }) {
                 <p>Open Monday to Saturday from 8am to 4pm.</p>
                 <p>Closed on Christian Holidays.</p>
               </div>
-
             </div>
 
             {/* PRICE */}
@@ -261,7 +254,6 @@ function HomePage({ pageInert, setPageInert }) {
             <p>Take a look at the ranges</p>
           </div>
           <div className="gallery__middle clamped">
-
             <picture className="image-container">
               {/*  Mobile Image  */}
               <source media="(max-width: 600px)" srcSet={rangeImagesLarge[galleryIndex].src} />
@@ -301,7 +293,10 @@ function HomePage({ pageInert, setPageInert }) {
             </div>
             <div className="contact__rules">
               <p>New to the range?</p>
-              <p>Check out our <Link to="/Rules">rules</Link></p> {/* Add modal on rules */}
+              <p>
+                Check out our <Link to="/Rules">rules</Link>
+              </p>{" "}
+              {/* Add modal on rules */}
             </div>
           </div>
           <div className="contact__bottom clamped-wider">
@@ -316,17 +311,22 @@ function HomePage({ pageInert, setPageInert }) {
               <div className="contact__image-container">
                 <img src="src/assets/SVGs/Mail.svg" alt="" />
               </div>
-              <p><a href="mailto:assegaishootingrange@gmail.com">assegaishootingrange@gmail.com</a></p>
+              <p>
+                <a href="mailto:assegaishootingrange@gmail.com">assegaishootingrange@gmail.com</a>
+              </p>
             </div>
             <div className="contact__card">
               <div className="contact__image-container">
                 <img src="src/assets/SVGs/Pindrop.svg" alt="" />
               </div>
-              <p><a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">Plot 94 Rietvlei Rd, Rustenburg, 0300</a></p>
+              <p>
+                <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">
+                  Plot 94 Rietvlei Rd, Rustenburg, 0300
+                </a>
+              </p>
             </div>
           </div>
           <div className="contact__background"></div>
-
         </section>
 
         {/* Trainers */}
@@ -335,7 +335,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="trainers__header ">
               <div className="trainers__title">
                 <h2>TRAINERS</h2>
-                <p >Our Partnered Trainers</p>
+                <p>Our Partnered Trainers</p>
               </div>
 
               <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
@@ -351,11 +351,9 @@ function HomePage({ pageInert, setPageInert }) {
             </div>
 
             <div className="trainers__body ">
-
               <p className="sr-only">Our featured trainers include: KMP Security and Training, Platinum Shooters, Golden Cat Safety and Security Academy, Kukama Security Services, G4S, Bambanani Security & Projects, G627 Tactical Group, Outdoor Adventure Center, and Bullzeye Training Academy.</p>
 
               <div className="trainers__logoContainer">
-
                 <div className="trainers__logo">
                   <img src="src/assets/logos/KMP.png" alt="" />
                 </div>
@@ -383,12 +381,9 @@ function HomePage({ pageInert, setPageInert }) {
                 <div className="trainers__logo">
                   <img src="src/assets/logos/northam-traced.svg" alt="" />
                 </div>
-
-
               </div>
             </div>
           </div>
-
         </section>
 
         {/* FAQ */}
