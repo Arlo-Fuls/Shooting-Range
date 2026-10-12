@@ -411,6 +411,7 @@ function HomePage({ pageInert, setPageInert }) {
 
               {/* 5 of the 9 questions */}
               <div className="faq__content">
+                {/* Turn off at the right road */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-1" aria-expanded={accordionStates[0]}
@@ -424,55 +425,59 @@ function HomePage({ pageInert, setPageInert }) {
                   </div>
                 </div>
 
+                {/* Stop at the offices */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-2" aria-expanded={accordionStates[1]}
                       aria-controls="accordion-panel-2" onClick={() => { toggleAccordion(1) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">Can I just head down to the range when I arrive?</span>
                       <img src={accordionStates[1] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-2" aria-labelledby="accordion-header-2" aria-hidden={!accordionStates[1]} hidden={!accordionStates[1]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    All visitors to the range need to stop at the office before heading down to the range to sign their indemnity forms and the range registers. The office will be identifiable as the white trailer in front of one of the residential properties after entering the plot. An image of the office can be seen in our <Link to="/Location">Range Guide</Link>.
                   </div>
                 </div>
 
+                {/* Payment options */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-3" aria-expanded={accordionStates[2]}
                       aria-controls="accordion-panel-3" onClick={() => { toggleAccordion(2) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">How and when do I pay?</span>
                       <img src={accordionStates[2] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-3" aria-labelledby="accordion-header-3" aria-hidden={!accordionStates[2]} hidden={!accordionStates[2]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    Payment can be made after the shooting session is complete. EFT is preferable, however accomidations can be made for cash payment if necessary. EFT details will be provided during booking (???).
                   </div>
                 </div>
 
+                {/* MOUs for training groups */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-4" aria-expanded={accordionStates[3]}
                       aria-controls="accordion-panel-4" onClick={() => { toggleAccordion(3) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">I want to bring a training group to the range, can you provide an MOU?</span>
                       <img src={accordionStates[3] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-4" aria-labelledby="accordion-header-4" aria-hidden={!accordionStates[3]} hidden={!accordionStates[3]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    Requests for MOU's can be sent to the same contact details used for booking, and will be provided as soon as possible at no cost.
                   </div>
                 </div>
 
+                {/* Accreditation */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-5" aria-expanded={accordionStates[4]}
                       aria-controls="accordion-panel-5" onClick={() => { toggleAccordion(4) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">Is the range accredited?</span>
                       <img src={accordionStates[4] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-5" aria-labelledby="accordion-header-5" aria-hidden={!accordionStates[4]} hidden={!accordionStates[4]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    The Assegai Shooting Range is SAPS and NRCS accredited.
                   </div>
                 </div>
 
@@ -487,55 +492,59 @@ function HomePage({ pageInert, setPageInert }) {
               {/* 4 of the 9 questions */}
               <div className="faq__content">
 
+                {/* Weapon and ammunition */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-6" aria-expanded={accordionStates[5]}
                       aria-controls="accordion-panel-6" onClick={() => { toggleAccordion(5) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">I don't have my own weapons and / or ammunition. Can you provide them?</span>
                       <img src={accordionStates[5] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-6" aria-labelledby="accordion-header-6" aria-hidden={!accordionStates[5]} hidden={!accordionStates[5]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    We do not have any weapons or ammunition for sale or hire on site. If you are in need of either, we ask that you contact a supplier or join a training group that can provide the necessary equipment.
                   </div>
                 </div>
 
+                {/* Children */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-7" aria-expanded={accordionStates[6]}
                       aria-controls="accordion-panel-7" onClick={() => { toggleAccordion(6) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">Are children allowed on the range?</span>
                       <img src={accordionStates[6] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-7" aria-labelledby="accordion-header-7" aria-hidden={!accordionStates[6]} hidden={!accordionStates[6]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    Yes, children are welcome at the range, and children under 18 do not need to pay. We ask you to take responsibility for the behaviour and safety of any minors in your care, please ensure that they wear the necessary protective gear and that they do not damage the range.
                   </div>
                 </div>
 
+                {/* Range Details */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-8" aria-expanded={accordionStates[7]}
                       aria-controls="accordion-panel-8" onClick={() => { toggleAccordion(7) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">What types of ranges do you offer? Are there any weapons that are not allowed to be used on the range?</span>
                       <img src={accordionStates[7] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-8" aria-labelledby="accordion-header-8" aria-hidden={!accordionStates[7]} hidden={!accordionStates[7]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    The ranges we offer ....
                   </div>
                 </div>
 
+                {/* Amenities */}
                 <div className="faq__question-container">
                   <h3>
                     <button className="accordion__header" id="accordion-header-9" aria-expanded={accordionStates[8]}
                       aria-controls="accordion-panel-9" onClick={() => { toggleAccordion(8) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <span class="button__text">What amenities are available on the range?</span>
                       <img src={accordionStates[8] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-9" aria-labelledby="accordion-header-9" aria-hidden={!accordionStates[8]} hidden={!accordionStates[8]}>
-                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                    Bathrooms are available on the range, and cold drinks can be purchased at the office if desired.
                   </div>
                 </div>
               </div>

@@ -1,14 +1,23 @@
 # To Do
 
-- optimize images
-- update SVGs
-- Add jump to top button
+## quick
 - Add drop shadow for nav bar
 - Add Trainers SVG (branches)
 - Other font to replace Annie Use your telescope
 - Add speech bubble at contact section (CSS)
-- Check to remove hero section
+- Check that all information in the main page is complete
+
+## larger
+
+- optimize images
+- update SVGs
+- Add jump to top button
 - Check to add load in animation
+
+## other
+- Check to remove hero section
+- Double check if design still matches the theme
+
 
 
 # Useful resources
