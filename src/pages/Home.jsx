@@ -141,6 +141,26 @@ function HomePage({ pageInert, setPageInert }) {
 
   const executeScroll = () => myRef.current.scrollIntoView();
 
+
+  // FAQ ACCORDION TOGGLE
+
+  // one open initially, rest closed
+  const [accordionStates, setAccordionStates] = useState([true, false, false, false, false, false, false, false, false])
+
+  const toggleAccordion = (id) => {
+    if (accordionStates[id]) {
+      const tempArray = [false, false, false, false, false, false, false, false, false];
+
+      setAccordionStates(tempArray);
+    }
+    else {
+      const tempArray = [false, false, false, false, false, false, false, false, false];
+      tempArray[id] = true;
+
+      setAccordionStates(tempArray);
+    }
+  }
+
   return (
     <>
       {/* <header className="hero" inert={pageInert}> */}
@@ -389,15 +409,146 @@ function HomePage({ pageInert, setPageInert }) {
                 <p>Frequently Asked Questions</p>
               </div>
 
-              <div className="faq__content"></div>
+              {/* 5 of the 9 questions */}
+              <div className="faq__content">
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-1" aria-expanded={accordionStates[0]}
+                      aria-controls="accordion-panel-1" onClick={() => { toggleAccordion(0) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[0] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-1" aria-labelledby="accordion-header-1" aria-hidden={!accordionStates[0]} hidden={!accordionStates[0]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-2" aria-expanded={accordionStates[1]}
+                      aria-controls="accordion-panel-2" onClick={() => { toggleAccordion(1) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[1] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-2" aria-labelledby="accordion-header-2" aria-hidden={!accordionStates[1]} hidden={!accordionStates[1]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-3" aria-expanded={accordionStates[2]}
+                      aria-controls="accordion-panel-3" onClick={() => { toggleAccordion(2) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[2] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-3" aria-labelledby="accordion-header-3" aria-hidden={!accordionStates[2]} hidden={!accordionStates[2]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-4" aria-expanded={accordionStates[3]}
+                      aria-controls="accordion-panel-4" onClick={() => { toggleAccordion(3) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[3] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-4" aria-labelledby="accordion-header-4" aria-hidden={!accordionStates[3]} hidden={!accordionStates[3]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-5" aria-expanded={accordionStates[4]}
+                      aria-controls="accordion-panel-5" onClick={() => { toggleAccordion(4) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[4] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-5" aria-labelledby="accordion-header-5" aria-hidden={!accordionStates[4]} hidden={!accordionStates[4]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             {/* Assegai image */}
             <img className="faq__assegai" src="src\assets\SVGs\Assegai.svg" alt="" />
 
+
             <div className="faq__left">
-              <div className="faq__content"></div>
-              <div className="faq__img"></div>
+              {/* 4 of the 9 questions */}
+              <div className="faq__content">
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-6" aria-expanded={accordionStates[5]}
+                      aria-controls="accordion-panel-6" onClick={() => { toggleAccordion(5) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[5] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-6" aria-labelledby="accordion-header-6" aria-hidden={!accordionStates[5]} hidden={!accordionStates[5]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-7" aria-expanded={accordionStates[6]}
+                      aria-controls="accordion-panel-7" onClick={() => { toggleAccordion(6) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[6] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-7" aria-labelledby="accordion-header-7" aria-hidden={!accordionStates[6]} hidden={!accordionStates[6]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-8" aria-expanded={accordionStates[7]}
+                      aria-controls="accordion-panel-8" onClick={() => { toggleAccordion(7) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[7] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-8" aria-labelledby="accordion-header-8" aria-hidden={!accordionStates[7]} hidden={!accordionStates[7]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+
+                <div className="faq__question-container">
+                  <h3>
+                    <button className="accordion__header" id="accordion-header-9" aria-expanded={accordionStates[8]}
+                      aria-controls="accordion-panel-9" onClick={() => { toggleAccordion(8) }}>
+                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                      <img src={accordionStates[8] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
+                    </button>
+                  </h3>
+                  <div className="accordion__panel" id="accordion-panel-9" aria-labelledby="accordion-header-9" aria-hidden={!accordionStates[8]} hidden={!accordionStates[8]}>
+                    Google Maps shows an enterance that is not available to the public. You should take the Phokeng / Sun City slipway (road 169) from the N4. You can take a look at our <Link to="/Location">Range Guide</Link> to see images of what you can expect the correct turn off to look like.
+                  </div>
+                </div>
+              </div>
+
+
+              <picture className="faq__image">
+                {/*  Mobile Image  */}
+                <source media="(max-width: 600px)" srcSet="src/assets/clutter/Baan7-Braai-area.jpg" />
+                {/*  Desktop Image */}
+                <source media="(min-width: 601px)" srcSet="src/assets/clutter/Baan7-Braai-area.jpg" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" loading="lazy" src="src/assets/clutter/Baan7-Braai-area.jpg" alt="A Braai Area with cement-filled trees as chairs on Range 7." />
+              </picture>
             </div>
           </div>
         </section>
