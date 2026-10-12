@@ -143,41 +143,29 @@ function HomePage({ pageInert, setPageInert }) {
 
   return (
     <>
-      <header className="hero" inert={pageInert}>
-        {/* Landing page */}
+      {/* <header className="hero" inert={pageInert}> */}
 
-        {/* <nav className="hero__nav">
-            <ul>
-              <li>
-                <Link to="/About">About Us</Link>
-              </li>
-              <li>
-                <Link to="/Location">Range Guide</Link>
-              </li>
-            </ul>
-          </nav> */}
-
-        {/* Replace h1 with svg */}
-        <div className="hero__group">
+      {/* Replace h1 with svg */}
+      {/* <div className="hero__group">
           <img className="hero__title" alt="Assegai Shooting Range" src="src\assets\SVGs\Assegai Shooting Range.svg" />
           <button className="hero__button" onClick={executeScroll}>
             Book a Session <img className="arrow" alt="" src="src\assets\SVGs\Arrow.svg" />
           </button>
-        </div>
+        </div> */}
 
-        {/* Background image -- UPDATE WHEN HAVE EDITED PHOTOS */}
-        <picture className="hero__bg-image">
-          {/*  Mobile Image  */}
-          <source media="(max-width: 600px)" srcSet="src/assets/clutter/Landing-Page.jpg" />
-          {/*  Desktop Image */}
-          <source media="(min-width: 601px)" srcSet="src/assets/clutter/Landing-Page.jpg" />
-          {/*  Fallback Image  */}
-          <img aria-hidden="true" decoding="async" src="src/assets/clutter/Landing-Page.jpg" alt="kitchen cabinets" width="1920" height="1280" />
-        </picture>
+      {/* Background image -- UPDATE WHEN HAVE EDITED PHOTOS */}
+      {/* <picture className="hero__bg-image"> */}
+      {/*  Mobile Image  */}
+      {/* <source media="(max-width: 600px)" srcSet="src/assets/clutter/Landing-Page.jpg" /> */}
+      {/*  Desktop Image */}
+      {/* <source media="(min-width: 601px)" srcSet="src/assets/clutter/Landing-Page.jpg" /> */}
+      {/*  Fallback Image  */}
+      {/* <img aria-hidden="true" decoding="async" src="src/assets/clutter/Landing-Page.jpg" alt="kitchen cabinets" width="1920" height="1280" /> */}
+      {/* </picture> */}
 
-        {/* Logo placed here as it will be animated outside of the flow */}
-        {/* <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" /> */}
-      </header>
+      {/* Logo placed here as it will be animated outside of the flow */}
+      {/* <img className="hero__logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" /> */}
+      {/* </header> */}
 
       <main className={pageInert ? "home-main inert" : "home-main"}>
         {/* Nav bar header */}
@@ -395,15 +383,19 @@ function HomePage({ pageInert, setPageInert }) {
         {/* FAQ */}
         <section className="faq mainSection" inert={pageInert}>
           <div className="faq__container clamped">
-            <div className="faq__left">
-              <h2>Frequently Asked Questions</h2>
+            <div className="faq__right">
+              <div className="faq__head">
+                <h2>FAQ</h2>
+                <p>Frequently Asked Questions</p>
+              </div>
+
               <div className="faq__content"></div>
             </div>
 
             {/* Assegai image */}
             <img className="faq__assegai" src="src\assets\SVGs\Assegai.svg" alt="" />
 
-            <div className="faq__right">
+            <div className="faq__left">
               <div className="faq__content"></div>
               <div className="faq__img"></div>
             </div>

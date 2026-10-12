@@ -235,7 +235,7 @@
 
       font-family: "BIZ UDPGothic", sans-serif;
 
-      transition: transform 0.15s ease;
+      transition: transform 0.2s ease;
 
       h3 {
         font-size: 1.125rem;
@@ -264,7 +264,7 @@
 
       &:hover {
         transform: scale(110%);
-        cursor: pointer;
+        // cursor: pointer;
       }
     }
   }
@@ -738,46 +738,98 @@
 .faq {
   background-color: var(--white);
 
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9rem;
+    width: 100%;
+    height: 12rem;
+    background-color: var(--black);
+    z-index: 0;
+  }
+
+
   // Contains entire faq section with parts split into left and right
   // Should collapse parts on smaller screens to have a column flow
   &__container {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     width: 100%;
-    height: 100%;
+
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "left icon right";
+    // gap: 1rem;
+
+
     padding: 5rem 0; // Padding between top section and footer
-    position: relative;
+
+    z-index: 1;
+
+  }
+
+  &__head {
+    text-align: right;
+    padding-top: 5.5rem; // Offset header slightly
 
     h2 {
-      padding-top: 2rem; // Offset header slightly
+      font-size: 0.9rem;
+      color: var(--red);
+    }
+
+    p {
+      font-size: 2.75rem;
+      font-family: "Akshar", sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.0625rem;
+
+      color: var(--white);
+
     }
   }
 
+  &__left {
+    grid-area: left;
+  }
+
+  &__right {
+    grid-area: right;
+    justify-self: end;
+  }
+
+
   &__left,
   &__right {
-    width: 48%; // Only for large screens
+    // width: 48%; // Only for large screens
+    width: 80%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+
+    gap: 5rem;
   }
 
-  &__assegai {
-    // Should hide on small screens
-    // Check that size caps work correctly
-    // Will probably not be reliable, especially when an faq element is open
-    position: absolute;
-    width: 3%;
-    max-height: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  // &__assegai {
+  //   // Should hide on small screens
+  //   // Check that size caps work correctly
+  //   // Will probably not be reliable, especially when an faq element is open
+  //   // position: absolute;
+  //   // width: 3%;
+  //   // max-height: 80%;
+  //   // top: 50%;
+  //   // left: 50%;
+  //   // transform: translate(-50%, -50%);
+  // }
 
   &__content {
     // Temp, only to visualize
     background-color: blue;
-    height: 20rem;
+    height: 40rem;
     width: 100%;
   }
 

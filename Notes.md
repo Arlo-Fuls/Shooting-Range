@@ -1,4 +1,17 @@
-### Useful resources
+# To Do
+
+- optimize images
+- update SVGs
+- Add jump to top button
+- Add drop shadow for nav bar
+- Add Trainers SVG (branches)
+- Other font to replace Annie Use your telescope
+- Add speech bubble at contact section (CSS)
+- Check to remove hero section
+- Check to add load in animation
+
+
+# Useful resources
 
 - [Hero section semantics](https://medium.com/@matt.dawkins/hero-sections-accessible-semantic-and-performant-c04502e16f40) - The comment at the end has a bunch of good corrections and explanations to look at.
 - [Optimizing page speed](https://codestitch.app/page-speed-handbook) - The goat, refer back for specific CSS.
