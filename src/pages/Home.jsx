@@ -186,10 +186,10 @@ function HomePage({ pageInert, setPageInert }) {
       {/* </header> */}
 
       <main className={pageInert ? "home-main inert" : "home-main"}>
-        <div className="main__navbarContainer">
-          {/* Nav bar header */}
-          <Navbar setPageInert={setPageInert} />
-        </div>
+        {/* <div className="main__navbarContainer"> */}
+        {/* Nav bar header */}
+        <Navbar setPageInert={setPageInert} />
+        {/* </div> */}
         {/* Pricing and time */}
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
