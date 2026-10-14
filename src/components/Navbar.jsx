@@ -127,24 +127,16 @@ function Navbar({ setPageInert }) {
         <nav className="navMain__menu">
           <ul>
             <li>
-              <NavLink activeClassName="selected" to="/">
-                Home
-              </NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/About">
-                About Us
-              </NavLink>
+              <NavLink to="/About">About Us</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/Location">
-                Range Guide
-              </NavLink>
+              <NavLink to="/Location">Range Guide</NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/Rules">
-                Rules
-              </NavLink>
+              <NavLink to="/Rules">Rules</NavLink>
             </li>
           </ul>
         </nav>

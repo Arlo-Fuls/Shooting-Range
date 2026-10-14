@@ -141,25 +141,23 @@ function HomePage({ pageInert, setPageInert }) {
 
   const executeScroll = () => myRef.current.scrollIntoView();
 
-
   // FAQ ACCORDION TOGGLE
 
   // one open initially, rest closed
-  const [accordionStates, setAccordionStates] = useState([true, false, false, false, false, false, false, false, false])
+  const [accordionStates, setAccordionStates] = useState([true, false, false, false, false, false, false, false, false]);
 
   const toggleAccordion = (id) => {
     if (accordionStates[id]) {
       const tempArray = [false, false, false, false, false, false, false, false, false];
 
       setAccordionStates(tempArray);
-    }
-    else {
+    } else {
       const tempArray = [false, false, false, false, false, false, false, false, false];
       tempArray[id] = true;
 
       setAccordionStates(tempArray);
     }
-  }
+  };
 
   return (
     <>
@@ -188,9 +186,10 @@ function HomePage({ pageInert, setPageInert }) {
       {/* </header> */}
 
       <main className={pageInert ? "home-main inert" : "home-main"}>
-        {/* Nav bar header */}
-        <Navbar setPageInert={setPageInert} />
-
+        <div className="main__navbarContainer">
+          {/* Nav bar header */}
+          <Navbar setPageInert={setPageInert} />
+        </div>
         {/* Pricing and time */}
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
@@ -345,6 +344,7 @@ function HomePage({ pageInert, setPageInert }) {
 
         {/* Trainers */}
         <section className="trainers mainSection" inert={pageInert}>
+          <img className="trainers__image--branch" src="src\assets\SVGs\Branch-1.svg" alt="" />
           <div className="trainers__container clamped">
             <div className="trainers__header ">
               <div className="trainers__title">
@@ -414,9 +414,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Turn off at the right road */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-1" aria-expanded={accordionStates[0]}
-                      aria-controls="accordion-panel-1" onClick={() => { toggleAccordion(0) }}>
-                      <span class="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-1"
+                      aria-expanded={accordionStates[0]}
+                      aria-controls="accordion-panel-1"
+                      onClick={() => {
+                        toggleAccordion(0);
+                      }}
+                    >
+                      <span className="button__text">I'm getting lost on my way to the range, where should I turn off?</span>
                       <img src={accordionStates[0] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -428,9 +435,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Stop at the offices */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-2" aria-expanded={accordionStates[1]}
-                      aria-controls="accordion-panel-2" onClick={() => { toggleAccordion(1) }}>
-                      <span class="button__text">Can I just head down to the range when I arrive?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-2"
+                      aria-expanded={accordionStates[1]}
+                      aria-controls="accordion-panel-2"
+                      onClick={() => {
+                        toggleAccordion(1);
+                      }}
+                    >
+                      <span className="button__text">Can I just head down to the range when I arrive?</span>
                       <img src={accordionStates[1] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -442,9 +456,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Payment options */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-3" aria-expanded={accordionStates[2]}
-                      aria-controls="accordion-panel-3" onClick={() => { toggleAccordion(2) }}>
-                      <span class="button__text">How and when do I pay?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-3"
+                      aria-expanded={accordionStates[2]}
+                      aria-controls="accordion-panel-3"
+                      onClick={() => {
+                        toggleAccordion(2);
+                      }}
+                    >
+                      <span className="button__text">How and when do I pay?</span>
                       <img src={accordionStates[2] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -456,9 +477,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* MOUs for training groups */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-4" aria-expanded={accordionStates[3]}
-                      aria-controls="accordion-panel-4" onClick={() => { toggleAccordion(3) }}>
-                      <span class="button__text">I want to bring a training group to the range, can you provide an MOU?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-4"
+                      aria-expanded={accordionStates[3]}
+                      aria-controls="accordion-panel-4"
+                      onClick={() => {
+                        toggleAccordion(3);
+                      }}
+                    >
+                      <span className="button__text">I want to bring a training group to the range, can you provide an MOU?</span>
                       <img src={accordionStates[3] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -470,9 +498,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Accreditation */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-5" aria-expanded={accordionStates[4]}
-                      aria-controls="accordion-panel-5" onClick={() => { toggleAccordion(4) }}>
-                      <span class="button__text">Is the range accredited?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-5"
+                      aria-expanded={accordionStates[4]}
+                      aria-controls="accordion-panel-5"
+                      onClick={() => {
+                        toggleAccordion(4);
+                      }}
+                    >
+                      <span className="button__text">Is the range accredited?</span>
                       <img src={accordionStates[4] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -480,24 +515,28 @@ function HomePage({ pageInert, setPageInert }) {
                     The Assegai Shooting Range is SAPS and NRCS accredited.
                   </div>
                 </div>
-
               </div>
             </div>
 
             {/* Assegai image */}
             <img className="faq__assegai" src="src\assets\SVGs\Assegai.svg" alt="" />
 
-
             <div className="faq__left">
               {/* 4 of the 9 questions */}
               <div className="faq__content">
-
                 {/* Weapon and ammunition */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-6" aria-expanded={accordionStates[5]}
-                      aria-controls="accordion-panel-6" onClick={() => { toggleAccordion(5) }}>
-                      <span class="button__text">I don't have my own weapons and / or ammunition. Can you provide them?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-6"
+                      aria-expanded={accordionStates[5]}
+                      aria-controls="accordion-panel-6"
+                      onClick={() => {
+                        toggleAccordion(5);
+                      }}
+                    >
+                      <span className="button__text">I don't have my own weapons and / or ammunition. Can you provide them?</span>
                       <img src={accordionStates[5] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -509,9 +548,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Children */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-7" aria-expanded={accordionStates[6]}
-                      aria-controls="accordion-panel-7" onClick={() => { toggleAccordion(6) }}>
-                      <span class="button__text">Are children allowed on the range?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-7"
+                      aria-expanded={accordionStates[6]}
+                      aria-controls="accordion-panel-7"
+                      onClick={() => {
+                        toggleAccordion(6);
+                      }}
+                    >
+                      <span className="button__text">Are children allowed on the range?</span>
                       <img src={accordionStates[6] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -523,9 +569,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Range Details */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-8" aria-expanded={accordionStates[7]}
-                      aria-controls="accordion-panel-8" onClick={() => { toggleAccordion(7) }}>
-                      <span class="button__text">What types of ranges do you offer? Are there any weapons that are not allowed to be used on the range?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-8"
+                      aria-expanded={accordionStates[7]}
+                      aria-controls="accordion-panel-8"
+                      onClick={() => {
+                        toggleAccordion(7);
+                      }}
+                    >
+                      <span className="button__text">What types of ranges do you offer? Are there any weapons that are not allowed to be used on the range?</span>
                       <img src={accordionStates[7] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -537,9 +590,16 @@ function HomePage({ pageInert, setPageInert }) {
                 {/* Amenities */}
                 <div className="faq__question-container">
                   <h3>
-                    <button className="accordion__header" id="accordion-header-9" aria-expanded={accordionStates[8]}
-                      aria-controls="accordion-panel-9" onClick={() => { toggleAccordion(8) }}>
-                      <span class="button__text">What amenities are available on the range?</span>
+                    <button
+                      className="accordion__header"
+                      id="accordion-header-9"
+                      aria-expanded={accordionStates[8]}
+                      aria-controls="accordion-panel-9"
+                      onClick={() => {
+                        toggleAccordion(8);
+                      }}
+                    >
+                      <span className="button__text">What amenities are available on the range?</span>
                       <img src={accordionStates[8] ? "src/assets/SVGs/Minus.svg" : "src/assets/SVGs/Plus.svg"} alt="" />
                     </button>
                   </h3>
@@ -548,7 +608,6 @@ function HomePage({ pageInert, setPageInert }) {
                   </div>
                 </div>
               </div>
-
 
               <picture className="faq__image">
                 {/*  Mobile Image  */}

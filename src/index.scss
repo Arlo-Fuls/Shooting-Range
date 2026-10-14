@@ -12,12 +12,15 @@
   --grey-med: #7a7a7a;
   --grey-light: #a5a5a5;
 
-  --teal-darker: #293F49;
+  --teal-darker: #293f49;
 
   --red: rgb(255, 0, 0);
 
-  --grey-very-light: #B6B6B6;
+  --grey-very-light: #b6b6b6;
 
+  --bp-small: 31.25rem;
+  --bp-medium: 50rem;
+  --bp-large: 75rem;
 
   // color-scheme: light dark;
   // font-synthesis: none;
@@ -50,10 +53,10 @@ body {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Akshar';
+  font-family: "Akshar";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/akshar-v17-latin-regular.woff2') format('woff2');
+  src: url("./assets/fonts/akshar-v17-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -61,10 +64,10 @@ body {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Akshar';
+  font-family: "Akshar";
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/akshar-v17-latin-500.woff2') format('woff2');
+  src: url("./assets/fonts/akshar-v17-latin-500.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -72,10 +75,10 @@ body {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'BIZ UDPGothic';
+  font-family: "BIZ UDPGothic";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/biz-udpgothic-v16-latin-regular.woff2') format('woff2');
+  src: url("./assets/fonts/biz-udpgothic-v16-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -83,10 +86,10 @@ body {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'BIZ UDPGothic';
+  font-family: "BIZ UDPGothic";
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/biz-udpgothic-v16-latin-700.woff2') format('woff2');
+  src: url("./assets/fonts/biz-udpgothic-v16-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -94,9 +97,9 @@ body {
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Annie Use Your Telescope';
+  font-family: "Annie Use Your Telescope";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/annie-use-your-telescope-v20-latin-regular.woff2') format('woff2');
+  src: url("./assets/fonts/annie-use-your-telescope-v20-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
