@@ -1,3 +1,5 @@
+@import "../App.scss";
+
 //--------------------------------------
 //  HERO SECTION
 //--------------------------------------
@@ -287,8 +289,7 @@
     flex-direction: column;
 
     h2 {
-      font-size: 0.9rem;
-      color: var(--red);
+      @extend .red-heading;
     }
 
     p {
