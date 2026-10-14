@@ -1,3 +1,5 @@
+@import "../App.scss";
+
 //--------------------------------------
 //  HERO SECTION
 //--------------------------------------
@@ -296,15 +298,18 @@
     flex-direction: column;
 
     h2 {
-      font-size: 0.9rem;
-      color: var(--red);
+      // font-size: 0.9rem;
+      // color: var(--red);
+      @extend .red-heading;
     }
 
     p {
-      font-size: 2.75rem;
-      font-family: "Akshar", sans-serif;
-      font-weight: 500;
-      letter-spacing: 0.0625rem;
+      // font-size: 2.75rem;
+      // font-family: "Akshar", sans-serif;
+      // font-weight: 500;
+      // letter-spacing: 0.0625rem;
+
+      @extend .large-heading;
     }
   }
 
@@ -482,15 +487,19 @@
 
   &__intro {
     h2 {
-      font-size: 0.9rem;
-      color: var(--red);
+      // font-size: 0.9rem;
+      // color: var(--red);
+
+      @extend .red-heading;
     }
 
     p {
-      font-size: 2.75rem;
-      font-family: "Akshar", sans-serif;
-      font-weight: 500;
-      letter-spacing: 0.0625rem;
+      // font-size: 2.75rem;
+      // font-family: "Akshar", sans-serif;
+      // font-weight: 500;
+      // letter-spacing: 0.0625rem;
+
+      @extend .large-heading;
 
       width: 50%;
     }
@@ -605,15 +614,19 @@
 
   &__title {
     h2 {
-      font-size: 0.9rem;
-      color: var(--red);
+      // font-size: 0.9rem;
+      // color: var(--red);
+      @extend .red-heading;
     }
 
     p {
+      // font-size: 2.75rem;
+      // font-family: "Akshar", sans-serif;
+      // font-weight: 500;
+      // letter-spacing: 0.0625rem;
+
+      @extend .large-heading;
       font-size: 2.75rem;
-      font-family: "Akshar", sans-serif;
-      font-weight: 500;
-      letter-spacing: 0.0625rem;
     }
   }
 
@@ -796,15 +809,18 @@
     padding-top: 5.5rem; // Offset header slightly
 
     h2 {
-      font-size: 0.9rem;
-      color: var(--red);
+      // font-size: 0.9rem;
+      // color: var(--red);
+      @extend .red-heading;
     }
 
     p {
-      font-size: 2.75rem;
-      font-family: "Akshar", sans-serif;
-      font-weight: 500;
-      letter-spacing: 0.0625rem;
+      // font-size: 2.75rem;
+      // font-family: "Akshar", sans-serif;
+      // font-weight: 500;
+      // letter-spacing: 0.0625rem;
+
+      @extend .large-heading;
 
       color: var(--white);
 
