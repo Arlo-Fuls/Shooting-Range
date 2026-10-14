@@ -595,7 +595,7 @@
   background-color: var(--white);
 
   &__container {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 35% 65%;
     gap: 6rem;
   }
@@ -790,7 +790,7 @@
     // justify-content: space-between;
     // width: 100%;
 
-    display: grid;
+    display: grid !important;
     grid-template-columns: 48% 4% 48%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "left icon right";
