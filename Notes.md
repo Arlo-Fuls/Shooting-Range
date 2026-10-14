@@ -11,6 +11,7 @@
 - Nav bar onder links, style links
 - Check animation on accordion pannels
 - Check if greener tint to the dark grey looks better
+- Add slant to About Page
 
 ## larger
 
