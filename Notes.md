@@ -9,6 +9,7 @@
 - check if a green left border next to the trainer text can look cool
 - Nav bar onder links, style links
 - Check animation on accordion pannels
+- Check if greener tint to the dark grey looks better
 
 ## larger
 
