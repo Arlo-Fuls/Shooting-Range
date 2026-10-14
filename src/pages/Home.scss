@@ -598,6 +598,8 @@
     display: grid !important;
     grid-template-columns: 35% 65%;
     gap: 6rem;
+
+    padding-bottom: 5rem;
   }
 
   &__header {
@@ -642,9 +644,9 @@
     position: absolute;
     width: 25%;
     // height: 40%;
-    bottom: -8rem;
+    bottom: 0rem;
     right: 0;
-    z-index: -1;
+    // z-index: -1;
   }
 
   &__body {
@@ -796,7 +798,7 @@
     grid-template-areas: "left icon right";
     // gap: 1rem;
 
-    padding: 7rem 0 5rem; // Padding between top section and footer
+    padding: 2rem 0 5rem; // Padding between top section and footer
 
     z-index: 1;
   }
