@@ -93,3 +93,15 @@ footer {
   white-space: nowrap;
   border: 0;
 }
+
+.red-heading {
+  font-size: 0.9rem;
+  color: var(--red);
+}
+
+.large-heading {
+  font-size: 2.75rem;
+  font-family: "Akshar", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.0625rem;
+}
