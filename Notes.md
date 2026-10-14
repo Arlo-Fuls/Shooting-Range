@@ -1,6 +1,7 @@
 # To Do
 
 ## quick
+
 - Add drop shadow for nav bar
 - Add Trainers SVG (branches)
 - Other font to replace Annie Use your telescope
@@ -14,16 +15,16 @@
 ## larger
 
 - optimize images
-    - crop image on home page (bullets) to be more square
+  - crop image on home page (bullets) to be more square
 - update SVGs
 - Add jump to top button
 - Check to add load in animation
+- Footer better make
 
 ## other
+
 - Check to remove hero section
 - Double check if design still matches the theme
-
-
 
 # Useful resources
 

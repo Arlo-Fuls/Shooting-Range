@@ -57,7 +57,7 @@ function RulesPage({ pageInert, setPageInert }) {
               <li>Have fun</li>
             </ul>
           </div>
-          <img className="rules__img--target" src="src\assets\SVGs\Target.svg" alt="" />
+          <img className="rules__img--target" src="src\assets\SVGs\Target-cropped.svg" alt="" />
         </section>
       </main>
     </>
