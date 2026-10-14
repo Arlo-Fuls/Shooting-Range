@@ -6,10 +6,14 @@
 - Other font to replace Annie Use your telescope
 - Add speech bubble at contact section (CSS)
 - Check that all information in the main page is complete
+- check if a green left border next to the trainer text can look cool
+- Nav bar onder links, style links
+- Check animation on accordion pannels
 
 ## larger
 
 - optimize images
+    - crop image on home page (bullets) to be more square
 - update SVGs
 - Add jump to top button
 - Check to add load in animation
