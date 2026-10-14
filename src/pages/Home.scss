@@ -482,7 +482,7 @@
     left: 0;
 
     background-color: var(--white);
-    clip-path: polygon(0 70%, 101% 101%, 0 101%);
+    clip-path: polygon(0 70%, 100% 100%, 0 100%);
   }
 
   &__intro {
@@ -783,7 +783,6 @@
     z-index: 0;
   }
 
-
   // Contains entire faq section with parts split into left and right
   // Should collapse parts on smaller screens to have a column flow
   &__container {
@@ -797,11 +796,9 @@
     grid-template-areas: "left icon right";
     // gap: 1rem;
 
-
     padding: 7rem 0 5rem; // Padding between top section and footer
 
     z-index: 1;
-
   }
 
   &__head {
@@ -823,7 +820,6 @@
       @extend .large-heading;
 
       color: var(--white);
-
     }
   }
 
@@ -835,7 +831,6 @@
     grid-area: right;
     justify-self: end;
   }
-
 
   &__left,
   &__right {
@@ -873,12 +868,10 @@
   }
 
   &__image {
-
     img {
       // height: 5rem;
-      width: 100%
+      width: 100%;
     }
-
   }
 }
 
