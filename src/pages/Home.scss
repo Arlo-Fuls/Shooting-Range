@@ -1,4 +1,5 @@
 @import "../App.scss";
+@import "../index.scss";
 
 //--------------------------------------
 //  HERO SECTION
@@ -219,18 +220,46 @@
         color: var(--white-2);
       }
     }
+
+    @media screen and (max-width: $bp-medium) {
+      .pricing__image {
+        width: 0;
+        display: none;
+      }
+
+      .pricing__text {
+        width: 100%;
+      }
+    }
   }
 
   &__bottom {
-    justify-content: space-between;
+    // justify-content: space-between;
+    display: grid;
+    width: 80%;
+    max-width: 75rem;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    row-gap: 5rem;
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: auto auto;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
 
     .card {
       // background-color: var(--grey-light);
       background-color: var(--green);
       color: var(--white);
 
-      width: 21%;
-      height: 13rem; // Temp, replace with padding? Check that all cards are the same height
+      width: 100%; // from 21%
+      // height: 13rem; // Temp, replace with padding? Check that all cards are the same height
       padding: 1.25rem 1rem;
 
       border-radius: 0.75rem;
@@ -331,24 +360,29 @@
 
       &:after {
         content: "";
-        width: 0;
-        height: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
 
-        z-index: 2;
+        clip-path: polygon(100% 0, 100% 100%, 75% 100%); // The final element's x-value determines sharpness of slant
 
-        border-left: 4rem solid transparent;
-        border-right: 4rem solid var(--white);
-        border-top: 12rem solid transparent;
-        border-bottom: 12rem solid var(--white);
+        // z-index: 2;
+
+        // border-left: 4rem solid transparent;
+        // border-right: 4rem solid var(--white);
+        // border-top: 12rem solid transparent;
+        // border-bottom: 12rem solid var(--white);
       }
     }
 
     .image-details {
       display: flex;
       flex-direction: column;
+      position: relative;
+      z-index: 1;
 
       width: 30%; // Temp
       align-items: flex-end;

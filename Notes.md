@@ -3,7 +3,7 @@
 ## quick
 
 - Add drop shadow for nav bar
-- Add Trainers SVG (branches)
+- Change nav bar font sizes for different breakpoints
 - Other font to replace Annie Use your telescope
 - Add speech bubble at contact section (CSS)
 - Check that all information in the main page is complete
@@ -34,3 +34,8 @@
 - [React hide nav on scroll](https://dev.to/biomathcode/navbar-hide-and-show-on-scroll-using-custom-react-hooks-1k98) - This was very helpful, though the comments had a lot of good fixes, used their advice.
 - [Style link for active page](https://stackoverflow.com/questions/8998574/css-style-for-links-pointing-to-the-current-page) - This works for different page navigation, but not for in page hrefs
 - [Favicon](https://favicon.io/tutorials/favicon-sizes/) - Explanation on favicon sizes and converter to use
+
+# Log of specific changes made
+
+- Replaced all navbar.scss "max-width: 37.5rem" parts with "max-width: $bp-medium"
+- Remove clamp className from pricing's pricing\_\_bottom and changed the display to grid

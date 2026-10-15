@@ -18,16 +18,16 @@
 
   --grey-very-light: #b6b6b6;
 
-  --bp-small: 31.25rem;
-  --bp-medium: 50rem;
-  --bp-large: 75rem;
-
   // color-scheme: light dark;
   // font-synthesis: none;
   // text-rendering: optimizeLegibility;
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
 }
+
+$bp-small: 31.25rem;
+$bp-medium: 50rem;
+$bp-large: 75rem;
 
 html,
 body,

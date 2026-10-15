@@ -209,7 +209,7 @@ function HomePage({ pageInert, setPageInert }) {
             </picture>
           </div>
 
-          <div className="pricing__bottom clamped">
+          <div className="pricing__bottom">
             {/* TIME */}
             <div className="card">
               <div className="card__top">

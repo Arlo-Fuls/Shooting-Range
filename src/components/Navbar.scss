@@ -1,3 +1,5 @@
+@import "../index.scss";
+
 body:has(.inert) {
   overflow: hidden;
 }
@@ -15,7 +17,7 @@ body:has(.inert) {
 
   transition: top 150ms ease-in-out;
 
-  @media screen and (max-width: 37.5rem) {
+  @media screen and (max-width: $bp-medium) {
     position: fixed;
 
     top: 0;
@@ -43,11 +45,10 @@ body:has(.inert) {
 
     padding-left: 2rem;
 
-    @media screen and (max-width: 37.5rem) {
+    @media screen and (max-width: $bp-medium) {
       flex-direction: column;
       justify-content: center;
       gap: 9rem;
-
 
       width: 100%;
       height: 100%;
@@ -64,16 +65,15 @@ body:has(.inert) {
     align-items: center;
     gap: 1.5rem;
 
-    @media screen and (max-width: 37.5rem) {
+    @media screen and (max-width: $bp-medium) {
       flex-direction: column;
     }
 
     .logo {
       height: 5rem;
 
-      @media screen and (max-width: 37.5rem) {
+      @media screen and (max-width: $bp-medium) {
         height: 12rem;
-
       }
     }
 
@@ -82,9 +82,8 @@ body:has(.inert) {
       font-weight: 500;
       letter-spacing: 0.125rem;
 
-      @media screen and (max-width: 37.5rem) {
+      @media screen and (max-width: $bp-medium) {
         display: none;
-
       }
     }
   }
@@ -92,11 +91,10 @@ body:has(.inert) {
   &__menu {
     height: 100%;
 
-    @media screen and (max-width: 37.5rem) {
+    @media screen and (max-width: $bp-medium) {
       width: 80%;
       height: auto;
     }
-
   }
 
   nav ul {
@@ -108,11 +106,10 @@ body:has(.inert) {
 
     height: 100%;
 
-    @media screen and (max-width: 37.5rem) {
+    @media screen and (max-width: $bp-medium) {
       flex-direction: column;
       height: auto;
       gap: 2rem;
-
     }
 
     li {
@@ -125,11 +122,10 @@ body:has(.inert) {
       display: flex;
       align-items: center;
 
-      @media screen and (max-width: 37.5rem) {
+      @media screen and (max-width: $bp-medium) {
         height: 3rem;
         width: 100%;
       }
-
     }
   }
 
@@ -158,7 +154,7 @@ body:has(.inert) {
   }
 
   &__open-btn[aria-expanded="true"] {
-    +.navMain__container {
+    + .navMain__container {
       translate: 0;
     }
   }
@@ -167,7 +163,7 @@ body:has(.inert) {
     display: none;
 
     // small screens, smaller than 600px
-    @media screen and (max-width: 37.5rem) {
+    @media screen and (max-width: $bp-medium) {
       display: block;
       position: absolute;
       right: 1rem;
@@ -187,7 +183,7 @@ body:has(.inert) {
     display: none;
 
     // small screens, smaller than 600px
-    @media screen and (max-width: 37.5rem) {
+    @media screen and (max-width: $bp-medium) {
       display: block;
       position: absolute;
       right: 1rem;
