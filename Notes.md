@@ -21,6 +21,8 @@
 - Add jump to top button
 - Check to add load in animation
 - Footer better make
+- Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
+- Fix dark lines that form when scrolling (places that clip-path is used)
 
 ## other
 

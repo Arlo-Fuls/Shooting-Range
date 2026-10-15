@@ -81,7 +81,7 @@ function Navbar({ setPageInert }) {
 
   useEffect(() => {
     // set initial value
-    const mediaWatcher = window.matchMedia("(width<600px)");
+    const mediaWatcher = window.matchMedia("(width<800px)");
     setIsNarrowScreen(mediaWatcher.matches);
 
     //watch for updates

@@ -226,7 +226,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="card">
               <div className="card__top">
                 <h3>Only R150 per person</h3>
-                <img className="icon" alt="" src="src\assets\SVGs\Money.svg" />
+                <img className="icon icon--larger" alt="" src="src\assets\SVGs\Money.svg" />
               </div>
               <div className="card__bottom">
                 <p>Shoot for an entire day for only R150 per person.</p>
@@ -237,11 +237,11 @@ function HomePage({ pageInert, setPageInert }) {
             {/* CARTONS */}
             <div className="card">
               <div className="card__top">
-                <h3>Targets available on site</h3>
-                <img className="icon--larger" alt="" src="src\assets\SVGs\Target.svg" />
+                <h3>Targets available</h3>
+                <img className="icon icon--larger" alt="" src="src\assets\SVGs\Target.svg" />
               </div>
               <div className="card__bottom">
-                <p>Targets and cartons can be purchased for R15 and R11 respectively. </p>
+                <p>Targets and cartons can be purchased at the office for R15 and R11 respectively. </p>
               </div>
             </div>
 
@@ -277,8 +277,10 @@ function HomePage({ pageInert, setPageInert }) {
             </picture>
 
             <div className="image-details">
-              <h3 className="image-title">{rangeImagesLarge[galleryIndex].head}</h3>
-              <p className="image-description">{rangeImagesLarge[galleryIndex].text}</p>
+              <div className="image-text">
+                <h3 className="image-title">{rangeImagesLarge[galleryIndex].head}</h3>
+                <p className="image-description">{rangeImagesLarge[galleryIndex].text}</p>
+              </div>
               <div className="gallery__buttons">
                 <button className="gallery__button gallery__button--ghost" onClick={prevImage}>
                   Previous
