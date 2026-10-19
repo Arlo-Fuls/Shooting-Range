@@ -304,7 +304,8 @@ function HomePage({ pageInert, setPageInert }) {
           <div className="contact__top clamped-wider">
             <div className="contact__intro">
               <h2>CONTACT US</h2>
-              <p>Ready to get started? Book a session today!</p>
+              <p>Ready to get started?</p>
+              <p>Book a session today!</p>
             </div>
             <div className="contact__rules">
               <p>New to the range?</p>
@@ -314,7 +315,7 @@ function HomePage({ pageInert, setPageInert }) {
               {/* Add modal on rules */}
             </div>
           </div>
-          <div className="contact__bottom clamped-wider">
+          <div className="contact__bottom">
             <div className="contact__card">
               <div className="contact__image-container">
                 <img src="src/assets/SVGs/Phone.svg" alt="" />
