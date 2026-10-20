@@ -23,11 +23,16 @@
 
   // Tracker image
   &__secondary-image {
-    margin-top: auto;
-    transform: translateY(30%);
+    // margin-top: auto;
+    transform: translateY(45%);
+    justify-self: end;
+    align-self: end;
+    padding-right: 7rem;
+
 
     img {
-      width: 25rem;
+      width: 20rem;
+
     }
   }
 
@@ -49,21 +54,22 @@
   }
 
   &__family-image {
+
     img {
       width: 100%;
-      // height: 40rem;
-      height: 100%;
-
+      height: 40rem;
+      // height: 100%;
       object-fit: cover;
     }
   }
 
   &__image-container {
     // position: relative;
+    align-self: end;
 
     padding-top: 7rem;
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
 }
 
@@ -112,26 +118,26 @@
     }
   }
 
-  &__right {
-    // Decorative Image
-    margin-top: auto;
-    width: 45%;
-    height: 20rem;
-    transform: translateY(30%);
+  // &__right {
+  //   // Decorative Image
+  //   margin-top: auto;
+  //   width: 45%;
+  //   height: 20rem;
+  //   transform: translateY(30%);
 
-
-  }
+  // }
 }
 
 .meetFamily {
   position: relative;
+  padding-bottom: 5rem;
 
   &__text-container {
-    height: 90%;
+    height: 100%;
     width: 100%;
     // background-color: var(--black);
 
-    padding-block: 7rem 5rem;
+    // padding-block: 7rem 5rem;
 
     display: flex;
     flex-direction: column;
@@ -155,7 +161,7 @@
 
     display: grid;
     grid-template-columns: 55% 45%;
-    grid-template-rows: calc(40rem + 7rem); //picture height plus gap above image
+    grid-template-rows: calc(42rem + 7rem); //picture height plus gap above image
     // gap: 1rem;
     color: var(--white);
 
@@ -165,9 +171,8 @@
 
     h2 {
       @extend .large-heading;
-      padding-block-end: 2rem;
+      padding-block: 4rem 2rem;
       border-bottom: 0.125rem solid var(--white);
-
 
       width: 70%;
 

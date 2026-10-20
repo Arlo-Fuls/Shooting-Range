@@ -194,7 +194,7 @@ function HomePage({ pageInert, setPageInert }) {
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
             <div className="pricing__text">
-              <h2>Welcome to Assegai Shooting Range</h2>
+              <h2>Welcome to <br /> Assegai Shooting Range</h2>
               <p>This family-run shooting range has been operating since 2008. We have 7 open-air ranges available for both training purposes and personal shooting, ranging between 25m and 100m. </p>
             </div>
 
@@ -252,7 +252,7 @@ function HomePage({ pageInert, setPageInert }) {
                 <img className="icon" alt="" src="src\assets\SVGs\Gun.svg" />
               </div>
               <div className="card__bottom">
-                <p>Weapons and ammunition are not for sale on the premises.</p>
+                <p>Weapons and ammunition are not provided by us.</p>
                 <p>Please bring your own gear or sign up to a training group.</p>
               </div>
             </div>
@@ -352,7 +352,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="trainers__header ">
               <div className="trainers__title">
                 <h2>TRAINERS</h2>
-                <p>Our Partnered Trainers</p>
+                <p>Meet Some of Our Partnered Trainers</p>
               </div>
 
               <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
@@ -473,7 +473,7 @@ function HomePage({ pageInert, setPageInert }) {
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-3" aria-labelledby="accordion-header-3" aria-hidden={!accordionStates[2]} hidden={!accordionStates[2]}>
-                    Payment can be made after the shooting session is complete. EFT is preferable, however accomidations can be made for cash payment if necessary. EFT details will be provided during booking (???).
+                    Payment can be made before or after the shooting session is complete. EFT is preferable, however accomidations can be made for cash payment if necessary. EFT details will be provided during booking (???).
                   </div>
                 </div>
 

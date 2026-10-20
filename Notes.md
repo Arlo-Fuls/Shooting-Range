@@ -12,7 +12,8 @@
 - Check animation on accordion pannels
 - Check if greener tint to the dark grey looks better
 - Add slant to About Page
-- Add second image on pricing section, one at bottom left, other top right - rooi trailer
+- Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
+
 
 ## larger
 

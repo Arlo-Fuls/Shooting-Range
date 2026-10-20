@@ -33,15 +33,6 @@ function AboutPage({ pageInert, setPageInert }) {
 
               <div className="about__slant-bg"></div>
             </div>
-
-            <picture className="about__secondary-image">
-              {/*  Mobile Image  */}
-              <source media="(max-width: 600px)" srcSet="src/assets/clutter/tracker-1.jpg" />
-              {/*  Desktop Image */}
-              <source media="(min-width: 601px)" srcSet="src/assets/clutter/tracker-1.jpg" />
-              {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/clutter/tracker-1.jpg" alt="Louw, the owner of the range driving a tracker. Two of the workers are sat in the bowl of the tracker behind him." />
-            </picture>
           </div>
         </section>
 
@@ -68,6 +59,15 @@ function AboutPage({ pageInert, setPageInert }) {
               <h2>Meet the Family</h2>
               <p>Many hands have helped shape the range over the years. Even though we can't include all of them, we would like to show those who are still working every day to improve the range.</p>
               <p>The picture below shows the family as it stands. At the center is Pa Louwa, the mastermind and heart of the operation. Alongside him, from left to right, are our lovely workers:</p>
+
+              <picture className="about__secondary-image">
+                {/*  Mobile Image  */}
+                <source media="(max-width: 600px)" srcSet="src/assets/clutter/tracker-1.jpg" />
+                {/*  Desktop Image */}
+                <source media="(min-width: 601px)" srcSet="src/assets/clutter/tracker-1.jpg" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/clutter/tracker-1.jpg" alt="Louw, the owner of the range driving a tracker. Two of the workers are sat in the bowl of the tracker behind him." />
+              </picture>
             </div>
 
           </div>
