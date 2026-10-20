@@ -209,6 +209,7 @@
 
     // clip-path: polygon(0 -1%, 100% 19%, 100% 60%, 0 40%);
     clip-path: polygon(50% 0%, 100% 0%, 100% 80%, 30% 80%);
+    will-change: transform;
 
     left: 0;
     top: 0;

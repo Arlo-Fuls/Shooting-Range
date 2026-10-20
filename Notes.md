@@ -31,6 +31,8 @@
 - Check to remove hero section
 - Double check if design still matches the theme
 
+- check FAQ info
+
 # Useful resources
 
 - [Hero section semantics](https://medium.com/@matt.dawkins/hero-sections-accessible-semantic-and-performant-c04502e16f40) - The comment at the end has a bunch of good corrections and explanations to look at.
@@ -38,6 +40,7 @@
 - [React hide nav on scroll](https://dev.to/biomathcode/navbar-hide-and-show-on-scroll-using-custom-react-hooks-1k98) - This was very helpful, though the comments had a lot of good fixes, used their advice.
 - [Style link for active page](https://stackoverflow.com/questions/8998574/css-style-for-links-pointing-to-the-current-page) - This works for different page navigation, but not for in page hrefs
 - [Favicon](https://favicon.io/tutorials/favicon-sizes/) - Explanation on favicon sizes and converter to use
+- [Fix clip path line](https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge) - This discussion showed how to use will-change: transform; to fix the weird line bug.
 
 # Log of specific changes made
 

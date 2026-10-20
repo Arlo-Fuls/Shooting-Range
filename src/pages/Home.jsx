@@ -473,7 +473,7 @@ function HomePage({ pageInert, setPageInert }) {
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-3" aria-labelledby="accordion-header-3" aria-hidden={!accordionStates[2]} hidden={!accordionStates[2]}>
-                    Payment can be made before or after the shooting session is complete. EFT is preferable, however accomidations can be made for cash payment if necessary. EFT details will be provided during booking (???).
+                    Payment can be made before or after the shooting session is complete. EFT is preferable, however accomidations can be made for cash payment if necessary. EFT details can be obtained on site.
                   </div>
                 </div>
 
@@ -494,7 +494,7 @@ function HomePage({ pageInert, setPageInert }) {
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-4" aria-labelledby="accordion-header-4" aria-hidden={!accordionStates[3]} hidden={!accordionStates[3]}>
-                    Requests for MOU's can be sent to the same contact details used for booking, and will be provided as soon as possible at no cost.
+                    Requests for MOU's can be sent to the same contact details used for booking, and will be processed as soon as possible at no cost.
                   </div>
                 </div>
 
@@ -586,7 +586,7 @@ function HomePage({ pageInert, setPageInert }) {
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-8" aria-labelledby="accordion-header-8" aria-hidden={!accordionStates[7]} hidden={!accordionStates[7]}>
-                    The ranges we offer ....
+                    The ranges span 25m, 50m, and 100m. For more information on the individual ranges, please take a look at our Gallery. All ranges are rifle accredited, so any weapons that fall under the rifle category are welcome. Fully automatic weapons, black powder weaponry, and 50 caliber or higher are not allowed on the range.
                   </div>
                 </div>
 
@@ -607,7 +607,7 @@ function HomePage({ pageInert, setPageInert }) {
                     </button>
                   </h3>
                   <div className="accordion__panel" id="accordion-panel-9" aria-labelledby="accordion-header-9" aria-hidden={!accordionStates[8]} hidden={!accordionStates[8]}>
-                    Bathrooms are available on the range, and cold drinks can be purchased at the office if desired.
+                    Bathrooms are available on the range, and cold drinks and selected snacks can be purchased at the office if desired.
                   </div>
                 </div>
               </div>
