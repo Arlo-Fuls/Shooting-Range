@@ -194,7 +194,7 @@ function HomePage({ pageInert, setPageInert }) {
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
             <div className="pricing__text">
-              <h2>Welcome to the Assegai Shooting Range</h2>
+              <h2>Welcome to Assegai Shooting Range</h2>
               <p>This family-run shooting range has been operating since 2008. We have 7 open-air ranges available for both training purposes and personal shooting, ranging between 25m and 100m. </p>
             </div>
 
