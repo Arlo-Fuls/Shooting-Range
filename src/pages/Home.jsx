@@ -14,7 +14,7 @@ function HomePage({ pageInert, setPageInert }) {
       src: "src/assets/images/Range1.jpg",
       alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
       head: "Range 1",
-      text: ["Range 1 is our most decorated range, with storage containers, tables and seating. The firing point is 25m from the targets, and there is enough space to accomodate 10 shooters at the same time.", "Range 1 is used privately by the APSC and is currently not available to the public or other training groups."],
+      text: ["Range 1 is our most decorated range, with storage containers, tables and seating. The firing point is 25m from the targets, and there is enough space to accomodate 10 shooters at the same time.", "Range 1 is used privately by the APSC group and is currently not available to the public or other training groups."],
     },
     {
       src: "src/assets/images/Range2.jpg",
