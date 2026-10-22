@@ -1,9 +1,12 @@
+@import "../App.scss";
+
 .rules__mainHeader {
-  min-height: 20rem;
+  min-height: 30rem;
   width: 100%;
   height: 100%;
   position: relative;
 
+  // Slant
   .header__background {
     // Define shape of container with x and y coord
     // Order: Top L - Top R - Bottom R - Bottom L
@@ -18,17 +21,34 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
   }
 
-  .header__bottom {
+  // Header text
+  .header__content {
     flex-direction: column;
     align-items: flex-end;
+
+    padding-top: 5rem;
+
+    color: var(--white);
+
+    h2 {
+      @extend .large-heading;
+    }
+
+    p {
+      padding-block-start: 1rem;
+      font-family: "Akshar", sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.0625rem;
+    }
   }
 }
 
 .rules__center {
   position: relative;
+
   justify-content: center;
-  min-height: 20rem; // Can't get children to occupy entire area
-  padding: 2rem 0 4rem;
+  min-height: 35rem; // Can't get children to occupy entire area
+  padding: 7rem 0 4rem;
 
   &__blocks {
     display: flex;
@@ -40,39 +60,76 @@
   &__block {
     width: 45%;
     //height: 100%;
-    min-height: 20rem; // Should try to get 100% height to work
-    background-color: var(--grey-med);
-    border: 0.5rem solid var(--grey-dark);
+    min-height: 35rem; // Should try to get 100% height to work
+
+    background-color: var(--green-2);
+    border: 0.75rem solid var(--green);
     border-radius: 0.5rem;
 
+    padding-inline: 2rem;
+
     legend {
-      background-color: var(--grey-dark);
-      font-size: 2rem;
-      padding: 0.5rem 1rem;
+      background-color: var(--green);
+
+      padding: 0.25rem 1rem;
+      color: var(--white);
+      @extend .large-heading;
+    }
+
+    ul {
+      padding-top: 1.5rem;
+      font-size: 1.25rem;
+
+      list-style-type: none;
+    }
+
+    ul li:before {
+      content: '\27A3';
+      font-size: 140%;
+      /* or whatever */
+
+      position: absolute;
+      left: 0;
+      top: 10%;
+
+    }
+
+    li {
+      padding-block-start: 0.75rem;
+      padding-inline-start: 2.5rem;
+      font-family: "Akshar", sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.0625rem;
+
+      position: relative;
     }
 
     &:nth-child(1) {
       // DO
       transform: translateY(-25%);
+
       legend {
-        margin-left: 2rem;
+        margin-left: 1rem;
       }
     }
 
     &:nth-child(2) {
       // DON'T
       transform: translateY(20%);
+
       legend {
         margin-left: auto;
-        margin-right: 2rem;
+        margin-right: 1rem;
       }
     }
   }
 
   &__bar {
     position: absolute;
+
     z-index: -1;
-    background-color: var(--grey-dark);
+    background-color: var(--black);
+
     height: 20%; // Set as percentage of entire section
     width: 100%;
   }
@@ -81,6 +138,7 @@
 .rules__bottom {
   padding-bottom: 4rem;
   position: relative;
+
   // Won't crop well. Should crop original svg instead
   // overflow: hidden;
   &__container {

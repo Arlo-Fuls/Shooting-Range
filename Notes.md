@@ -14,6 +14,8 @@
 - Add slant to About Page
 - Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
 - Check all alt text for images
+- Check section linking met aria
+- Check if should aria-hide content when inert as well
 
 
 ## larger
@@ -42,6 +44,8 @@
 - [Style link for active page](https://stackoverflow.com/questions/8998574/css-style-for-links-pointing-to-the-current-page) - This works for different page navigation, but not for in page hrefs
 - [Favicon](https://favicon.io/tutorials/favicon-sizes/) - Explanation on favicon sizes and converter to use
 - [Fix clip path line](https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge) - This discussion showed how to use will-change: transform; to fix the weird line bug.
+- [Special ul styling](https://stackoverflow.com/questions/61365526/how-to-customize-unordered-list-bullet-using-inline-css-only-for-emails) - Showed how to use unicode as bullets
+- [ul wrapping with special bullet](https://stackoverflow.com/questions/24685355/aligning-li-text-that-wraps-when-using-custom-bullet-point) - Showed to use position absolute and relative to position to avoid strange wrapping
 
 # Log of specific changes made
 

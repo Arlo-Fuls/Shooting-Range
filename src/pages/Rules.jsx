@@ -4,23 +4,22 @@ import "./Rules.scss";
 function RulesPage({ pageInert, setPageInert }) {
   return (
     <>
-      <header className="rules__mainHeader mainSection">
-        {/* Colour polygon */}
-        <div className="header__background"></div>
-        {/* Page specific navbar */}
-        <div className="navMain__container--rules">
-          <Navbar setPageInert={setPageInert} />
-        </div>
-
-        {/* Bottom of header section */}
-        <div className="header__bottom clamped">
-          <h2>The DO's and DONT's of our range</h2>
-          <p>While you're at the range, we ask that you...</p>
-        </div>
-      </header>
-
       <main className={pageInert ? "rules__main inert" : "rules__main"}>
-        <section className="rules__center mainSection">
+        <section className="rules__mainHeader mainSection">
+          {/* Colour polygon */}
+          <div className="header__background"></div>
+
+          {/* Page specific navbar */}
+          <Navbar setPageInert={setPageInert} />
+
+          {/* Bottom of header section */}
+          <div className="header__content clamped">
+            <h2>The DO's and DONT's of our range</h2>
+            <p>While you're at the range, we ask that you...</p>
+          </div>
+        </section>
+
+        <section className="rules__center mainSection" inert={pageInert}>
           <div className="rules__center__bar"></div>
           <div className="rules__center__blocks clamped">
             {/* NB: Using fieldset to get text in border, liable to change */}
@@ -30,9 +29,11 @@ function RulesPage({ pageInert, setPageInert }) {
                 <h3>DO</h3>
               </legend>
               <ul>
-                <li>Have fun</li>
-                <li>Have fun</li>
-                <li>Have fun</li>
+                <li>Sign the indemnity form</li>
+                <li>Complete the range register</li>
+                <li>Wear hearing and eye protection</li>
+                <li>Listen to the range officials</li>
+                <li>Only use shotguns when shooting on steel plates</li>
               </ul>
             </fieldset>
             <fieldset className="rules__center__block">
@@ -40,15 +41,18 @@ function RulesPage({ pageInert, setPageInert }) {
                 <h3>DON'T</h3>
               </legend>
               <ul>
-                <li>Die</li>
-                <li>Die</li>
-                <li>Die</li>
+                <li>Climb on the sand walls</li>
+                <li>Fire at anything other than the standard targets, including roaming animals</li>
+                <li>Shoot under the influence of alcohol / narcotics</li>
+                <li>Bring alcohol or narcotics onto the premises</li>
+                <li>Litter</li>
+                <li>Interupt other groups on the range</li>
               </ul>
             </fieldset>
           </div>
         </section>
 
-        <section className="rules__bottom mainSection">
+        <section className="rules__bottom mainSection" inert={pageInert}>
           <div className="rules__bottom__container clamped">
             <h3>Stay safe</h3>
             <ul>
