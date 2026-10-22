@@ -44,11 +44,11 @@ function AboutPage({ pageInert, setPageInert }) {
             <div className="about__image-container">
               <picture className="about__family-image">
                 {/*  Mobile Image  */}
-                <source media="(max-width: 600px)" srcSet="src/assets/clutter/Landing-Page.jpg" />
+                <source media="(max-width: 600px)" srcSet="src/assets/images/family-photo.jpg" />
                 {/*  Desktop Image */}
-                <source media="(min-width: 601px)" srcSet="src/assets/clutter/Landing-Page.jpg" />
+                <source media="(min-width: 601px)" srcSet="src/assets/images/family-photo.jpg" />
                 {/*  Fallback Image  */}
-                <img aria-hidden="true" decoding="async" src="src/assets/clutter/Landing-Page.jpg" alt="Trees." />
+                <img aria-hidden="true" decoding="async" src="src/assets/images/family-photo.jpg" alt="Trees." />
               </picture>
 
               {/* <div className="meetFamily__slant"></div> */}
@@ -58,7 +58,7 @@ function AboutPage({ pageInert, setPageInert }) {
             <div className="meetFamily__text-container">
               <h2>Meet the Family</h2>
               <p>Many hands have helped shape the range over the years. Even though we can't include all of them, we would like to show those who are still working every day to improve the range.</p>
-              <p>The picture below shows the family as it stands. At the center is Pa Louwa, the mastermind and heart of the operation. Alongside him, from left to right, are our lovely workers:</p>
+              <p>The picture shows the family as it stands. On the left is Pa Louwa, the mastermind and heart of the operation. Alongside him, from left to right, are our lovely workers: Peter and Shorty. Not pictured here are our other workers, Alex and Alfred.</p>
 
               <picture className="about__secondary-image">
                 {/*  Mobile Image  */}

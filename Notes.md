@@ -13,6 +13,7 @@
 - Check if greener tint to the dark grey looks better
 - Add slant to About Page
 - Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
+- Check all alt text for images
 
 
 ## larger
