@@ -43,12 +43,13 @@
   }
 }
 
+// Two blocks with DO and DONT
 .rules__center {
   position: relative;
 
   justify-content: center;
   min-height: 35rem; // Can't get children to occupy entire area
-  padding: 7rem 0 4rem;
+  padding: 6rem 0 4rem;
 
   &__blocks {
     display: flex;
@@ -81,17 +82,17 @@
       font-size: 1.25rem;
 
       list-style-type: none;
-    }
 
-    ul li:before {
-      content: '\27A3';
-      font-size: 140%;
-      /* or whatever */
+      li:before {
+        content: '\27A3';
+        font-size: 140%;
+        /* or whatever */
 
-      position: absolute;
-      left: 0;
-      top: 10%;
+        position: absolute;
+        left: 0;
+        top: 10%;
 
+      }
     }
 
     li {
@@ -106,7 +107,7 @@
 
     &:nth-child(1) {
       // DO
-      transform: translateY(-25%);
+      transform: translateY(-20%);
 
       legend {
         margin-left: 1rem;
@@ -115,7 +116,7 @@
 
     &:nth-child(2) {
       // DON'T
-      transform: translateY(20%);
+      transform: translateY(15%);
 
       legend {
         margin-left: auto;
@@ -135,8 +136,9 @@
   }
 }
 
+// Stay safe and image
 .rules__bottom {
-  padding-bottom: 4rem;
+  padding-block: 2rem 7rem;
   position: relative;
 
   // Won't crop well. Should crop original svg instead
@@ -144,14 +146,45 @@
   &__container {
     flex-direction: column;
 
+    h3 {
+      @extend .large-heading;
+    }
+
     ul {
       width: 75%;
+
+      padding-top: 1.5rem;
+      font-size: 1.25rem;
+
+      list-style-type: none;
+
+      li:before {
+        content: '\27A3';
+        font-size: 140%;
+        /* or whatever */
+
+        position: absolute;
+        left: 0;
+        top: 10%;
+
+      }
     }
+
+    li {
+      padding-block-start: 0.75rem;
+      padding-inline-start: 2.5rem;
+      font-family: "Akshar", sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 0.0625rem;
+
+      position: relative;
+    }
+
   }
 }
 
 .rules__img--target {
-  height: 15rem;
+  height: 30rem;
   position: absolute;
   z-index: -1;
 

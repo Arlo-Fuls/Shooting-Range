@@ -54,11 +54,12 @@ function RulesPage({ pageInert, setPageInert }) {
 
         <section className="rules__bottom mainSection" inert={pageInert}>
           <div className="rules__bottom__container clamped">
-            <h3>Stay safe</h3>
+            <h3>Stay safe!</h3>
             <ul>
-              <li>Have fun</li>
-              <li>Have fun</li>
-              <li>Have fun</li>
+              <li>Only handle a loaded gun while at the firing point</li>
+              <li>Put down / holster the unloaded gun while not at the firing point</li>
+              <li>Don't turn away from the firing point with a loaded gun</li>
+              <li>Stay at least 10m behind any shooters while not actively shooting</li>
             </ul>
           </div>
           <img className="rules__img--target" src="src\assets\SVGs\Target-cropped.svg" alt="" />
