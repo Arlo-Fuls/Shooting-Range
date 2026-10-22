@@ -52,6 +52,12 @@ function HomePage({ pageInert, setPageInert }) {
       head: "Range 7",
       text: "Range 7 has x amount of tables that can be used at once and is x meters long",
     },
+    {
+      src: "src/assets/images/river-range.jpg",
+      alt: "A dried up river bed with trees and foliage.",
+      head: "River Range",
+      text: "The River Range is only available to training groups",
+    }
   ]);
   const [rangeImagesSmall, setRangeImagesSmall] = useState([
     {
@@ -82,6 +88,10 @@ function HomePage({ pageInert, setPageInert }) {
       src: "src/assets/images/Range7.jpg",
       alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
     },
+    {
+      src: "src/assets/images/river-range.jpg",
+      alt: "A dried up river bed with trees and foliage."
+    }
   ]);
   const [rangeImagesFallback, setRangeImagesFallback] = useState([
     {
@@ -112,12 +122,16 @@ function HomePage({ pageInert, setPageInert }) {
       src: "src/assets/images/Range7.jpg",
       alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
     },
+    {
+      src: "src/assets/images/river-range.jpg",
+      alt: "A dried up river bed with trees and foliage."
+    }
   ]);
 
   const [galleryIndex, setGalleryIndex] = useState(0);
 
   const nextImage = () => {
-    if (galleryIndex < 6) {
+    if (galleryIndex < 7) {
       const temp = galleryIndex + 1;
       setGalleryIndex(temp);
     } else {
@@ -131,7 +145,7 @@ function HomePage({ pageInert, setPageInert }) {
       const temp = galleryIndex - 1;
       setGalleryIndex(temp);
     } else {
-      const temp = 6;
+      const temp = 7;
       setGalleryIndex(temp);
     }
   };
