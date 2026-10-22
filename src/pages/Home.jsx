@@ -14,49 +14,49 @@ function HomePage({ pageInert, setPageInert }) {
       src: "src/assets/images/Range1.jpg",
       alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
       head: "Range 1",
-      text: "Range 1 is used privately by the APSC.",
+      text: "Range 1 is our most decorated range, with storage containers, tables and seating. The firing point is 25m from the targets, and there is enough space to accomodate 10 shooters at the same time. Range 1 is used privately by the APSC and is currently not available to the public or other training groups.",
     },
     {
       src: "src/assets/images/Range2.jpg",
       alt: "A long open-aired range with 5 visible tables for shooters to stand.",
       head: "Range 2",
-      text: "Range 2 has x amount of tables that can be used at once and is x meters long",
+      text: "Range 2 is our longest range, with a distance of 100m. It is split into 2 sections, each with 5 tables to accomodate simultanious shooters. It is also known as our Rifle Range since it is primarily used for rifle training, though other types of weapons can be used on it as well.",
     },
     {
       src: "src/assets/images/Range3.jpg",
       alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
       head: "Range 3",
-      text: "Range 3 has x amount of tables that can be used at once and is x meters long",
+      text: "Range 3 is a nice open space with some trees for shade. The firing point, which is marked by the orange bins, is 25m from the targets, and the space can allow 10 shooters to be active at the same time. The setup and distance is ideal for the use of weapons such as pistol, shot-gun, etc.",
     },
     {
       src: "src/assets/images/Range4.jpg",
       alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
       head: "Range 4",
-      text: "Range 4 has x amount of tables that can be used at once and is x meters long",
+      text: "Range 4 is a narrow range that is 50m long. There is one table on the range, but there is enough space to accomodate 5 shooters simultaniously. The enclosed space and distance makes the range good for long-range shooting practice, and ideal for .22.",
     },
     {
       src: "src/assets/images/Range5.jpg",
       alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
       head: "Range 5",
-      text: "Range 5 has x amount of tables that can be used at once and is x meters long",
+      text: "Range 5 has the most open space of the ranges, with no structures or trees. The firing points, marked by the orange bins, are 25m from the targets, and 10 shooters can be active at the same time. Due to its large open area, it is ideal for drive-by shooting and tactical training.",
     },
     {
       src: "src/assets/images/Range6.jpg",
       alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
       head: "Range 6",
-      text: "Range 6 has x amount of tables that can be used at once and is x meters long",
+      text: "Range 6 has a sheltered seating area for shooters who are not actively shooting, and a shelter by the firing point to protect from the heat. The range is 25m long and can accomodate 10 shooters simultaniously. It is ideal for standard weapons like pistol, rifle, shotgun, etc.",
     },
     {
       src: "src/assets/images/Range7.jpg",
       alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
       head: "Range 7",
-      text: "Range 7 has x amount of tables that can be used at once and is x meters long",
+      text: "Range 7 is not yet NRCS accredited, though the process has been started. We hope to transform the range into a fixed tactical range in the future for those who do not have their own tactical training setup.",
     },
     {
       src: "src/assets/images/river-range.jpg",
       alt: "A dried up river bed with trees and foliage.",
       head: "River Range",
-      text: "The River Range is only available to training groups",
+      text: "The River Range was developed in a long stretch of dried-up river. There are lots of trees and folliage, making it ideal for tactical training with obscured targets. Due to the risk of tactical training, it is currently only available to training groups.",
     }
   ]);
   const [rangeImagesSmall, setRangeImagesSmall] = useState([
