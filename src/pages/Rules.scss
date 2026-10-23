@@ -32,6 +32,7 @@
 
     h2 {
       @extend .large-heading;
+      font-size: 3rem;
     }
 
     p {
@@ -49,7 +50,7 @@
 
   justify-content: center;
   min-height: 35rem; // Can't get children to occupy entire area
-  padding: 6rem 0 4rem;
+  padding: 3rem 0 4rem;
 
   &__blocks {
     display: flex;
@@ -75,6 +76,8 @@
       padding: 0.25rem 1rem;
       color: var(--white);
       @extend .large-heading;
+
+      font-size: 2.125rem;
     }
 
     ul {
@@ -96,10 +99,10 @@
     }
 
     li {
-      padding-block-start: 0.75rem;
+      padding-block-start: 1rem;
       padding-inline-start: 2.5rem;
       font-family: "Akshar", sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       letter-spacing: 0.0625rem;
 
       position: relative;
@@ -174,7 +177,7 @@
       padding-block-start: 0.75rem;
       padding-inline-start: 2.5rem;
       font-family: "Akshar", sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       letter-spacing: 0.0625rem;
 
       position: relative;
