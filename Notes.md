@@ -16,7 +16,8 @@
 - Check all alt text for images
 - Check section linking met aria
 - Check if should aria-hide content when inert as well
-
+- Fix FAQ Assegai stretching
+- Fix FAQ :after breakpoints
 
 ## larger
 
@@ -28,11 +29,14 @@
 - Footer better make
 - Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
 - Fix dark lines that form when scrolling (places that clip-path is used)
+- Finish Trainer Section on home page (logos too small near 500px and below plus horizontal overflow @ around 505px)
 
 ## other
 
 - Check to remove hero section
 - Double check if design still matches the theme
+- Check Deprecation Warning in vs code console
+- Fix errors in web console (Each child in a list should have a unique "key" prop.)
 
 - check FAQ info
 

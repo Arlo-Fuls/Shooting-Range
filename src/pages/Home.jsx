@@ -57,7 +57,7 @@ function HomePage({ pageInert, setPageInert }) {
       alt: "A dried up river bed with trees and foliage.",
       head: "River Range",
       text: ["The River Range was developed in a long stretch of dried-up river. There are lots of trees and folliage, making it ideal for tactical training with obscured targets.", "Due to the risk of tactical training, it is currently only available to training groups."],
-    }
+    },
   ]);
   const [rangeImagesSmall, setRangeImagesSmall] = useState([
     {
@@ -90,8 +90,8 @@ function HomePage({ pageInert, setPageInert }) {
     },
     {
       src: "src/assets/images/river-range.jpg",
-      alt: "A dried up river bed with trees and foliage."
-    }
+      alt: "A dried up river bed with trees and foliage.",
+    },
   ]);
   const [rangeImagesFallback, setRangeImagesFallback] = useState([
     {
@@ -124,8 +124,8 @@ function HomePage({ pageInert, setPageInert }) {
     },
     {
       src: "src/assets/images/river-range.jpg",
-      alt: "A dried up river bed with trees and foliage."
-    }
+      alt: "A dried up river bed with trees and foliage.",
+    },
   ]);
 
   const [galleryIndex, setGalleryIndex] = useState(0);
@@ -208,7 +208,9 @@ function HomePage({ pageInert, setPageInert }) {
         <section className="pricing mainSection" inert={pageInert}>
           <div className="pricing__top clamped">
             <div className="pricing__text">
-              <h2>Welcome to <br /> Assegai Shooting Range</h2>
+              <h2>
+                Welcome to <br /> Assegai Shooting Range
+              </h2>
               <p>This family-run shooting range has been operating since 2008. We have 7 open-air ranges available for both training purposes and personal shooting, ranging between 25m and 100m. </p>
             </div>
 
@@ -294,11 +296,10 @@ function HomePage({ pageInert, setPageInert }) {
               <div className="image-text">
                 <h3 className="image-title">{rangeImagesLarge[galleryIndex].head}</h3>
                 <div className="image-text-container">
-                  {rangeImagesLarge[galleryIndex]['text'].map(info =>
-                    (<p className="image-description">{info}</p>)
-                  )}
+                  {rangeImagesLarge[galleryIndex]["text"].map((info) => (
+                    <p className="image-description">{info}</p>
+                  ))}
                 </div>
-
               </div>
               <div className="gallery__buttons">
                 <button className="gallery__button gallery__button--ghost" onClick={prevImage}>
@@ -371,10 +372,9 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="trainers__header ">
               <div className="trainers__title">
                 <h2>TRAINERS</h2>
-                <p>Meet Some of Our Partnered Trainers</p>
+                <p className="headerText">Meet Some of Our Partnered Trainers</p>
+                <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
               </div>
-
-              <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
 
               <picture className="trainers__image">
                 {/*  Mobile Image  */}

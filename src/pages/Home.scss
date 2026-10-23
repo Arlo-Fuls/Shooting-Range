@@ -746,23 +746,41 @@
   position: relative;
   background-color: var(--white);
 
+  @media screen and (max-width: $bp-medium) {
+    padding-top: 2rem;
+  }
+
   &__container {
     display: grid !important;
     grid-template-columns: 35% 65%;
-    gap: 6rem;
+    // gap: 6rem;
+    gap: 7%;
 
     padding-bottom: 5rem;
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+      gap: 0;
+    }
   }
 
   &__header {
     display: flex;
     flex-direction: column;
-    gap: 2.25rem;
+    // gap: 2.25rem;
 
     p {
       font-family: "Akshar", sans-serif;
       font-size: 1.25rem;
       letter-spacing: 0.0625rem;
+    }
+
+    @media screen and (max-width: $bp-large) {
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
     }
   }
 
@@ -773,7 +791,7 @@
       @extend .red-heading;
     }
 
-    p {
+    .headerText {
       // font-size: 2.75rem;
       // font-family: "Akshar", sans-serif;
       // font-weight: 500;
@@ -781,6 +799,16 @@
 
       @extend .large-heading;
       font-size: 2.75rem;
+      padding-bottom: 2.25rem;
+    }
+
+    @media screen and (max-width: $bp-large) {
+      width: 70%;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      width: 100%;
+      // text-align: justify;
     }
   }
 
@@ -789,6 +817,15 @@
 
     img {
       width: 100%;
+    }
+
+    @media screen and (max-width: $bp-large) {
+      width: 30%;
+      padding: 0;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      display: none;
     }
   }
 
@@ -809,6 +846,10 @@
     // width: 40rem;
     justify-self: center;
     align-self: center;
+
+    @media screen and (max-width: $bp-medium) {
+      padding-inline: 0;
+    }
   }
 
   &__logoContainer {
@@ -935,6 +976,25 @@
     height: 12rem;
     background-color: var(--black);
     z-index: 0;
+
+    @media screen and (max-width: 54.0625rem) {
+      // Point where header becomes 3 lines
+      height: 15rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      height: 8rem;
+    }
+
+    @media screen and (max-width: 45.875rem) {
+      // Point where header becomes 2 lines
+      height: 12rem;
+    }
+
+    @media screen and (max-width: 27.5625rem) {
+      // Point where header becomes 3 lines
+      height: 15rem;
+    }
   }
 
   // Contains entire faq section with parts split into left and right
@@ -953,6 +1013,28 @@
     padding: 2rem 0 5rem; // Padding between top section and footer
 
     z-index: 1;
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: 47% 6% 47%;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      grid-template-columns: 6% auto;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "icon right"
+        "icon left";
+      row-gap: 0.75rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "right"
+        "left";
+      row-gap: 0.75rem;
+    }
   }
 
   &__head {
@@ -979,6 +1061,10 @@
 
   &__left {
     grid-area: left;
+
+    @media screen and (max-width: $bp-medium) {
+      justify-self: end;
+    }
   }
 
   &__right {
@@ -997,6 +1083,10 @@
     // justify-content: space-between;
 
     gap: 5rem;
+
+    @media screen and (max-width: $bp-large) {
+      width: 95%;
+    }
   }
 
   // &__assegai {
@@ -1012,6 +1102,12 @@
 
   //   // align-self: center;
   // }
+
+  &__assegai {
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
 
   &__content {
     width: 100%;
