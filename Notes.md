@@ -55,3 +55,4 @@
 
 - Replaced all navbar.scss "max-width: 37.5rem" parts with "max-width: $bp-medium"
 - Remove clamp className from pricing's pricing\_\_bottom and changed the display to grid
+- Changed the assegai svg to not maintain aspect ratio. Added 'preserveAspectRatio="none"' to the svg file and explicit heights and widths in home.scss

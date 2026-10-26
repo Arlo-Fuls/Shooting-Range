@@ -1,10 +1,16 @@
 @import "../App.scss";
+@import "../index.scss";
 
 .rules__mainHeader {
   min-height: 30rem;
   width: 100%;
   height: 100%;
   position: relative;
+
+  @media screen and (max-width: $bp-medium) {
+    min-height: 10rem;
+    padding-bottom: 4rem;
+  }
 
   // Slant
   .header__background {
@@ -19,6 +25,14 @@
     background-color: var(--black);
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+
+    @media screen and (max-width: $bp-large) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      clip-path: none;
+    }
   }
 
   // Header text
@@ -49,26 +63,45 @@
   position: relative;
 
   justify-content: center;
-  min-height: 35rem; // Can't get children to occupy entire area
+  // min-height: 35rem; // Can't get children to occupy entire area
   padding: 3rem 0 4rem;
 
   &__blocks {
-    display: flex;
-    //flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+
+    max-width: 75rem;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    column-gap: 4rem;
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 4rem;
+    }
   }
 
   &__block {
-    width: 45%;
+    // width: 45%;
     //height: 100%;
-    min-height: 35rem; // Should try to get 100% height to work
+    // min-height: 35rem; // Should try to get 100% height to work
 
     background-color: var(--green-2);
     border: 0.75rem solid var(--green);
     border-radius: 0.5rem;
 
-    padding-inline: 2rem;
+    // padding-inline: 2rem;
+    padding: 0 2rem 2rem;
+
+    @media screen and (max-width: $bp-small) {
+      padding-inline: 0.5rem;
+    }
 
     legend {
       background-color: var(--green);
@@ -87,14 +120,13 @@
       list-style-type: none;
 
       li:before {
-        content: '\27A3';
+        content: "\27A3";
         font-size: 140%;
         /* or whatever */
 
         position: absolute;
         left: 0;
         top: 10%;
-
       }
     }
 
@@ -110,20 +142,34 @@
 
     &:nth-child(1) {
       // DO
-      transform: translateY(-20%);
+      transform: translateY(-8rem);
+      @media screen and (max-width: $bp-large) {
+        transform: none;
+      }
 
       legend {
         margin-left: 1rem;
+        @media screen and (max-width: $bp-large) {
+          margin-left: auto;
+          margin-right: 1rem;
+        }
       }
     }
 
     &:nth-child(2) {
       // DON'T
-      transform: translateY(15%);
+      transform: translateY(8rem);
+      @media screen and (max-width: $bp-large) {
+        transform: none;
+      }
 
       legend {
         margin-left: auto;
         margin-right: 1rem;
+        @media screen and (max-width: $bp-large) {
+          margin-left: 1rem;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -141,8 +187,12 @@
 
 // Stay safe and image
 .rules__bottom {
-  padding-block: 2rem 7rem;
+  padding-block: 8rem 7rem;
   position: relative;
+
+  @media screen and (max-width: $bp-large) {
+    padding-block: 0 7rem;
+  }
 
   // Won't crop well. Should crop original svg instead
   // overflow: hidden;
@@ -162,14 +212,17 @@
       list-style-type: none;
 
       li:before {
-        content: '\27A3';
+        content: "\27A3";
         font-size: 140%;
         /* or whatever */
 
         position: absolute;
         left: 0;
         top: 10%;
+      }
 
+      @media screen and (max-width: $bp-medium) {
+        width: 100%;
       }
     }
 
@@ -182,7 +235,6 @@
 
       position: relative;
     }
-
   }
 }
 
@@ -193,4 +245,12 @@
 
   bottom: -1rem;
   right: 0;
+
+  @media screen and (max-width: $bp-large) {
+    height: 20rem;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }

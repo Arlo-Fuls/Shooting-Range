@@ -21,7 +21,7 @@ function RulesPage({ pageInert, setPageInert }) {
 
         <section className="rules__center mainSection" inert={pageInert}>
           <div className="rules__center__bar"></div>
-          <div className="rules__center__blocks clamped">
+          <div className="rules__center__blocks">
             {/* NB: Using fieldset to get text in border, liable to change */}
             <fieldset className="rules__center__block">
               {/* Either add SR-only h3 or nest h3 element */}
