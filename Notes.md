@@ -18,6 +18,7 @@
 - Check if should aria-hide content when inert as well
 - Fix FAQ Assegai stretching
 - Fix FAQ :after breakpoints
+- Check why sticky nav not working on other pages, most likely because of position relative missing
 
 ## larger
 
