@@ -12,23 +12,22 @@ function LocationPage({ pageInert, setPageInert }) {
 
   return (
     <>
-      <header className="rangerGuide__mainHeader mainSection">
+      <section className="rangerGuide__mainHeader mainSection">
+        <Navbar setPageInert={setPageInert} />
+
         {/* Colour polygon */}
         <div className="header__background"></div>
-        {/* Page specific navbar */}
-        <div className="navMain__container--location">
-          <Navbar setPageInert={setPageInert} />
-        </div>
 
         {/* Bottom of header section */}
         <div className="header__bottom clamped">
           <div className="header__left">
             <h2>Range Guide</h2>
-            <p>Take a look at the path to the range with all of the most important stops on the way</p>
+            <p>Take a look at the path to the range with all of the most important stops on the way!</p>
           </div>
-          <button className="location__nextButton">Next</button>
+          {/* <button className="location__nextButton">Next</button> */}
+          <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">Find us on Google Maps &rarr;</a>
         </div>
-      </header>
+      </section>
 
       <main className={pageInert ? "location-main inert" : "location-main"}>
         {/* Image with nav buttons */}
