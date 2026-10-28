@@ -19,6 +19,7 @@
 - Fix FAQ Assegai stretching
 - Fix FAQ :after breakpoints
 - Check why sticky nav not working on other pages, most likely because of position relative missing
+- Look at range guide image for scaling, position icons
 
 ## larger
 

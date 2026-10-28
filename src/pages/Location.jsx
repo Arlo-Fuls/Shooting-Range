@@ -57,7 +57,8 @@ function LocationPage({ pageInert, setPageInert }) {
 
         {/* Conditional Render 1 */}
         {/* Also verify that screen readers update correctly when changing section visibility */}
-        <section className={sectionIndex === 0 ? "rangeGuide--1 mainSection" : "rangeGuide--1 mainSection hiddenSection"} inert={pageInert}>
+
+        {sectionIndex == 0 && <section className="rangeGuide--1 mainSection" inert={pageInert}>
           <h3>Getting to the range</h3>
           <div className="rangeGuide--1__top clamped">
             <img className="rangeGuide--1__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
@@ -73,12 +74,12 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>Welcome to Assegai Shooting Range!</p>
-            <button className="location__nextButton">Next</button> {/* Move to bottom outside of conditional? */}
+            <button className="location__nextButton" onClick={() => setSectionIndex(1)}>Next</button>
           </div>
-        </section>
+        </section>}
 
         {/* Conditional Render 2 */}
-        <section className={sectionIndex === 1 ? "rangeGuide--2 mainSection" : "rangeGuide--2 mainSection hiddenSection"} inert={pageInert}>
+        {sectionIndex == 1 && <section className="rangeGuide--2 mainSection" inert={pageInert}>
           <h3>Tuckshop</h3> {/* ?? */}
           <div className="rangeGuide--2__top clamped">
             <div className="rangeGuide--2__left">
@@ -99,12 +100,12 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>Order in person or call ahead!</p>
-            <button className="location__nextButton">Next</button>
+            <button className="location__nextButton" onClick={() => setSectionIndex(2)}>Next</button>
           </div>
-        </section>
+        </section>}
 
         {/* Conditional Render 3 */}
-        <section className={sectionIndex === 2 ? "rangeGuide--3 mainSection" : "rangeGuide--3 mainSection hiddenSection"} inert={pageInert}>
+        {sectionIndex == 2 && <section className="rangeGuide--3 mainSection" inert={pageInert}>
           <h3>Office</h3>
           <div className="rangeGuide--3__top clamped">
             <img className="rangeGuide--3__img--left" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
@@ -112,12 +113,12 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>Now you are ready to get shooting!</p>
-            <button className="location__nextButton">Next</button>
+            <button className="location__nextButton" onClick={() => setSectionIndex(3)}>Next</button>
           </div>
-        </section>
+        </section>}
 
         {/* Conditional Render 4 */}
-        <section className={sectionIndex === 3 ? "rangeGuide--4 mainSection" : "rangeGuide--4 mainSection hiddenSection"} inert={pageInert}>
+        {sectionIndex == 3 && <section className="rangeGuide--4 mainSection" inert={pageInert}>
           <h3>The Range</h3>
           <div className="rangeGuide--4__top clamped">
             <img className="rangeGuide--4__img--head" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
@@ -135,9 +136,10 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>We hope you enjoy the range!</p>
-            <button className="location__nextButton">Next</button>
+            <button className="location__nextButton" onClick={() => setSectionIndex(0)}>Back to the start</button>
+            {/* update to make go to home page for session booking? */}
           </div>
-        </section>
+        </section>}
       </main>
     </>
   );
