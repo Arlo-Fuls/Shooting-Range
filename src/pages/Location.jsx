@@ -59,22 +59,52 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* Also verify that screen readers update correctly when changing section visibility */}
 
         {sectionIndex == 0 && <section className="rangeGuide--1 mainSection" inert={pageInert}>
-          <h3>Getting to the range</h3>
-          <div className="rangeGuide--1__top clamped">
-            <img className="rangeGuide--1__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
+          <div className="rangeGuide__header-container">
+            <img src="src/assets/clutter/flourish-flipped.png" alt="" />
+            <h3>Getting to the range</h3>
+            <img src="src/assets/clutter/flourish.png" alt="" />
+          </div>
+
+
+          <div className="rangeGuide--1__top clamped-wider">
+            <picture className="rangeGuide--1__img">
+              {/*  Mobile Image  */}
+              <source media="(max-width: 600px)" srcSet="src/assets/images/Road1.png" />
+              {/*  Desktop Image */}
+              <source media="(min-width: 601px)" srcSet="src/assets/images/Road1.png" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/images/Road1.png" alt="" />
+            </picture>
             <p className="rangeGuide--1__text">Something amazing I guess</p>
           </div>
-          <div className="rangeGuide--1__middle clamped">
+
+          <div className="rangeGuide--1__middle clamped-wider">
             {/* Order of elements changed in stylesheet */}
-            <img className="rangeGuide--1__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
+            <picture className="rangeGuide--1__img">
+              {/*  Mobile Image  */}
+              <source media="(max-width: 600px)" srcSet="src/assets/images/Road2.png" />
+              {/*  Desktop Image */}
+              <source media="(min-width: 601px)" srcSet="src/assets/images/Road2.png" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/images/Road2.png" alt="" />
+            </picture>
             <p className="rangeGuide--1__text">Something amazing I guess</p>
           </div>
-          <div className="rangeGuide--1__bottom clamped">
-            <p className="rangeGuide--1__text">Something amazing I guess</p>
+
+          <div className="rangeGuide--1__bottom clamped-wider">
+            <picture className="rangeGuide--1__img rangeGuide--1__img--large">
+              {/*  Mobile Image  */}
+              <source media="(max-width: 600px)" srcSet="src/assets/images/Plot-enterance.jpg" />
+              {/*  Desktop Image */}
+              <source media="(min-width: 601px)" srcSet="src/assets/images/Plot-enterance.jpg" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/images/Plot-enterance.jpg" alt="" />
+            </picture>
           </div>
-          <div className="rangeGuide__sectionEnd clamped">
+
+          <div className="rangeGuide__sectionEnd clamped-wider">
             <p>Welcome to Assegai Shooting Range!</p>
-            <button className="location__nextButton" onClick={() => setSectionIndex(1)}>Next</button>
+            <button className="location__nextButton" onClick={() => setSectionIndex(1)}>Next Section &rarr;</button>
           </div>
         </section>}
 

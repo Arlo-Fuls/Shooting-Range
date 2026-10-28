@@ -1,6 +1,10 @@
 @import "../App.scss";
 @import "../index.scss";
 
+// -------------------------------
+// TOP SECTION -- Every page
+// -------------------------------
+
 .navMain__container--location {
   padding: 2rem 0;
   width: 100%;
@@ -63,15 +67,12 @@
     a:hover {
       color: var(--white);
       background-color: var(--yellow);
-      border: 0.1875rem solid var(--yellow);
     }
   }
 
 }
 
 .locationImage {
-
-
 
   &__container {
     position: relative;
@@ -112,9 +113,34 @@
   }
 }
 
-// To range
+// -------------------------------
+// FIRST PAGE -- Get to the range
+// -------------------------------
+.rangeGuide__header-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  img {
+    width: 7rem;
+  }
+
+  h3 {
+    @extend .large-heading;
+    justify-content: center;
+    padding-inline: 1.5rem;
+
+    border-top: 0.25rem solid var(--green);
+    border-bottom: 0.25rem solid var(--green);
+  }
+}
+
 .rangeGuide--1 {
-  gap: 3rem;
+  padding-block: 4rem;
+  gap: 4rem;
+
 
   // Target all children to center align them
   >*:has(.rangeGuide--1__text) {
@@ -124,13 +150,13 @@
     width: 100%;
   }
 
-  h3 {
-    justify-content: center;
+  &__img img {
+    width: 35rem;
+    // height: 10rem;
   }
 
-  &__img {
-    width: 20rem;
-    height: 10rem;
+  &__img--large img {
+    width: 100%;
   }
 
   // Flip elements around on big screen
@@ -143,9 +169,37 @@
   // Final section text and next button
   flex-direction: column;
   align-items: center;
+  gap: 4rem;
+
+  p {
+    @extend .large-heading;
+    font-family: 2.5rem;
+  }
+
+  button {
+    font-family: "Akshar", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+
+    color: var(--yellow);
+    background-color: var(--white);
+    border: 0.1875rem solid var(--yellow);
+    padding: 0.5rem 0.75rem;
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--yellow);
+      cursor: pointer;
+    }
+  }
 }
 
-// Tuckshop
+// -------------------------------
+// SECOND PAGE -- Tuckshop
+// -------------------------------
 .rangeGuide--2 {
   gap: 10rem;
 
@@ -179,7 +233,9 @@
   }
 }
 
-// Office
+// -------------------------------
+// THIRD PAGE -- Tuckshop
+// -------------------------------
 .rangeGuide--3 {
   &__top {
     flex-direction: column;
@@ -196,7 +252,9 @@
   }
 }
 
-// Range
+// -------------------------------
+// LAST PAGE -- The Range
+// -------------------------------
 .rangeGuide--4 {
   &__top {
     flex-direction: column;
@@ -258,8 +316,4 @@
       grid-row: 11 / 15;
     }
   }
-}
-
-.hiddenSection {
-  display: none;
 }

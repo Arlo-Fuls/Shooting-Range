@@ -20,6 +20,7 @@
 - Fix FAQ :after breakpoints
 - Check why sticky nav not working on other pages, most likely because of position relative missing
 - Look at range guide image for scaling, position icons
+- Check if range guide should use aria-atomic for changing sections
 
 ## larger
 
