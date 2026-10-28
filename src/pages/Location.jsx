@@ -75,7 +75,7 @@ function LocationPage({ pageInert, setPageInert }) {
               {/*  Fallback Image  */}
               <img aria-hidden="true" decoding="async" src="src/assets/images/Road1.png" alt="" />
             </picture>
-            <p className="rangeGuide--1__text">Something amazing I guess</p>
+            <p className="rangeGuide--1__text">The Assegai Shooting Range is located approximately 10km outside of Rustenburg. The range itself is part of a residential plot nestled against the side of a mountain which provides a perfect backing for shooting practice.</p>
           </div>
 
           <div className="rangeGuide--1__middle clamped-wider">
@@ -88,7 +88,7 @@ function LocationPage({ pageInert, setPageInert }) {
               {/*  Fallback Image  */}
               <img aria-hidden="true" decoding="async" src="src/assets/images/Road2.png" alt="" />
             </picture>
-            <p className="rangeGuide--1__text">Something amazing I guess</p>
+            <p className="rangeGuide--1__text">The Google Maps link sometimes shows a path to the range that is not accessible to the public. The correct road is using the Phokeng / Sun City slipway (road 169) from the N4. The images show the enterance you can expect to see when visiting the range.</p>
           </div>
 
           <div className="rangeGuide--1__bottom clamped-wider">
