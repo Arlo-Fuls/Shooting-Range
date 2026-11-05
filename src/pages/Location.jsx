@@ -55,7 +55,9 @@ function LocationPage({ pageInert, setPageInert }) {
           </picture>
         </div>
 
-        {/* Conditional Render 1 */}
+        {/* -------------------- */}
+        {/* GETTING TO THE RANGE */}
+        {/* -------------------- */}
         {/* Also verify that screen readers update correctly when changing section visibility */}
 
         {sectionIndex == 0 && <section className="rangeGuide rangeGuide--1 mainSection" inert={pageInert}>
@@ -108,7 +110,9 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
         </section>}
 
-        {/* Conditional Render 2 */}
+        {/* -------------------- */}
+        {/* THE TUCKSHOP */}
+        {/* -------------------- */}
         {/* SNOEPIE REMOVED FOR NOW */}
         {/* {sectionIndex == 1 && <section className="rangeGuide--2 mainSection" inert={pageInert}> */}
         {/* <h3>Tuckshop</h3> */}
@@ -135,7 +139,9 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
         </section>} */}
 
-        {/* Conditional Render 3 */}
+        {/* -------------------- */}
+        {/* THE OFFICE */}
+        {/* -------------------- */}
         {sectionIndex == 2 && <section className="rangeGuide rangeGuide--3 mainSection" inert={pageInert}>
           {/* HEADING */}
           <div className="rangeGuide__header-container">
@@ -171,14 +177,33 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
         </section>}
 
-        {/* Conditional Render 4 */}
+        {/* -------------------- */}
+        {/* THE RANGE */}
+        {/* -------------------- */}
         {sectionIndex == 3 && <section className="rangeGuide rangeGuide--4 mainSection" inert={pageInert}>
-          <h3>The Range</h3>
-          <div className="rangeGuide--4__top clamped">
-            <img className="rangeGuide--4__img--head" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
-            <p>Idk</p>
+          {/* HEADING */}
+          <div className="rangeGuide__header-container">
+            <img src="src/assets/clutter/flourish-flipped.png" alt="" />
+            <h3>The Range</h3>
+            <img src="src/assets/clutter/flourish.png" alt="" />
           </div>
-          <div className="rangeGuide--4__bottom clamped">
+
+          <div className="rangeGuide--4__top clamped-wider">
+            <picture className="rangeGuide--4__img--head">
+              {/*  Mobile Image  */}
+              <source media="(max-width: 600px)" srcSet="src/assets/images/Shooting-range-entrance.jpg" />
+              {/*  Desktop Image */}
+              <source media="(min-width: 601px)" srcSet="src/assets/images/Shooting-range-entrance.jpg" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/images/Shooting-range-entrance.jpg" alt="" />
+            </picture>
+
+            <p>Now that you've reached the range, you are ready to get shooting. Head down to your designated range and have fun!</p>
+          </div>
+
+          <div className="page-divider"></div>
+
+          <div className="rangeGuide--4__bottom clamped-wider">
             <div className="tile"></div>
             <div className="tile"></div>
             <div className="tile"></div>
@@ -190,7 +215,7 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>We hope you enjoy the range!</p>
-            <button className="location__nextButton" onClick={() => setSectionIndex(0)}>Back to the start</button>
+            <button className="location__nextButton" onClick={() => setSectionIndex(0)}>Back to the start &rarr;</button>
             {/* update to make go to home page for session booking? */}
           </div>
         </section>}
