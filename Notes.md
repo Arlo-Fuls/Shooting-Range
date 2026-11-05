@@ -1,47 +1,68 @@
 # To Do
 
-## quick
-
-- Add drop shadow for nav bar
-- Change nav bar font sizes for different breakpoints
-- Other font to replace Annie Use your telescope
+<!-- STYLING -->
 - Add speech bubble at contact section (CSS)
-- Check that all information in the main page is complete
 - check if a green left border next to the trainer text can look cool
-- Nav bar onder links, style links
-- Check animation on accordion pannels
 - Check if greener tint to the dark grey looks better
-- Add slant to About Page
+- Check animation on accordion pannels
+
+<!-- INFORMATION -->
+- Check that all information in the main page is complete
+- check FAQ info
+
+<!-- ADD OR FIX CONTENT -->
 - Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
+- Fix FAQ Assegai stretching
+- Fix FAQ :after breakpoints
+
+<!-- ACCESSIBILITY -->
 - Check all alt text for images
 - Check section linking met aria
 - Check if should aria-hide content when inert as well
-- Fix FAQ Assegai stretching
-- Fix FAQ :after breakpoints
-- Check why sticky nav not working on other pages, most likely because of position relative missing
-- Look at range guide image for scaling, position icons
-- Check if range guide should use aria-atomic for changing sections
 
-## larger
-
+<!-- OPTIMIZATION -->
 - optimize images
   - crop image on home page (bullets) to be more square
 - update SVGs
-- Add jump to top button
-- Check to add load in animation
-- Footer better make
-- Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
-- Fix dark lines that form when scrolling (places that clip-path is used)
-- Finish Trainer Section on home page (logos too small near 500px and below plus horizontal overflow @ around 505px)
-
-## other
-
-- Check to remove hero section
-- Double check if design still matches the theme
 - Check Deprecation Warning in vs code console
 - Fix errors in web console (Each child in a list should have a unique "key" prop.)
 
-- check FAQ info
+<!-- FINISHING TOUCHES -->
+- Add jump to top button
+- Check to add load in animation
+- Check to remove hero section
+- Double check if design still matches the theme
+
+
+
+# ANKIA PLAN OF ACTION
+
+STEP 1 - RANGE GUIDE:
+- Plan bento grid for range photos
+- Sort images, starting at the range guide, optimizing and color grading as needed
+- Create own flourish to use
+- Check for better funky font to use
+- Fix guide image with buttons
+- Make sure happy with style of Range Guide
+- Check all alt text for images
+- Check section linking met aria
+- Check if range guide should use aria-atomic for changing sections
+
+STEP 2 - FOOTER AND NAV BAR:
+- Fix footer fonts and style
+- Update SVG for Nav and Footer
+- Update NavBar style, including breakpoints
+- Add dropshadow to NavBar
+- Check why sticky nav not working on other pages, most likely because of position relative missing
+- Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
+
+
+STEP 3 - TRAINERS:
+- Update style trainers section with new logo
+- Finish Trainer Section on home page (logos too small near 500px and below plus horizontal overflow @ around 505px)
+- Optimize images
+- Check accessibility
+
 
 # Useful resources
 
