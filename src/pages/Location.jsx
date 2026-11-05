@@ -35,9 +35,9 @@ function LocationPage({ pageInert, setPageInert }) {
           <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "pindrop pindrop--large" : "pindrop"}>
             <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" />
           </button>
-          <button onClick={() => setSectionIndex(1)} className={sectionIndex == 1 ? "pindrop pindrop--large" : "pindrop"}>
+          {/* <button onClick={() => setSectionIndex(1)} className={sectionIndex == 1 ? "pindrop pindrop--large" : "pindrop"}>
             <img src="src/assets/SVGs/Pindrop.svg" alt="Location 2 pin" />
-          </button>
+          </button> */}
           <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "pindrop pindrop--large" : "pindrop"}>
             <img src="src/assets/SVGs/Pindrop.svg" alt="Location 3 pin" />
           </button>
@@ -104,14 +104,15 @@ function LocationPage({ pageInert, setPageInert }) {
 
           <div className="rangeGuide__sectionEnd clamped-wider">
             <p>Welcome to Assegai Shooting Range!</p>
-            <button className="location__nextButton" onClick={() => setSectionIndex(1)}>Next Section &rarr;</button>
+            <button className="location__nextButton" onClick={() => setSectionIndex(2)}>Next Section &rarr;</button>
           </div>
         </section>}
 
         {/* Conditional Render 2 */}
-        {sectionIndex == 1 && <section className="rangeGuide--2 mainSection" inert={pageInert}>
-          <h3>Tuckshop</h3> {/* ?? */}
-          <div className="rangeGuide--2__top clamped">
+        {/* SNOEPIE REMOVED FOR NOW */}
+        {/* {sectionIndex == 1 && <section className="rangeGuide--2 mainSection" inert={pageInert}> */}
+        {/* <h3>Tuckshop</h3> */}
+        {/* <div className="rangeGuide--2__top clamped">
             <div className="rangeGuide--2__left">
               <img className="rangeGuide--2__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
             </div>
@@ -123,16 +124,16 @@ function LocationPage({ pageInert, setPageInert }) {
               <img className="rangeGuide--2__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
             </div>
           </div>
-          <div className="rangeGuide--2__bottom clamped">
-            {/* Menu */}
-            {/* Still viable?? */}
-            <img className="rangeGuide--2__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
+          <div className="rangeGuide--2__bottom clamped"> */}
+        {/* Menu */}
+        {/* Still viable?? */}
+        {/* <img className="rangeGuide--2__img" alt="Placeholder" src="src\assets\SVGs\Logo-fav.svg" />
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p>Order in person or call ahead!</p>
             <button className="location__nextButton" onClick={() => setSectionIndex(2)}>Next</button>
           </div>
-        </section>}
+        </section>} */}
 
         {/* Conditional Render 3 */}
         {sectionIndex == 2 && <section className="rangeGuide--3 mainSection" inert={pageInert}>
