@@ -27,6 +27,8 @@
 - Check Deprecation Warning in vs code console
 - Fix errors in web console (Each child in a list should have a unique "key" prop.)
 - Clean up css and main code, delete all commented sections if happy, check to make reusable classes.
+- Look at which fonts and images should be preloaded in head
+- Look at fallback fonts for flashing
 
 <!-- FINISHING TOUCHES -->
 - Add jump to top button
