@@ -76,41 +76,54 @@ function LocationPage({ pageInert, setPageInert }) {
             {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
 
+          <div className="rangeGuide--1__container clamped-wider">
 
-          <div className="rangeGuide--1__top clamped-wider">
-            <picture className="rangeGuide--1__img">
-              {/*  Mobile Image  */}
-              <source media="(max-width: 600px)" srcSet="src/assets/images/Road1.png" />
-              {/*  Desktop Image */}
-              <source media="(min-width: 601px)" srcSet="src/assets/images/Road1.png" />
-              {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/images/Road1.png" alt="" />
-            </picture>
-            <p className="rangeGuide--1__text">The Assegai Shooting Range is located approximately 10km outside of Rustenburg. The range itself is part of a residential plot nestled against the side of a mountain which provides a perfect backing for shooting practice.</p>
+            <div className="rangeGuide--1__item-container">
+              <h4 className="rangeGuide--1__number"><span className="sr-only">Step </span>1</h4>
+              <picture className="rangeGuide--1__img">
+                {/*  Mobile Image  */}
+                <source media="(max-width: 600px)" srcSet="src/assets/images/Road1.png" />
+                {/*  Desktop Image */}
+                <source media="(min-width: 601px)" srcSet="src/assets/images/Road1.png" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/images/Road1.png" alt="" />
+              </picture>
+
+              <p className="rangeGuide--1__text">The Google Maps link sometimes shows a path to the range that is not accessible to the public. The correct road is using the Phokeng / Sun City slipway (road 169) from the N4. When you reach this crossroads, turn left.</p>
+            </div>
+
+            <div className="rangeGuide--1__item-container">
+              <h4 className="rangeGuide--1__number"><span className="sr-only">Step </span>2</h4>
+              <picture className="rangeGuide--1__img">
+                {/*  Mobile Image  */}
+                <source media="(max-width: 600px)" srcSet="src/assets/images/Road2.png" />
+                {/*  Desktop Image */}
+                <source media="(min-width: 601px)" srcSet="src/assets/images/Road2.png" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/images/Road2.png" alt="" />
+              </picture>
+
+              <p className="rangeGuide--1__text">Shortly after the previous turn, you will see this dirt road on the right side of the road. Turn down it and follow the road the rest of the way to the shooting range.</p>
+            </div>
+
           </div>
 
-          <div className="rangeGuide--1__middle clamped-wider">
-            {/* Order of elements changed in stylesheet */}
-            <picture className="rangeGuide--1__img">
-              {/*  Mobile Image  */}
-              <source media="(max-width: 600px)" srcSet="src/assets/images/Road2.png" />
-              {/*  Desktop Image */}
-              <source media="(min-width: 601px)" srcSet="src/assets/images/Road2.png" />
-              {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/images/Road2.png" alt="" />
-            </picture>
-            <p className="rangeGuide--1__text">The Google Maps link sometimes shows a path to the range that is not accessible to the public. The correct road is using the Phokeng / Sun City slipway (road 169) from the N4. The images show the enterance you can expect to see when visiting the range.</p>
-          </div>
+          <div className="rangeGuide--1__bottom">
+            <div className="rangeGuide--1__bottom--container clamped-wider">
+              <h4 className="large-heading">When you see this gate, you have reached the right place!</h4>
+              <p>Head inside and follow the road until you reach the office for the next step.</p>
 
-          <div className="rangeGuide--1__bottom clamped-wider">
-            <picture className="rangeGuide--1__img rangeGuide--1__img--large">
-              {/*  Mobile Image  */}
-              <source media="(max-width: 600px)" srcSet="src/assets/images/Plot-enterance.jpg" />
-              {/*  Desktop Image */}
-              <source media="(min-width: 601px)" srcSet="src/assets/images/Plot-enterance.jpg" />
-              {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/images/Plot-enterance.jpg" alt="" />
-            </picture>
+              <picture className="rangeGuide--1__img rangeGuide--1__img--large">
+                {/*  Mobile Image  */}
+                <source media="(max-width: 600px)" srcSet="src/assets/images/Plot-enterance.jpg" />
+                {/*  Desktop Image */}
+                <source media="(min-width: 601px)" srcSet="src/assets/images/Plot-enterance.jpg" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/images/Plot-enterance.jpg" alt="" />
+              </picture>
+            </div>
+
+
           </div>
 
           <div className="rangeGuide__sectionEnd clamped-wider">
