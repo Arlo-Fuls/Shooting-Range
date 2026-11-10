@@ -278,8 +278,8 @@ function HomePage({ pageInert, setPageInert }) {
         {/* Image Gallery */}
         <section className="gallery mainSection" inert={pageInert}>
           <div className="gallery__top clamped">
-            <h2>GALLERY</h2>
-            <p>Take a look at the ranges</p>
+            <h2 className="red-heading">GALLERY</h2>
+            <p className="large-heading">Take a look at the ranges</p>
           </div>
           <div className="gallery__middle clamped">
             <picture className="image-container">
@@ -323,9 +323,9 @@ function HomePage({ pageInert, setPageInert }) {
         <section className="contact mainSection" inert={pageInert} ref={myRef}>
           <div className="contact__top clamped-wider">
             <div className="contact__intro">
-              <h2>CONTACT US</h2>
-              <p>Ready to get started?</p>
-              <p>Book a session today!</p>
+              <h2 className="red-heading">CONTACT US</h2>
+              <p className="large-heading">Ready to get started?</p>
+              <p className="large-heading">Book a session today!</p>
             </div>
             <div className="contact__rules">
               <p>New to the range?</p>
@@ -371,8 +371,8 @@ function HomePage({ pageInert, setPageInert }) {
           <div className="trainers__container clamped">
             <div className="trainers__header ">
               <div className="trainers__title">
-                <h2>TRAINERS</h2>
-                <p className="headerText">Meet Some of Our Partnered Trainers</p>
+                <h2 className="red-heading">TRAINERS</h2>
+                <p className="large-heading headerText">Meet Some of Our Partnered Trainers</p>
                 <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
               </div>
 
@@ -427,8 +427,8 @@ function HomePage({ pageInert, setPageInert }) {
           <div className="faq__container clamped">
             <div className="faq__right">
               <div className="faq__head">
-                <h2>FAQ</h2>
-                <p>Frequently Asked Questions</p>
+                <h2 className="red-heading">FAQ</h2>
+                <p className="large-heading">Frequently Asked Questions</p>
               </div>
 
               {/* 5 of the 9 questions */}

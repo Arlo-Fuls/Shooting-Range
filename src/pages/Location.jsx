@@ -22,7 +22,7 @@ function LocationPage({ pageInert, setPageInert }) {
           {/* Bottom of header section */}
           <div className="header__bottom clamped">
             <div className="header__left">
-              <h2>Range Guide</h2>
+              <h2 className="large-heading">Range Guide</h2>
               <p>Take a look at the path to the range with all of the most important stops on the way!</p>
             </div>
             {/* <button className="location__nextButton">Next</button> */}
@@ -63,7 +63,7 @@ function LocationPage({ pageInert, setPageInert }) {
         {sectionIndex == 0 && <section className="rangeGuide rangeGuide--1 mainSection" inert={pageInert}>
           <div className="rangeGuide__header-container">
             <img src="src/assets/clutter/flourish-flipped.png" alt="" />
-            <h3>Getting to the range</h3>
+            <h3 className="large-heading">Getting to the range</h3>
             <img src="src/assets/clutter/flourish.png" alt="" />
           </div>
 
@@ -105,7 +105,7 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
 
           <div className="rangeGuide__sectionEnd clamped-wider">
-            <p>Welcome to Assegai Shooting Range!</p>
+            <p className="large-heading">Welcome to Assegai Shooting Range!</p>
             <button className="location__nextButton" onClick={() => setSectionIndex(2)}>Next Section &rarr;</button>
           </div>
         </section>}
@@ -146,7 +146,7 @@ function LocationPage({ pageInert, setPageInert }) {
           {/* HEADING */}
           <div className="rangeGuide__header-container">
             <img src="src/assets/clutter/flourish-flipped.png" alt="" />
-            <h3>Office</h3>
+            <h3 className="large-heading">Office</h3>
             <img src="src/assets/clutter/flourish.png" alt="" />
           </div>
 
@@ -172,7 +172,7 @@ function LocationPage({ pageInert, setPageInert }) {
 
           {/* END */}
           <div className="rangeGuide__sectionEnd clamped">
-            <p>Now you are ready to get shooting!</p>
+            <p className="large-heading">Now you are ready to get shooting!</p>
             <button className="location__nextButton" onClick={() => setSectionIndex(3)}>Next &rarr;</button>
           </div>
         </section>}
@@ -184,7 +184,7 @@ function LocationPage({ pageInert, setPageInert }) {
           {/* HEADING */}
           <div className="rangeGuide__header-container">
             <img src="src/assets/clutter/flourish-flipped.png" alt="" />
-            <h3>The Range</h3>
+            <h3 className="large-heading">The Range</h3>
             <img src="src/assets/clutter/flourish.png" alt="" />
           </div>
 
@@ -214,7 +214,7 @@ function LocationPage({ pageInert, setPageInert }) {
             <div className="tile"></div>
           </div>
           <div className="rangeGuide__sectionEnd clamped">
-            <p>We hope you enjoy the range!</p>
+            <p className="large-heading">We hope you enjoy the range!</p>
             <button className="location__nextButton" onClick={() => setSectionIndex(0)}>Back to the start &rarr;</button>
             {/* update to make go to home page for session booking? */}
           </div>

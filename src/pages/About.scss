@@ -1,8 +1,12 @@
-@import "../App.scss";
+// @import "../App.scss";
 // .navMain__container--about {
 //   padding: 2rem 0;
 //   width: 100%;
 // }
+
+$bp-small: 31.25rem;
+$bp-medium: 50rem;
+$bp-large: 75rem;
 
 // Large bg image
 .about {
@@ -108,7 +112,6 @@
     z-index: 2;
 
     h2 {
-      @extend .large-heading;
       width: 70%;
       padding-block-end: 1rem;
     }
@@ -173,12 +176,10 @@
     // z-index: 2;
 
     h2 {
-      @extend .large-heading;
       padding-block: 4rem 2rem;
       border-bottom: 0.125rem solid var(--white);
 
       width: 70%;
-
     }
 
     p {

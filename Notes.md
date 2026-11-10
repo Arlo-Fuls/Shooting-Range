@@ -26,6 +26,7 @@
 - update SVGs
 - Check Deprecation Warning in vs code console
 - Fix errors in web console (Each child in a list should have a unique "key" prop.)
+- Clean up css and main code, delete all commented sections if happy, check to make reusable classes.
 
 <!-- FINISHING TOUCHES -->
 - Add jump to top button

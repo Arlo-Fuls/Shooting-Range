@@ -1,5 +1,9 @@
-@import "../App.scss";
-@import "../index.scss";
+// @import "../App.scss";
+// @import "../index.scss";
+
+$bp-small: 31.25rem;
+$bp-medium: 50rem;
+$bp-large: 75rem;
 
 // -------------------------------
 // TOP SECTION -- Every page
@@ -39,7 +43,6 @@
     color: var(--white);
 
     h2 {
-      @extend .large-heading;
       font-size: 3rem;
       padding-bottom: 1rem;
     }
@@ -144,7 +147,6 @@
   }
 
   h3 {
-    @extend .large-heading;
     justify-content: center;
     padding-inline: 1.5rem;
 
@@ -161,7 +163,6 @@
   gap: 4rem;
 
   p {
-    @extend .large-heading;
     font-family: 2.5rem;
   }
 

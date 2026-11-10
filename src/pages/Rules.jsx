@@ -14,7 +14,7 @@ function RulesPage({ pageInert, setPageInert }) {
 
           {/* Bottom of header section */}
           <div className="header__content clamped">
-            <h2>The DO's and DONT's of our range</h2>
+            <h2 className="large-heading">The DO's and DONT's of our range</h2>
             <p>While you're at the range, we ask that you...</p>
           </div>
         </section>
@@ -25,7 +25,7 @@ function RulesPage({ pageInert, setPageInert }) {
             {/* NB: Using fieldset to get text in border, liable to change */}
             <fieldset className="rules__center__block">
               {/* Either add SR-only h3 or nest h3 element */}
-              <legend>
+              <legend className="large-heading">
                 <h3>DO</h3>
               </legend>
               <ul>
@@ -37,7 +37,7 @@ function RulesPage({ pageInert, setPageInert }) {
               </ul>
             </fieldset>
             <fieldset className="rules__center__block">
-              <legend>
+              <legend className="large-heading">
                 <h3>DON'T</h3>
               </legend>
               <ul>
@@ -54,7 +54,7 @@ function RulesPage({ pageInert, setPageInert }) {
 
         <section className="rules__bottom mainSection" inert={pageInert}>
           <div className="rules__bottom__container clamped">
-            <h3>Stay safe!</h3>
+            <h3 className="large-heading">Stay safe!</h3>
             <ul>
               <li>Only handle a loaded gun while at the firing point</li>
               <li>Put down / holster the unloaded gun while not at the firing point</li>

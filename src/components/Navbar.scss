@@ -1,4 +1,8 @@
-@import "../index.scss";
+// @import "../index.scss";
+
+$bp-small: 31.25rem;
+$bp-medium: 50rem;
+$bp-large: 75rem;
 
 body:has(.inert) {
   overflow: hidden;
@@ -27,6 +31,7 @@ body:has(.inert) {
   &:has(.navMain__open-btn[aria-expanded="true"]) {
     @media screen and (max-width: $bp-medium) {
       height: 100%;
+
       .navMain__container {
         width: 100%;
         height: 100%;
@@ -173,7 +178,7 @@ body:has(.inert) {
   }
 
   &__open-btn[aria-expanded="true"] {
-    + .navMain__container {
+    +.navMain__container {
       translate: 0;
     }
   }

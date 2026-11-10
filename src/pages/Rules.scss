@@ -1,5 +1,9 @@
-@import "../App.scss";
-@import "../index.scss";
+// @import "../App.scss";
+// @import "../index.scss";
+
+$bp-small: 31.25rem;
+$bp-medium: 50rem;
+$bp-large: 75rem;
 
 .rules__mainHeader {
   min-height: 30rem;
@@ -30,6 +34,7 @@
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
     }
 
+
     @media screen and (max-width: $bp-medium) {
       clip-path: none;
     }
@@ -45,7 +50,6 @@
     color: var(--white);
 
     h2 {
-      @extend .large-heading;
       font-size: 3rem;
     }
 
@@ -108,7 +112,6 @@
 
       padding: 0.25rem 1rem;
       color: var(--white);
-      @extend .large-heading;
 
       font-size: 2.125rem;
     }
@@ -143,12 +146,14 @@
     &:nth-child(1) {
       // DO
       transform: translateY(-8rem);
+
       @media screen and (max-width: $bp-large) {
         transform: none;
       }
 
       legend {
         margin-left: 1rem;
+
         @media screen and (max-width: $bp-large) {
           margin-left: auto;
           margin-right: 1rem;
@@ -159,6 +164,7 @@
     &:nth-child(2) {
       // DON'T
       transform: translateY(8rem);
+
       @media screen and (max-width: $bp-large) {
         transform: none;
       }
@@ -166,6 +172,7 @@
       legend {
         margin-left: auto;
         margin-right: 1rem;
+
         @media screen and (max-width: $bp-large) {
           margin-left: 1rem;
           margin-right: 0;
@@ -198,10 +205,6 @@
   // overflow: hidden;
   &__container {
     flex-direction: column;
-
-    h3 {
-      @extend .large-heading;
-    }
 
     ul {
       width: 75%;

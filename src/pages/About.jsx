@@ -27,7 +27,7 @@ function AboutPage({ pageInert, setPageInert }) {
           {/* About range section */}
           <div className="aboutRange__container clamped-wider" inert={pageInert}>
             <div className="aboutRange__left">
-              <h2>The story behind the shooting range</h2>
+              <h2 className="large-heading">The story behind the shooting range</h2>
               <p>The Assegai Shooting Range started out as a hobby, a passion project for a family with a combined 68 years in the police force. It was slow but satisfying work, and soon we realised that there was a need for more open-air shooting ranges in the area to help accomadate a wider variety of training needs.</p>
               <p>We spent the years since we started in 2008 working hand-in-hand with the people who used our range to shape it into something great, and we hope to continue this tradition for many more years to come.</p>
 
@@ -56,7 +56,7 @@ function AboutPage({ pageInert, setPageInert }) {
             <div className="meetFamily__slant"></div>
 
             <div className="meetFamily__text-container">
-              <h2>Meet the Family</h2>
+              <h2 className="large-heading">Meet the Family</h2>
               <p>Many hands have helped shape the range over the years. Even though we can't include all of them, we would like to show those who are still working every day to improve the range.</p>
               <p>The picture shows the family as it stands. On the left is Pa Louwa, the mastermind and heart of the operation. Alongside him, from left to right, are our lovely workers: Peter and Shorty. Not pictured here are our other workers, Alex and Alfred.</p>
 
