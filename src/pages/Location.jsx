@@ -28,32 +28,40 @@ function LocationPage({ pageInert, setPageInert }) {
             {/* <button className="location__nextButton">Next</button> */}
             <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">Find us on Google Maps &rarr;</a>
           </div>
+
+          <div className="locationButtons__container">
+            <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
+              {/* <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" /> */}
+            </button>
+            <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
+              {/* <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" /> */}
+            </button>
+            <button onClick={() => setSectionIndex(3)} className={sectionIndex == 3 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
+              {/* <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" /> */}
+            </button>
+          </div>
+
+          {/* Image with nav buttons */}
+          {/* <div className="locationImage__container">
+            <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "pindrop pindrop--large" : "pindrop"}>
+              <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" />
+            </button>
+            <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "pindrop pindrop--large" : "pindrop"}>
+              <img src="src/assets/SVGs/Pindrop.svg" alt="Location 3 pin" />
+            </button>
+            <button onClick={() => setSectionIndex(3)} className={sectionIndex == 3 ? "pindrop pindrop--large" : "pindrop"}>
+              <img src="src/assets/SVGs/Pindrop.svg" alt="Location 4 pin" />
+            </button>
+
+            <picture className="locationImage__image">
+              <source media="(max-width: 600px)" srcSet="src/assets/SVGs/Roadmap.svg" />
+              <source media="(min-width: 601px)" srcSet="src/assets/SVGs/Roadmap.svg" />
+              <img aria-hidden="true" decoding="async" src="src/assets/SVGs/Roadmap.svg" alt="" />
+            </picture>
+          </div> */}
         </section>
 
-        {/* Image with nav buttons */}
-        <div className="locationImage__container" inert={pageInert}>
-          <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "pindrop pindrop--large" : "pindrop"}>
-            <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" />
-          </button>
-          {/* <button onClick={() => setSectionIndex(1)} className={sectionIndex == 1 ? "pindrop pindrop--large" : "pindrop"}>
-            <img src="src/assets/SVGs/Pindrop.svg" alt="Location 2 pin" />
-          </button> */}
-          <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "pindrop pindrop--large" : "pindrop"}>
-            <img src="src/assets/SVGs/Pindrop.svg" alt="Location 3 pin" />
-          </button>
-          <button onClick={() => setSectionIndex(3)} className={sectionIndex == 3 ? "pindrop pindrop--large" : "pindrop"}>
-            <img src="src/assets/SVGs/Pindrop.svg" alt="Location 4 pin" />
-          </button>
 
-          <picture className="locationImage__image">
-            {/*  Mobile Image  */}
-            <source media="(max-width: 600px)" srcSet="src/assets/SVGs/Roadmap.svg" />
-            {/*  Desktop Image */}
-            <source media="(min-width: 601px)" srcSet="src/assets/SVGs/Roadmap.svg" />
-            {/*  Fallback Image  */}
-            <img aria-hidden="true" decoding="async" src="src/assets/SVGs/Roadmap.svg" alt="" />
-          </picture>
-        </div>
 
         {/* -------------------- */}
         {/* GETTING TO THE RANGE */}
@@ -61,10 +69,11 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* Also verify that screen readers update correctly when changing section visibility */}
 
         {sectionIndex == 0 && <section className="rangeGuide rangeGuide--1 mainSection" inert={pageInert}>
-          <div className="rangeGuide__header-container">
-            <img src="src/assets/clutter/flourish-flipped.png" alt="" />
-            <h3 className="large-heading">Getting to the range</h3>
-            <img src="src/assets/clutter/flourish.png" alt="" />
+          <div className="rangeGuide__header-container clamped-wider">
+            {/* <img src="src/assets/clutter/flourish-flipped.png" alt="" /> */}
+            <h3 className="red-heading">Arrival</h3>
+            <p className="large-heading">Your guide to getting to the range</p>
+            {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
 
 
@@ -144,10 +153,11 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* -------------------- */}
         {sectionIndex == 2 && <section className="rangeGuide rangeGuide--3 mainSection" inert={pageInert}>
           {/* HEADING */}
-          <div className="rangeGuide__header-container">
-            <img src="src/assets/clutter/flourish-flipped.png" alt="" />
-            <h3 className="large-heading">Office</h3>
-            <img src="src/assets/clutter/flourish.png" alt="" />
+          <div className="rangeGuide__header-container clamped-wider">
+            {/* <img src="src/assets/clutter/flourish-flipped.png" alt="" /> */}
+            <h3 className="red-heading">Office</h3>
+            <p className="large-heading">Handling bussiness at the office</p>
+            {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
 
           {/* CONTENT */}
@@ -182,10 +192,11 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* -------------------- */}
         {sectionIndex == 3 && <section className="rangeGuide rangeGuide--4 mainSection" inert={pageInert}>
           {/* HEADING */}
-          <div className="rangeGuide__header-container">
-            <img src="src/assets/clutter/flourish-flipped.png" alt="" />
-            <h3 className="large-heading">The Range</h3>
-            <img src="src/assets/clutter/flourish.png" alt="" />
+          <div className="rangeGuide__header-container clamped-wider">
+            {/* <img src="src/assets/clutter/flourish-flipped.png" alt="" /> */}
+            <h3 className="red-heading">Range</h3>
+            <p className="large-heading">Now you are ready to get shooting!</p>
+            {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
 
           <div className="rangeGuide--4__top clamped-wider">

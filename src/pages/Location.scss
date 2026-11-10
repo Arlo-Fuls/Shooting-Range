@@ -9,12 +9,6 @@ $bp-large: 75rem;
 // TOP SECTION -- Every page
 // -------------------------------
 
-.navMain__container--location {
-  padding: 2rem 0;
-  width: 100%;
-  position: relative;
-}
-
 .rangerGuide__mainHeader {
   min-height: 20rem;
   width: 100%;
@@ -22,9 +16,6 @@ $bp-large: 75rem;
   position: relative;
 
   .header__background {
-    // Define shape of container with x and y coord
-    // Order: Top L - Top R - Bottom R - Bottom L
-    // With Bottom L's y val smaller, an incline will be created
     position: absolute;
     height: 100%;
     width: 100%;
@@ -32,11 +23,11 @@ $bp-large: 75rem;
     left: 0;
     background-color: var(--black);
     z-index: -1;
-    clip-path: polygon(0 0, 85% 0, 55% 100%, 0 100%);
+    clip-path: polygon(0 0, 90% 0, 65% 90%, 0 90%);
   }
 
   .header__bottom {
-    padding-block-start: 3rem;
+    padding-block: 3rem 4rem;
     justify-content: space-between;
     align-items: end;
 
@@ -78,66 +69,105 @@ $bp-large: 75rem;
 
 }
 
-.locationImage {
-
+.locationButtons {
   &__container {
-    position: relative;
-
     width: 100%;
-    min-height: 25rem;
-    // background-color: red; // Temp
-
-    .pindrop {
-      width: 5rem;
-      height: 5rem;
-
-      background-color: transparent;
-      border: none;
-
-      cursor: pointer;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-
-      &--large {
-        width: 7rem;
-        height: 7rem;
-      }
-    }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 
-  &__image img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  &__btn {
+    width: 15%;
+    height: 10rem;
+    cursor: pointer;
+    background-color: var(--green);
+    border-radius: 0.5rem;
+    border: none;
+    outline: 0.25rem solid var(--white);
 
-    top: 0;
-    left: 0;
-    z-index: -1;
+    &--inactive {
+      filter: grayscale(0.8);
+    }
   }
 }
+
+// .locationImage {
+
+//   &__container {
+//     position: relative;
+
+//     width: 100%;
+//     min-height: 25rem;
+//     // background-color: red; // Temp
+
+//     .pindrop {
+//       width: 5rem;
+//       height: 5rem;
+
+//       background-color: transparent;
+//       border: none;
+
+//       cursor: pointer;
+
+//       img {
+//         width: 100%;
+//         height: 100%;
+//       }
+
+//       &--large {
+//         width: 7rem;
+//         height: 7rem;
+//       }
+//     }
+
+//   }
+
+//   &__image img {
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//   }
+// }
 
 // -------------------------------
 // REUSEABLE
 // -------------------------------
 
 .rangeGuide {
-  padding-block: 4rem;
+  padding-block: 5rem 4rem;
   gap: 4rem;
+
+  position: relative;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   height: 100%;
+  //   width: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: var(--green);
+  //   z-index: -1;
+  //   clip-path: polygon(10% 0, 30% 0, 30% 100%, 10% 100%);
+  // }
 }
 
 .rangeGuide__header-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  align-items: start;
+  gap: 0.5rem;
 
-  background-color: var(--green);
+  // background-color: var(--green);
   padding-block: 1.5rem;
   // border-top: 0.5rem solid var(--green);
   // border-bottom: 0.5rem solid var(--green);
@@ -147,12 +177,19 @@ $bp-large: 75rem;
   }
 
   h3 {
-    justify-content: center;
-    padding-inline: 1.5rem;
+    // justify-content: center;
+    // padding-inline: 1.5rem;
 
-    color: var(--white);
+    // color: var(--white);
     // border-top: 0.25rem solid var(--green);
     // border-bottom: 0.25rem solid var(--green);
+    font-size: 1.25rem;
+  }
+
+  p {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5rem solid var(--green);
   }
 }
 
