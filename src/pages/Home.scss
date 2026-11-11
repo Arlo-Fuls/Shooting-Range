@@ -216,19 +216,18 @@ $bp-large: 75rem;
       color: var(--white);
 
       h2 {
-        font-family: "Annie Use Your Telescope", sans-serif;
-        font-size: 3.85rem;
+        font-size: 3rem;
         letter-spacing: 0.0625rem;
-        line-height: 0.95;
+        line-height: 1.2;
 
-        text-align: center;
+        // text-align: center;
         padding-bottom: 3rem;
       }
 
       p {
         font-family: "BIZ UDPGothic", sans-serif;
         line-height: 1.65;
-        text-align: center;
+        // text-align: center;
         color: var(--white-2);
       }
     }
@@ -510,8 +509,8 @@ $bp-large: 75rem;
     letter-spacing: 0.0625rem;
 
     &--decorative {
-      font-family: "Annie Use Your Telescope", sans-serif;
-      font-size: 1.75rem;
+      font-family: 'Aclonica', sans-serif;
+      font-size: 1.35rem;
 
       // font-family: Georgia, 'Times New Roman', Times, serif;
       // text-transform: uppercase;
@@ -599,7 +598,7 @@ $bp-large: 75rem;
       // margin-right: -7rem;
       // transform: translate(70%);
       font-size: 2rem;
-      font-family: "Annie Use Your Telescope", sans-serif;
+      font-family: 'Aclonica', sans-serif;
       text-align: end;
 
       a,

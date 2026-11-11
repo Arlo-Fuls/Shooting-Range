@@ -54,7 +54,7 @@ function RulesPage({ pageInert, setPageInert }) {
 
         <section className="rules__bottom mainSection" inert={pageInert}>
           <div className="rules__bottom__container clamped">
-            <h3 className="large-heading">Stay safe!</h3>
+            <h3 className="large-heading funky">Stay safe!</h3>
             <ul>
               <li>Only handle a loaded gun while at the firing point</li>
               <li>Put down / holster the unloaded gun while not at the firing point</li>

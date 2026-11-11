@@ -9,6 +9,7 @@
 <!-- INFORMATION -->
 - Check that all information in the main page is complete
 - check FAQ info
+- Check of ander photo moet gebruik by road enterance vir range guide pt1
 
 <!-- ADD OR FIX CONTENT -->
 - Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
@@ -42,10 +43,8 @@
 
 STEP 1 - RANGE GUIDE:
 - Plan bento grid for range photos
+- Get button photos
 - Sort images, starting at the range guide, optimizing and color grading as needed
-- Create own flourish to use
-- Check for better funky font to use
-- Fix guide image with buttons
 - Make sure happy with style of Range Guide
 - Check all alt text for images
 - Check section linking met aria
