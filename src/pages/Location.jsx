@@ -31,13 +31,46 @@ function LocationPage({ pageInert, setPageInert }) {
 
           <div className="locationButtons__container">
             <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
-              {/* <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" /> */}
+              <picture className="locationButtons__btn--image">
+                {/*  <500   */}
+                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/arrival-button.png" alt="" />
+              </picture>
             </button>
             <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
-              {/* <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" /> */}
+              <picture className="locationButtons__btn--image">
+                {/*  <500   */}
+                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/office-button.png" alt="" />
+              </picture>
             </button>
             <button onClick={() => setSectionIndex(3)} className={sectionIndex == 3 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
-              {/* <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" /> */}
+              <picture className="locationButtons__btn--image">
+                {/*  <500   */}
+                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                {/*  Fallback Image  */}
+                <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/range-button.png" alt="" />
+              </picture>
             </button>
           </div>
 

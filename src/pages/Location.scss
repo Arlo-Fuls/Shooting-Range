@@ -90,6 +90,17 @@ $bp-large: 75rem;
     &--inactive {
       filter: grayscale(0.8);
     }
+
+    &--image {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 
