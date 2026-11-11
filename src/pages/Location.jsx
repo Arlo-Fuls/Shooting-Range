@@ -147,12 +147,16 @@ function LocationPage({ pageInert, setPageInert }) {
               <p>Head inside and follow the road until you reach the office for the next step.</p>
 
               <picture className="rangeGuide--1__img rangeGuide--1__img--large">
-                {/*  Mobile Image  */}
-                <source media="(max-width: 600px)" srcSet="src/assets/images/Plot-enterance.jpg" />
-                {/*  Desktop Image */}
-                <source media="(min-width: 601px)" srcSet="src/assets/images/Plot-enterance.jpg" />
+                {/*  <500   */}
+                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
                 {/*  Fallback Image  */}
-                <img aria-hidden="true" decoding="async" src="src/assets/images/Plot-enterance.jpg" alt="" />
+                <img aria-hidden="true" loading="lazy" decoding="async" src="src/assets/photos/fallback/roadmap-1-enterance.png" alt="" />
               </picture>
             </div>
 
@@ -260,15 +264,162 @@ function LocationPage({ pageInert, setPageInert }) {
 
           <div className="page-divider"></div>
 
-          <div className="rangeGuide--4__bottom clamped-wider">
-            <div className="tile"></div>
-            <div className="tile"></div>
-            <div className="tile"></div>
-            <div className="tile"></div>
-            <div className="tile"></div>
-            <div className="tile"></div>
-            <div className="tile"></div>
-            <div className="tile"></div>
+          <div className="rangeGuide--4__bottom clamped">
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-1.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-12.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-3.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-4.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-5.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-6.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-7.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-8.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-9.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-10.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-11.png" alt="" />
+            </picture>
+
+            <picture className="tile">
+              {/*  <500   */}
+              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              {/*  Fallback Image  */}
+              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-2.png" alt="" />
+            </picture>
           </div>
           <div className="rangeGuide__sectionEnd clamped">
             <p className="large-heading funky">We hope you enjoy the range!</p>
