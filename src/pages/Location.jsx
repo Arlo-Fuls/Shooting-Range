@@ -34,13 +34,13 @@ function LocationPage({ pageInert, setPageInert }) {
               <p className="locationButtons__text">ARRIVAL</p>
               <picture className="locationButtons__btn--image">
                 {/*  <500   */}
-                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
                 {/*  > 500  */}
-                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
                 {/*  > 800  */}
-                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
                 {/* >1200 */}
-                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
                 {/*  Fallback Image  */}
                 <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/arrival-button.png" alt="" />
               </picture>
@@ -49,13 +49,13 @@ function LocationPage({ pageInert, setPageInert }) {
               <p className="locationButtons__text">OFFICE</p>
               <picture className="locationButtons__btn--image">
                 {/*  <500   */}
-                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/office-button.webp" />
                 {/*  > 500  */}
-                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/office-button.webp" />
                 {/*  > 800  */}
-                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/office-button.webp" />
                 {/* >1200 */}
-                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/office-button.webp" />
                 {/*  Fallback Image  */}
                 <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/office-button.png" alt="" />
               </picture>
@@ -64,40 +64,19 @@ function LocationPage({ pageInert, setPageInert }) {
               <p className="locationButtons__text">RANGE</p>
               <picture className="locationButtons__btn--image">
                 {/*  <500   */}
-                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/range-button.webp" />
                 {/*  > 500  */}
-                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/range-button.webp" />
                 {/*  > 800  */}
-                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/range-button.webp" />
                 {/* >1200 */}
-                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/range-button.webp" />
                 {/*  Fallback Image  */}
                 <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/range-button.png" alt="" />
               </picture>
             </button>
           </div>
-
-          {/* Image with nav buttons */}
-          {/* <div className="locationImage__container">
-            <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "pindrop pindrop--large" : "pindrop"}>
-              <img src="src/assets/SVGs/Pindrop.svg" alt="Location 1 pin" />
-            </button>
-            <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "pindrop pindrop--large" : "pindrop"}>
-              <img src="src/assets/SVGs/Pindrop.svg" alt="Location 3 pin" />
-            </button>
-            <button onClick={() => setSectionIndex(3)} className={sectionIndex == 3 ? "pindrop pindrop--large" : "pindrop"}>
-              <img src="src/assets/SVGs/Pindrop.svg" alt="Location 4 pin" />
-            </button>
-
-            <picture className="locationImage__image">
-              <source media="(max-width: 600px)" srcSet="src/assets/SVGs/Roadmap.svg" />
-              <source media="(min-width: 601px)" srcSet="src/assets/SVGs/Roadmap.svg" />
-              <img aria-hidden="true" decoding="async" src="src/assets/SVGs/Roadmap.svg" alt="" />
-            </picture>
-          </div> */}
         </section>
-
-
 
         {/* -------------------- */}
         {/* GETTING TO THE RANGE */}
@@ -106,10 +85,8 @@ function LocationPage({ pageInert, setPageInert }) {
 
         {sectionIndex == 0 && <section className="rangeGuide rangeGuide--1 mainSection" inert={pageInert}>
           <div className="rangeGuide__header-container clamped-wider">
-            {/* <img src="src/assets/clutter/flourish-flipped.png" alt="" /> */}
             <h3 className="red-heading">Arrival</h3>
             <p className="large-heading">Your guide to getting to the range</p>
-            {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
 
           <div className="rangeGuide--1__container clamped-wider">
@@ -122,7 +99,7 @@ function LocationPage({ pageInert, setPageInert }) {
                 {/*  Desktop Image */}
                 <source media="(min-width: 601px)" srcSet="src/assets/images/Road1.png" />
                 {/*  Fallback Image  */}
-                <img aria-hidden="true" decoding="async" src="src/assets/images/Road1.png" alt="" />
+                <img decoding="async" src="src/assets/images/Road1.png" alt="Road 169 from the N4 where the correct turn-off to the range is." />
               </picture>
 
               <p className="rangeGuide--1__text">The Google Maps link sometimes shows a path to the range that is not accessible to the public. The correct road is using the Phokeng / Sun City slipway (road 169) from the N4. When you reach this crossroads, turn left.</p>
@@ -136,7 +113,7 @@ function LocationPage({ pageInert, setPageInert }) {
                 {/*  Desktop Image */}
                 <source media="(min-width: 601px)" srcSet="src/assets/images/Road2.png" />
                 {/*  Fallback Image  */}
-                <img aria-hidden="true" decoding="async" src="src/assets/images/Road2.png" alt="" />
+                <img decoding="async" src="src/assets/images/Road2.png" alt="The dirt road enterance to the plots where the range is situated." />
               </picture>
 
               <p className="rangeGuide--1__text">Shortly after the previous turn, you will see this dirt road on the right side of the road. Turn down it and follow the road the rest of the way to the shooting range.</p>
@@ -151,15 +128,15 @@ function LocationPage({ pageInert, setPageInert }) {
 
               <picture className="rangeGuide--1__img rangeGuide--1__img--large">
                 {/*  <500   */}
-                <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
                 {/*  > 500  */}
-                <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
                 {/*  > 800  */}
-                <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
                 {/* >1200 */}
-                <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-1-enterance.webp" />
                 {/*  Fallback Image  */}
-                <img aria-hidden="true" loading="lazy" decoding="async" src="src/assets/photos/fallback/roadmap-1-enterance.png" alt="" />
+                <img loading="lazy" decoding="async" src="src/assets/photos/fallback/roadmap-1-enterance.png" alt="The enterance of the shooting range premises, with a white car driving out of the gates." />
               </picture>
             </div>
 
@@ -268,162 +245,176 @@ function LocationPage({ pageInert, setPageInert }) {
           <div className="page-divider"></div>
 
           <div className="rangeGuide--4__bottom clamped">
+            {/* Baan 3 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-1.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-1.png" alt="A shorter range with two orange bins to use as tables. The images is framed by two trees." />
             </picture>
 
+            {/* Baan 4 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-12.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-12.png" alt="A long and narrow range with a single table and 5 posts for targets visible in the distance." />
             </picture>
 
+            {/* Baan 1 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-3.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-3.png" alt="The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image." />
             </picture>
 
+            {/* Baan 2 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-4.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-4.png" alt="A long open-aired range with 5 visible tables for shooters to stand." />
             </picture>
 
+            {/* Baan 4 Trees */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-5.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-5.png" alt="A large tree casting shadow on Range 4 with tires stacked to form a wall next to it." />
             </picture>
 
+            {/* River Range */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-6.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-6.png" alt="A dried up river bed with trees and foliage." />
             </picture>
 
+            {/* Old Trailer by Office */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-7.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-7.png" alt="A rusted, old-timey trailer under a tree outside of the office." />
             </picture>
 
+            {/* Baan 7 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-8.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-8.png" alt="A longer range with a single table. There is a large tree providing shelter next to the table." />
             </picture>
 
+            {/* Trailer op baan */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-9.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-9.png" alt="A red trailer that is situated on the range, often used for seating or for shelter from the rain." />
             </picture>
 
+            {/* Braai Area */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-10.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-10.png" alt="A braai area situated on Range 7. The seating is made from tires filled with cement and there are trees that provide shade. There is one braai station visible in the foreground." />
             </picture>
 
+            {/* Baan 6 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-11.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-11.png" alt="A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups." />
             </picture>
 
+            {/* Baan 5 */}
             <picture className="tile">
               {/*  <500   */}
-              <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
               {/*  > 500  */}
-              <source media="(max-width: 800px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
               {/*  > 800  */}
-              <source media="(max-width: 1199px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
               {/* >1200 */}
-              <source media="(min-width: 1200px)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/photos/fallback/roadmap-4-image-2.png" alt="" />
+              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-2.png" alt="A wider range with 9 posts for targets visible behind 3 orange bins. The background of the image is covered by a mountain." />
             </picture>
           </div>
+
+
           <div className="rangeGuide__sectionEnd clamped">
             <p className="large-heading funky">We hope you enjoy the range!</p>
             <button className="location__nextButton" onClick={() => setSectionIndex(0)}>Back to the start &rarr;</button>

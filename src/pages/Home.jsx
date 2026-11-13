@@ -36,7 +36,7 @@ function HomePage({ pageInert, setPageInert }) {
     },
     {
       src: "src/assets/images/Range5.jpg",
-      alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
+      alt: "A wider range with 9 posts for targets visible behind 3 orange bins. The background of the image is covered by a mountain.",
       head: "Range 5",
       text: ["Range 5 has the most open space of the ranges, with no structures or trees. The firing points, marked by the orange bins, are 25m from the targets, and 10 shooters can be active at the same time.", "Due to its large open area, it is ideal for drive-by shooting and tactical training."],
     },
@@ -59,72 +59,108 @@ function HomePage({ pageInert, setPageInert }) {
       text: ["The River Range was developed in a long stretch of dried-up river. There are lots of trees and folliage, making it ideal for tactical training with obscured targets.", "Due to the risk of tactical training, it is currently only available to training groups."],
     },
   ]);
+  const [rangeImagesMediumLarge, setRangeImagesMediumLarge] = useState([
+    {
+      src: "src/assets/images/Range1.jpg"
+    },
+    {
+      src: "src/assets/images/Range2.jpg"
+    },
+    {
+      src: "src/assets/images/Range3.jpg"
+    },
+    {
+      src: "src/assets/images/Range4.jpg"
+    },
+    {
+      src: "src/assets/images/Range5.jpg"
+    },
+    {
+      src: "src/assets/images/Range6.jpg"
+    },
+    {
+      src: "src/assets/images/Range7.jpg"
+    },
+    {
+      src: "src/assets/images/river-range.jpg"
+    },
+  ]);
+  const [rangeImagesMediumSmall, setRangeImagesMediumSmall] = useState([
+    {
+      src: "src/assets/images/Range1.jpg"
+    },
+    {
+      src: "src/assets/images/Range2.jpg"
+    },
+    {
+      src: "src/assets/images/Range3.jpg"
+    },
+    {
+      src: "src/assets/images/Range4.jpg"
+    },
+    {
+      src: "src/assets/images/Range5.jpg"
+    },
+    {
+      src: "src/assets/images/Range6.jpg"
+    },
+    {
+      src: "src/assets/images/Range7.jpg"
+    },
+    {
+      src: "src/assets/images/river-range.jpg"
+    },
+  ]);
   const [rangeImagesSmall, setRangeImagesSmall] = useState([
     {
-      src: "src/assets/images/Range1.jpg",
-      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
+      src: "src/assets/images/Range1.jpg"
     },
     {
-      src: "src/assets/images/Range2.jpg",
-      alt: "A long open-aired range with 5 visible tables for shooters to stand.",
+      src: "src/assets/images/Range2.jpg"
     },
     {
-      src: "src/assets/images/Range3.jpg",
-      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
+      src: "src/assets/images/Range3.jpg"
     },
     {
-      src: "src/assets/images/Range4.jpg",
-      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
+      src: "src/assets/images/Range4.jpg"
     },
     {
-      src: "src/assets/images/Range5.jpg",
-      alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
+      src: "src/assets/images/Range5.jpg"
     },
     {
-      src: "src/assets/images/Range6.jpg",
-      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
+      src: "src/assets/images/Range6.jpg"
     },
     {
-      src: "src/assets/images/Range7.jpg",
-      alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
+      src: "src/assets/images/Range7.jpg"
     },
     {
-      src: "src/assets/images/river-range.jpg",
-      alt: "A dried up river bed with trees and foliage.",
+      src: "src/assets/images/river-range.jpg"
     },
   ]);
   const [rangeImagesFallback, setRangeImagesFallback] = useState([
     {
-      src: "src/assets/images/Range1.jpg",
-      alt: "The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image.",
+      src: "src/assets/images/Range1.jpg"
     },
     {
-      src: "src/assets/images/Range2.jpg",
-      alt: "A long open-aired range with 5 visible tables for shooters to stand.",
+      src: "src/assets/images/Range2.jpg"
     },
     {
-      src: "src/assets/images/Range3.jpg",
-      alt: "A shorter range with two orange bins to use as tables. The images is framed by two trees.",
+      src: "src/assets/images/Range3.jpg"
     },
     {
-      src: "src/assets/images/Range4.jpg",
-      alt: "A long and narrow range with a single table and 5 posts for targets visible in the distance.",
+      src: "src/assets/images/Range4.jpg"
     },
     {
-      src: "src/assets/images/Range5.jpg",
-      alt: "A wider range with 9 posts for targets visible behind 3 orange bins.",
+      src: "src/assets/images/Range5.jpg"
     },
     {
-      src: "src/assets/images/Range6.jpg",
-      alt: "A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups.",
+      src: "src/assets/images/Range6.jpg"
     },
     {
-      src: "src/assets/images/Range7.jpg",
-      alt: "A longer range with a single table. There is a large tree providing shelter next to the table.",
+      src: "src/assets/images/Range7.jpg"
     },
     {
-      src: "src/assets/images/river-range.jpg",
-      alt: "A dried up river bed with trees and foliage.",
+      src: "src/assets/images/river-range.jpg"
     },
   ]);
 

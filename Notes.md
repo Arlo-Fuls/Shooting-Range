@@ -44,7 +44,8 @@
 STEP 1 - RANGE GUIDE:
 - Sort images, starting at the range guide, optimizing and color grading as needed
 - Make sure happy with style of Range Guide
-- Check all alt text for images
+- Check all alt text for images and aria-hidden
+- Check lazy loading for images
 - Check section linking met aria
 - Check if range guide should use aria-atomic for changing sections
 
