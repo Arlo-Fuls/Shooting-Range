@@ -42,7 +42,6 @@
 # ANKIA PLAN OF ACTION
 
 STEP 1 - RANGE GUIDE:
-
 - Sort images, starting at the range guide, optimizing and color grading as needed
 - Make sure happy with style of Range Guide
 - Check all alt text for images

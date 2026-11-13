@@ -78,20 +78,34 @@ $bp-large: 75rem;
     gap: 3rem;
   }
 
+  &__text {
+    font-size: 1.75rem;
+    color: var(--white);
+    font-family: 'Akshar', sans-serif;
+    font-weight: 500;
+  }
+
   &__btn {
     width: 15%;
     height: 10rem;
     cursor: pointer;
-    background-color: var(--green);
     border-radius: 0.5rem;
     border: none;
     outline: 0.25rem solid var(--white);
+    background-color: transparent;
+
+    position: relative;
 
     &--inactive {
       filter: grayscale(0.8);
+
     }
 
     &--image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
       width: 100%;
       height: 100%;
 
@@ -503,7 +517,7 @@ $bp-large: 75rem;
   // Individual element of bento grid
   .tile {
     // padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     // border: none;
     background: #3b82f6;
     overflow: hidden;

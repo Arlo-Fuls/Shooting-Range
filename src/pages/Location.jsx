@@ -31,6 +31,7 @@ function LocationPage({ pageInert, setPageInert }) {
 
           <div className="locationButtons__container">
             <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
+              <p className="locationButtons__text">ARRIVAL</p>
               <picture className="locationButtons__btn--image">
                 {/*  <500   */}
                 <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/arrival-button.webp" />
@@ -45,6 +46,7 @@ function LocationPage({ pageInert, setPageInert }) {
               </picture>
             </button>
             <button onClick={() => setSectionIndex(2)} className={sectionIndex == 2 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
+              <p className="locationButtons__text">OFFICE</p>
               <picture className="locationButtons__btn--image">
                 {/*  <500   */}
                 <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/office-button.webp" />
@@ -59,6 +61,7 @@ function LocationPage({ pageInert, setPageInert }) {
               </picture>
             </button>
             <button onClick={() => setSectionIndex(3)} className={sectionIndex == 3 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
+              <p className="locationButtons__text">RANGE</p>
               <picture className="locationButtons__btn--image">
                 {/*  <500   */}
                 <source media="(max-width: 500px)" srcSet="src/assets/photos/large-screen/range-button.webp" />
