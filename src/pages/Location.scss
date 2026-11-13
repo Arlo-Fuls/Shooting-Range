@@ -83,6 +83,8 @@ $bp-large: 75rem;
     color: var(--white);
     font-family: 'Akshar', sans-serif;
     font-weight: 500;
+
+    filter: drop-shadow(0 0 0.5rem var(--black));
   }
 
   &__btn {
