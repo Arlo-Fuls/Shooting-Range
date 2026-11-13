@@ -43,10 +43,9 @@
 
 STEP 1 - RANGE GUIDE:
 - Sort images, starting at the range guide, optimizing and color grading as needed
-- Make sure happy with style of Range Guide
 - Check all alt text for images and aria-hidden
 - Check lazy loading for images
-- Check section linking met aria
+- Make sure happy with style of Range Guide
 - Check if range guide should use aria-atomic for changing sections
 
 STEP 2 - FOOTER AND NAV BAR:
@@ -56,6 +55,8 @@ STEP 2 - FOOTER AND NAV BAR:
 - Add dropshadow to NavBar
 - Check why sticky nav not working on other pages, most likely because of position relative missing
 - Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
+- Check section linking met aria
+- Check all alt text for images and aria-hidden
 
 
 STEP 3 - TRAINERS:
@@ -63,6 +64,17 @@ STEP 3 - TRAINERS:
 - Finish Trainer Section on home page (logos too small near 500px and below plus horizontal overflow @ around 505px)
 - Optimize images
 - Check accessibility
+- Check section linking met aria
+- Check all alt text for images and aria-hidden
+- Check lazy loading for images
+
+
+# ARLO TO DO
+
+- Media queries for other pages
+- Double check accessibility soos gaan
+- Double check of enige alt text gemis het
+
 
 
 # Useful resources

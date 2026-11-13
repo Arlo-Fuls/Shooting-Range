@@ -13,7 +13,7 @@ function LocationPage({ pageInert, setPageInert }) {
   return (
     <>
       <main className={pageInert ? "location-main inert" : "location-main"}>
-        <section className="rangerGuide__mainHeader mainSection" inert={pageInert}>
+        <section className="rangerGuide__mainHeader mainSection" aria-labelledby="range-guide-header" inert={pageInert}>
           <Navbar setPageInert={setPageInert} />
 
           {/* Colour polygon */}
@@ -22,7 +22,7 @@ function LocationPage({ pageInert, setPageInert }) {
           {/* Bottom of header section */}
           <div className="header__bottom clamped">
             <div className="header__left">
-              <h2 className="large-heading funky">Range Guide</h2>
+              <h2 className="large-heading funky" id="range-guide-header">Range Guide</h2>
               <p>Take a look at the path to the range with all of the most important stops on the way!</p>
             </div>
             {/* <button className="location__nextButton">Next</button> */}
@@ -83,9 +83,9 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* -------------------- */}
         {/* Also verify that screen readers update correctly when changing section visibility */}
 
-        {sectionIndex == 0 && <section className="rangeGuide rangeGuide--1 mainSection" inert={pageInert}>
+        {sectionIndex == 0 && <section className="rangeGuide rangeGuide--1 mainSection" aria-labelledby="arrival-section-heading" inert={pageInert}>
           <div className="rangeGuide__header-container clamped-wider">
-            <h3 className="red-heading">Arrival</h3>
+            <h3 className="red-heading" id="arrival-section-heading">Arrival</h3>
             <p className="large-heading">Your guide to getting to the range</p>
           </div>
 
@@ -94,26 +94,52 @@ function LocationPage({ pageInert, setPageInert }) {
             <div className="rangeGuide--1__item-container">
               <h4 className="rangeGuide--1__number"><span className="sr-only">Step </span>1</h4>
               <picture className="rangeGuide--1__img">
-                {/*  Mobile Image  */}
-                <source media="(max-width: 600px)" srcSet="src/assets/images/Road1.png" />
-                {/*  Desktop Image */}
-                <source media="(min-width: 601px)" srcSet="src/assets/images/Road1.png" />
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-1.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-1.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-1.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-1.webp" />
                 {/*  Fallback Image  */}
-                <img decoding="async" src="src/assets/images/Road1.png" alt="Road 169 from the N4 where the correct turn-off to the range is." />
+                <img decoding="async" src="src/assets/photos/fallback/roadmap-1-path-1.png" alt="The road to the range with the R565 sign on the left side of the road." />
               </picture>
 
-              <p className="rangeGuide--1__text">The Google Maps link sometimes shows a path to the range that is not accessible to the public. The correct road is using the Phokeng / Sun City slipway (road 169) from the N4. When you reach this crossroads, turn left.</p>
+              <p className="rangeGuide--1__text">The Google Maps link sometimes shows a path to the range that is not accessible to the public. The correct road is using the Phokeng / Sun City slipway (road 169) from the N4.</p>
             </div>
 
             <div className="rangeGuide--1__item-container">
               <h4 className="rangeGuide--1__number"><span className="sr-only">Step </span>2</h4>
               <picture className="rangeGuide--1__img">
-                {/*  Mobile Image  */}
-                <source media="(max-width: 600px)" srcSet="src/assets/images/Road2.png" />
-                {/*  Desktop Image */}
-                <source media="(min-width: 601px)" srcSet="src/assets/images/Road2.png" />
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-2.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-2.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-2.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-2.webp" />
                 {/*  Fallback Image  */}
-                <img decoding="async" src="src/assets/images/Road2.png" alt="The dirt road enterance to the plots where the range is situated." />
+                <img decoding="async" src="src/assets/photos/fallback/roadmap-1-path-2.png" alt="The crossing just before the turn off to the range. A turn sign to Life Peglerae is visible next to the road." />
+              </picture>
+
+              <p className="rangeGuide--1__text">Following the road should bring you to this intersection where you will turn left.</p>
+            </div>
+
+            <div className="rangeGuide--1__item-container">
+              <h4 className="rangeGuide--1__number"><span className="sr-only">Step </span>3</h4>
+              <picture className="rangeGuide--1__img">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-3.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-3.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-3.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-1-path-3.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" src="src/assets/photos/fallback/roadmap-1-path-3.png" alt="The crossing just before the turn off to the range. A turn sign to Life Peglerae is visible next to the road." />
               </picture>
 
               <p className="rangeGuide--1__text">Shortly after the previous turn, you will see this dirt road on the right side of the road. Turn down it and follow the road the rest of the way to the shooting range.</p>
@@ -181,11 +207,11 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* -------------------- */}
         {/* THE OFFICE */}
         {/* -------------------- */}
-        {sectionIndex == 2 && <section className="rangeGuide rangeGuide--3 mainSection" inert={pageInert}>
+        {sectionIndex == 2 && <section className="rangeGuide rangeGuide--3 mainSection" aria-labelledby="office-section-heading" inert={pageInert}>
           {/* HEADING */}
           <div className="rangeGuide__header-container clamped-wider">
             {/* <img src="src/assets/clutter/flourish-flipped.png" alt="" /> */}
-            <h3 className="red-heading">Office</h3>
+            <h3 className="red-heading" id="office-section-heading">Office</h3>
             <p className="large-heading">Handling bussiness at the office</p>
             {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
@@ -220,11 +246,11 @@ function LocationPage({ pageInert, setPageInert }) {
         {/* -------------------- */}
         {/* THE RANGE */}
         {/* -------------------- */}
-        {sectionIndex == 3 && <section className="rangeGuide rangeGuide--4 mainSection" inert={pageInert}>
+        {sectionIndex == 3 && <section className="rangeGuide rangeGuide--4 mainSection" aria-labelledby="range-section-heading" inert={pageInert}>
           {/* HEADING */}
           <div className="rangeGuide__header-container clamped-wider">
             {/* <img src="src/assets/clutter/flourish-flipped.png" alt="" /> */}
-            <h3 className="red-heading">Range</h3>
+            <h3 className="red-heading" id="range-section-heading">Range</h3>
             <p className="large-heading">Now you are ready to get shooting!</p>
             {/* <img src="src/assets/clutter/flourish.png" alt="" /> */}
           </div>
