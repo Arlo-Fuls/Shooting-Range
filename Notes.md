@@ -41,12 +41,14 @@
 
 # ANKIA PLAN OF ACTION
 
-STEP 1 - RANGE GUIDE:
-- Sort images, starting at the range guide, optimizing and color grading as needed
+STEP 1 - RULES AND ABOUT SECTIONS:
+- Revise styles
+- Optimize images
+- Check accessibility
+- Check section linking met aria
 - Check all alt text for images and aria-hidden
 - Check lazy loading for images
-- Make sure happy with style of Range Guide
-- Check if range guide should use aria-atomic for changing sections
+
 
 STEP 2 - FOOTER AND NAV BAR:
 - Fix footer fonts and style
@@ -71,10 +73,11 @@ STEP 3 - TRAINERS:
 
 # ARLO TO DO
 
+- Check if range guide should use aria-atomic for changing sections
+- Kyk hoe om router te stel dat dit op scroll na die bokant van die page as dit change
 - Media queries for other pages
 - Double check accessibility soos gaan
 - Double check of enige alt text gemis het
-- Kyk hoe om router te stel dat dit op scroll na die bokant van die page as dit change
 
 
 
