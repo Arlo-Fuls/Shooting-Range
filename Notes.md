@@ -74,6 +74,7 @@ STEP 3 - TRAINERS:
 - Media queries for other pages
 - Double check accessibility soos gaan
 - Double check of enige alt text gemis het
+- Kyk hoe om router te stel dat dit op scroll na die bokant van die page as dit change
 
 
 

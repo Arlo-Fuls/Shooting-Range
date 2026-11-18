@@ -279,187 +279,194 @@ function LocationPage({ pageInert, setPageInert }) {
 
           <div className="rangeGuide--4__top clamped-wider">
             <picture className="rangeGuide--4__img--head">
-              {/*  Mobile Image  */}
-              <source media="(max-width: 600px)" srcSet="src/assets/images/Shooting-range-entrance.jpg" />
-              {/*  Desktop Image */}
-              <source media="(min-width: 601px)" srcSet="src/assets/images/Shooting-range-entrance.jpg" />
+              {/*  <500   */}
+              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-header.webp" />
+              {/*  > 500  */}
+              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-header.webp" />
+              {/*  > 800  */}
+              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-header.webp" />
+              {/* >1200 */}
+              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-header.webp" />
               {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/images/Shooting-range-entrance.jpg" alt="" />
+              <img decoding="async" src="src/assets/photos/fallback/roadmap-4-header.png" alt="The enterance of the shooting range, marked by a gate with a sign and a red flag." />
             </picture>
-
-            <p>Now that you've reached the range, you are ready to get shooting. Head down to your designated range and have fun!</p>
           </div>
 
-          <div className="page-divider"></div>
+          <div className="rangeGuide--4__middle">
+            <p>Welcome to the Assegai Shooting Range!</p>
+            <p>Head down to your designated range and have fun!</p>
+          </div>
 
-          <div className="rangeGuide--4__bottom clamped">
-            {/* Baan 3 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-1.png" alt="A shorter range with two orange bins to use as tables. The images is framed by two trees." />
-            </picture>
+          <div className="rangeGuide--4__bottom-container">
+            <div className="rangeGuide--4__bottom clamped">
+              {/* Baan 3 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-1.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-1.png" alt="A shorter range with two orange bins to use as tables. The images is framed by two trees." />
+              </picture>
 
-            {/* Baan 4 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-12.png" alt="A long and narrow range with a single table and 5 posts for targets visible in the distance." />
-            </picture>
+              {/* Baan 4 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-12.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-12.png" alt="A long and narrow range with a single table and 5 posts for targets visible in the distance." />
+              </picture>
 
-            {/* Baan 1 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-3.png" alt="The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image." />
-            </picture>
+              {/* Baan 1 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-3.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-3.png" alt="The interior of the container on Range 1. There are tables and signs around the container, and a tree is visible at the center of the image." />
+              </picture>
 
-            {/* Baan 2 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-4.png" alt="A long open-aired range with 5 visible tables for shooters to stand." />
-            </picture>
+              {/* Baan 2 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-4.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-4.png" alt="A long open-aired range with 5 visible tables for shooters to stand." />
+              </picture>
 
-            {/* Baan 4 Trees */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-5.png" alt="A large tree casting shadow on Range 4 with tires stacked to form a wall next to it." />
-            </picture>
+              {/* Baan 4 Trees */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-5.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-5.png" alt="A large tree casting shadow on Range 4 with tires stacked to form a wall next to it." />
+              </picture>
 
-            {/* River Range */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-6.png" alt="A dried up river bed with trees and foliage." />
-            </picture>
+              {/* River Range */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-6.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-6.png" alt="A dried up river bed with trees and foliage." />
+              </picture>
 
-            {/* Old Trailer by Office */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-7.png" alt="A rusted, old-timey trailer under a tree outside of the office." />
-            </picture>
+              {/* Old Trailer by Office */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-7.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-7.png" alt="A rusted, old-timey trailer under a tree outside of the office." />
+              </picture>
 
-            {/* Baan 7 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-8.png" alt="A longer range with a single table. There is a large tree providing shelter next to the table." />
-            </picture>
+              {/* Baan 7 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-8.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-8.png" alt="A longer range with a single table. There is a large tree providing shelter next to the table." />
+              </picture>
 
-            {/* Trailer op baan */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-9.png" alt="A red trailer that is situated on the range, often used for seating or for shelter from the rain." />
-            </picture>
+              {/* Trailer op baan */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-9.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-9.png" alt="A red trailer that is situated on the range, often used for seating or for shelter from the rain." />
+              </picture>
 
-            {/* Braai Area */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-10.png" alt="A braai area situated on Range 7. The seating is made from tires filled with cement and there are trees that provide shade. There is one braai station visible in the foreground." />
-            </picture>
+              {/* Braai Area */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-10.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-10.png" alt="A braai area situated on Range 7. The seating is made from tires filled with cement and there are trees that provide shade. There is one braai station visible in the foreground." />
+              </picture>
 
-            {/* Baan 6 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-11.png" alt="A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups." />
-            </picture>
+              {/* Baan 6 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-11.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-11.png" alt="A wide range with 10 posts for targets. The section has some shelter to protect from the sun, and there is an additional sheltered section with seating for bigger groups." />
+              </picture>
 
-            {/* Baan 5 */}
-            <picture className="tile">
-              {/*  <500   */}
-              <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
-              {/*  > 500  */}
-              <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
-              {/*  > 800  */}
-              <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
-              {/* >1200 */}
-              <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
-              {/*  Fallback Image  */}
-              <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-2.png" alt="A wider range with 9 posts for targets visible behind 3 orange bins. The background of the image is covered by a mountain." />
-            </picture>
+              {/* Baan 5 */}
+              <picture className="tile">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-4-image-2.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/roadmap-4-image-2.png" alt="A wider range with 9 posts for targets visible behind 3 orange bins. The background of the image is covered by a mountain." />
+              </picture>
+            </div>
           </div>
 
 
