@@ -117,6 +117,10 @@ $bp-large: 75rem;
         object-fit: cover;
       }
     }
+
+    &:focus {
+      outline: 0.25rem solid var(--yellow);
+    }
   }
 }
 
