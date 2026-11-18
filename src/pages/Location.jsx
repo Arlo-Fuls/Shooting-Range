@@ -217,23 +217,45 @@ function LocationPage({ pageInert, setPageInert }) {
           </div>
 
           {/* CONTENT */}
-          <div className="rangeGuide--3__top clamped-wider">
+          <div className="rangeGuide--3__top">
 
-            <picture className="rangeGuide--3__img">
-              {/*  Mobile Image  */}
-              <source media="(max-width: 600px)" srcSet="src/assets/images/Office.jpg" />
-              {/*  Desktop Image */}
-              <source media="(min-width: 601px)" srcSet="src/assets/images/Office.jpg" />
-              {/*  Fallback Image  */}
-              <img aria-hidden="true" decoding="async" src="src/assets/images/Office.jpg" alt="" />
-            </picture>
+
+            <div className="rangeGuide--3__img-container">
+
+              <picture className="rangeGuide--3__img">
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/roadmap-3-office.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/roadmap-3-office.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/roadmap-3-office.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/roadmap-3-office.webp" />
+                {/*  Fallback Image  */}
+                <img decoding="async" src="src/assets/photos/fallback/roadmap-3-office.png" alt="The office, a white trailer outside of a residential building. There are two white lawn chairs in front of it on a raised platform." />
+              </picture>
+            </div>
 
             <div className="rangeGuide--3__text">
-              <div className="rangeGuide__line"></div>
-              <p>When you enter the range, follow the path forward until you reach the office, shown in this image.</p>
+              {/* <div className="rangeGuide__line"></div> */}
+              <p>When you enter the range, follow the path forward until you reach the office</p>
               <p>Here, you will be greeted by one of our staff who will assist you with all neccessary paperwork that needs to be completed before heading down to the range.</p>
-              <div className="rangeGuide__line"></div>
+              {/* <div className="rangeGuide__line"></div> */}
             </div>
+          </div>
+
+          <div className="rangeGuide--3__middle">
+            <h4 className="large-heading">
+              Your Office Checklist
+            </h4>
+            {/* <div className="page-divider--smaller"></div> */}
+            <div className="rangeGuide--3__item-container">
+              <p><span>&#x1F7B6;</span> Complete the indemnity form</p>
+              <p><span>&#x1F7B6;</span>Complete the range register</p>
+              <p><span>&#x1F7B6;</span>Arrange targets if you didn't do it telephonically.</p>
+              <p><span>&#x1F7B6;</span>Purchase some drinks if you're interested.</p>
+            </div>
+            {/* <div className="page-divider--smaller"></div> */}
           </div>
 
           {/* END */}

@@ -87,6 +87,7 @@ STEP 3 - TRAINERS:
 - [Fix clip path line](https://stackoverflow.com/questions/51542919/clip-path-on-chrome-leaves-a-strange-line-on-the-edge) - This discussion showed how to use will-change: transform; to fix the weird line bug.
 - [Special ul styling](https://stackoverflow.com/questions/61365526/how-to-customize-unordered-list-bullet-using-inline-css-only-for-emails) - Showed how to use unicode as bullets
 - [ul wrapping with special bullet](https://stackoverflow.com/questions/24685355/aligning-li-text-that-wraps-when-using-custom-bullet-point) - Showed to use position absolute and relative to position to avoid strange wrapping
+- [Background image gradient](https://stackoverflow.com/questions/17955536/adding-a-css-gradient-to-an-image-not-a-background-image) - Adding a gradient to the image
 
 # Log of specific changes made
 
