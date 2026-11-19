@@ -41,7 +41,7 @@
 
 # ANKIA PLAN OF ACTION
 
-STEP 1 - RULES AND ABOUT SECTIONS:
+STEP 1 - ABOUT SECTIONS:
 - Revise styles
 - Optimize images
 - Check accessibility

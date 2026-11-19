@@ -76,6 +76,8 @@ $bp-large: 75rem;
 
     text-align: center;
     transform: translateY(-60%);
+
+    text-transform: uppercase;
   }
 
   &--do {
@@ -84,15 +86,17 @@ $bp-large: 75rem;
 
   &--safe {
     width: 100%;
+
     display: grid;
     grid-template-columns: 40% 60%;
     justify-items: center;
     align-items: center;
 
-    padding-block: 8rem;
+    padding-block: 7rem;
 
     &__container {
       width: 100%;
+      min-height: 25rem;
       position: relative;
 
       display: flex;
@@ -104,6 +108,8 @@ $bp-large: 75rem;
       font-size: 8rem;
       width: 50%;
       // padding-inline-start: 7rem;
+      display: flex;
+      align-items: center;
 
       filter: drop-shadow(0 0 0.0625rem var(--white));
     }
@@ -124,18 +130,21 @@ $bp-large: 75rem;
 
   &__img {
     width: 50%;
-    object-fit: cover;
+    height: 28.75rem;
+
 
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     &--target {
       position: absolute;
       left: 0;
       top: 0;
-      height: 15rem;
-      width: 15rem;
+      height: 25rem;
+      width: 18.75rem;
 
       z-index: -1;
     }
@@ -161,9 +170,9 @@ $bp-large: 75rem;
 
         position: relative;
 
-        &:first-of-type {
-          padding-block-start: 0rem;
-        }
+        // &:first-of-type {
+        //   padding-block-start: 0rem;
+        // }
       }
 
       li:before {
@@ -180,7 +189,7 @@ $bp-large: 75rem;
 
   &__divider {
     width: 100%;
-    height: 5.5rem;
+    height: 5.75rem;
     background-color: var(--black);
   }
 }
