@@ -5,257 +5,182 @@ $bp-small: 31.25rem;
 $bp-medium: 50rem;
 $bp-large: 75rem;
 
-.rules__mainHeader {
-  min-height: 30rem;
-  width: 100%;
-  height: 100%;
-  position: relative;
-
-  @media screen and (max-width: $bp-medium) {
-    min-height: 10rem;
-    padding-bottom: 4rem;
-  }
-
-  // Slant
-  .header__background {
-    // Define shape of container with x and y coord
-    // Order: Top L - Top R - Bottom R - Bottom L
-    // With Bottom L's y val smaller, an incline will be created
-    position: absolute;
-    height: 100%;
+.rules {
+  &__mainHeader {
+    min-height: 20rem;
     width: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--black);
-    z-index: -1;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
-
-    @media screen and (max-width: $bp-large) {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
-    }
-
+    height: 100%;
+    position: relative;
 
     @media screen and (max-width: $bp-medium) {
-      clip-path: none;
-    }
-  }
-
-  // Header text
-  .header__content {
-    flex-direction: column;
-    align-items: flex-end;
-
-    padding-top: 5rem;
-
-    color: var(--white);
-
-    h2 {
-      font-size: 2.5rem;
-      font-family: 'Aclonica', sans-serif;
+      min-height: 10rem;
+      // padding-bottom: 4rem;
     }
 
-    p {
-      padding-block-start: 1rem;
-      font-family: "Akshar", sans-serif;
-      font-size: 1.25rem;
-      letter-spacing: 0.0625rem;
-    }
-  }
-}
-
-// Two blocks with DO and DONT
-.rules__center {
-  position: relative;
-
-  justify-content: center;
-  // min-height: 35rem; // Can't get children to occupy entire area
-  padding: 3rem 0 4rem;
-
-  &__blocks {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-
-    max-width: 75rem;
-    width: 80%;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
-    column-gap: 4rem;
-
-    @media screen and (max-width: $bp-large) {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-      row-gap: 4rem;
-    }
-  }
-
-  &__block {
-    // width: 45%;
-    //height: 100%;
-    // min-height: 35rem; // Should try to get 100% height to work
-
-    background-color: var(--green-2);
-    border: 0.75rem solid var(--green);
-    border-radius: 0.5rem;
-
-    // padding-inline: 2rem;
-    padding: 0 2rem 2rem;
-
-    @media screen and (max-width: $bp-small) {
-      padding-inline: 0.5rem;
-    }
-
-    legend {
-      background-color: var(--green);
-
-      padding: 0.25rem 1rem;
-      color: var(--white);
-
-      font-size: 2rem;
-      font-family: 'Aclonica', sans-serif;
-    }
-
-    ul {
-      padding-top: 1.5rem;
-      font-size: 1.25rem;
-
-      list-style-type: none;
-
-      li:before {
-        content: "\27A3";
-        font-size: 140%;
-        /* or whatever */
-
-        position: absolute;
-        left: 0;
-        top: 10%;
-      }
-    }
-
-    li {
-      padding-block-start: 1rem;
-      padding-inline-start: 2.5rem;
-      font-family: "Akshar", sans-serif;
-      font-size: 1.5rem;
-      letter-spacing: 0.0625rem;
-
-      position: relative;
-    }
-
-    &:nth-child(1) {
-      // DO
-      transform: translateY(-8rem);
+    // Slant
+    .header__background {
+      // Define shape of container with x and y coord
+      // Order: Top L - Top R - Bottom R - Bottom L
+      // With Bottom L's y val smaller, an incline will be created
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: var(--black);
+      z-index: -1;
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+      clip-path: polygon(3% 0, 100% 0, 100% 100%, 10% 100%);
 
       @media screen and (max-width: $bp-large) {
-        transform: none;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
       }
 
-      legend {
-        margin-left: 1rem;
-
-        @media screen and (max-width: $bp-large) {
-          margin-left: auto;
-          margin-right: 1rem;
-        }
-      }
-    }
-
-    &:nth-child(2) {
-      // DON'T
-      transform: translateY(8rem);
-
-      @media screen and (max-width: $bp-large) {
-        transform: none;
-      }
-
-      legend {
-        margin-left: auto;
-        margin-right: 1rem;
-
-        @media screen and (max-width: $bp-large) {
-          margin-left: 1rem;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-  &__bar {
-    position: absolute;
-
-    z-index: -1;
-    background-color: var(--black);
-
-    height: 20%; // Set as percentage of entire section
-    width: 100%;
-  }
-}
-
-// Stay safe and image
-.rules__bottom {
-  padding-block: 8rem 7rem;
-  position: relative;
-
-  @media screen and (max-width: $bp-large) {
-    padding-block: 0 7rem;
-  }
-
-  // Won't crop well. Should crop original svg instead
-  // overflow: hidden;
-  &__container {
-    flex-direction: column;
-
-    ul {
-      width: 75%;
-
-      padding-top: 1.5rem;
-      font-size: 1.25rem;
-
-      list-style-type: none;
-
-      li:before {
-        content: "\27A3";
-        font-size: 140%;
-        /* or whatever */
-
-        position: absolute;
-        left: 0;
-        top: 10%;
-      }
 
       @media screen and (max-width: $bp-medium) {
-        width: 100%;
+        clip-path: none;
       }
     }
 
-    li {
-      padding-block-start: 0.75rem;
-      padding-inline-start: 2.5rem;
-      font-family: "Akshar", sans-serif;
-      font-size: 1.5rem;
-      letter-spacing: 0.0625rem;
+    // Header text
+    .header__content {
+      flex-direction: column;
+      align-items: flex-end;
 
-      position: relative;
+      padding-top: 5rem;
+
+      color: var(--white);
+
+      h2 {
+        font-size: 2.5rem;
+        font-family: 'Aclonica', sans-serif;
+      }
+
+      p {
+        padding-block-start: 1rem;
+        font-family: "Akshar", sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 0.0625rem;
+      }
     }
   }
-}
 
-.rules__img--target {
-  height: 30rem;
-  position: absolute;
-  z-index: -1;
+  &__section-heading {
+    background-color: var(--green);
+    color: var(--white);
+    width: 12rem;
+    padding-block: 0.25rem;
+    border-radius: 0.25rem;
 
-  bottom: -1rem;
-  right: 0;
+    border: 0.25rem solid var(--white);
 
-  @media screen and (max-width: $bp-large) {
-    height: 20rem;
+    text-align: center;
+    transform: translateY(-60%);
   }
 
-  @media screen and (max-width: $bp-medium) {
-    display: none;
+  &--do {
+    padding-block-end: 2rem;
+  }
+
+  &--safe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-items: center;
+    align-items: center;
+
+    padding-block: 8rem;
+
+    &__container {
+      width: 100%;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+
+    }
+
+    h3 {
+      font-size: 8rem;
+      width: 50%;
+      // padding-inline-start: 7rem;
+
+      filter: drop-shadow(0 0 0.0625rem var(--white));
+    }
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    gap: 6rem;
+    align-items: center;
+
+    padding-block-start: 1.25rem;
+
+    &:nth-of-type(2) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+    }
+
+    &--target {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 15rem;
+      width: 15rem;
+
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    font-family: "Akshar", sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.5;
+
+    ul {
+      font-size: 1.25rem;
+
+      list-style-type: none;
+
+      li {
+        padding-block-start: 1rem;
+        padding-inline-start: 3rem;
+        font-family: "Akshar", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.0625rem;
+
+        position: relative;
+
+        &:first-of-type {
+          padding-block-start: 0rem;
+        }
+      }
+
+      li:before {
+        content: "\27A3";
+        font-size: 140%;
+        /* or whatever */
+
+        position: absolute;
+        left: 0;
+        top: 20%;
+      }
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 5.5rem;
+    background-color: var(--black);
   }
 }
