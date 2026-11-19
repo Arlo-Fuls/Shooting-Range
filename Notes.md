@@ -1,18 +1,14 @@
 # To Do
 
 <!-- STYLING -->
-- Add speech bubble at contact section (CSS)
-- check if a green left border next to the trainer text can look cool
 - Check if greener tint to the dark grey looks better
 - Check animation on accordion pannels
 
 <!-- INFORMATION -->
 - Check that all information in the main page is complete
 - check FAQ info
-- Check of ander photo moet gebruik by road enterance vir range guide pt1
 
 <!-- ADD OR FIX CONTENT -->
-- Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
 - Fix FAQ Assegai stretching
 - Fix FAQ :after breakpoints
 
@@ -23,7 +19,6 @@
 
 <!-- OPTIMIZATION -->
 - optimize images
-  - crop image on home page (bullets) to be more square
 - update SVGs
 - Check Deprecation Warning in vs code console
 - Fix errors in web console (Each child in a list should have a unique "key" prop.)
@@ -36,6 +31,7 @@
 - Check to add load in animation
 - Check to remove hero section
 - Double check if design still matches the theme
+
 
 
 
@@ -61,7 +57,19 @@ STEP 2 - FOOTER AND NAV BAR:
 - Check all alt text for images and aria-hidden
 
 
-STEP 3 - TRAINERS:
+STEP 3 - HOME PAGE:
+- Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
+- Add css bubble in contact section
+- check if a green left border next to the trainer text can look cool
+- crop image on home page (bullets) to be more square
+- Optimize images
+- Check accessibility
+- Check section linking met aria
+- Check all alt text for images and aria-hidden
+- Check lazy loading for images
+
+
+STEP 4 - TRAINERS:
 - Update style trainers section with new logo
 - Finish Trainer Section on home page (logos too small near 500px and below plus horizontal overflow @ around 505px)
 - Optimize images
@@ -69,6 +77,8 @@ STEP 3 - TRAINERS:
 - Check section linking met aria
 - Check all alt text for images and aria-hidden
 - Check lazy loading for images
+
+- Add button and modal to trainers, simple modal with names of trainers and their contact details
 
 
 # ARLO TO DO
