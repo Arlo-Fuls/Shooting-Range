@@ -32,14 +32,14 @@ $bp-large: 75rem;
       // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
       clip-path: polygon(3% 0, 100% 0, 100% 100%, 10% 100%);
 
-      @media screen and (max-width: $bp-large) {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
-      }
+      // @media screen and (max-width: $bp-large) {
+      //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+      // }
 
 
-      @media screen and (max-width: $bp-medium) {
-        clip-path: none;
-      }
+      // @media screen and (max-width: $bp-medium) {
+      //   clip-path: none;
+      // }
     }
 
     // Header text
@@ -82,7 +82,13 @@ $bp-large: 75rem;
 
   &--do {
     padding-block-end: 2rem;
+    padding-inline-end: 2rem;
   }
+
+  &--dont .rules__text {
+    padding-inline-start: 2rem;
+  }
+
 
   &--safe {
     width: 100%;
@@ -185,6 +191,7 @@ $bp-large: 75rem;
         top: 20%;
       }
     }
+
   }
 
   &__divider {
