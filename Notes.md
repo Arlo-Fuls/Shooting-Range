@@ -3,6 +3,7 @@
 <!-- STYLING -->
 - Check if greener tint to the dark grey looks better
 - Check animation on accordion pannels
+- Finalize hover, focus, and active states
 
 <!-- INFORMATION -->
 - Check that all information in the main page is complete
@@ -36,11 +37,6 @@
 
 
 # ANKIA PLAN OF ACTION
-
-STEP 1 - ABOUT SECTIONS:
-- Check section linking met aria
-
-
 
 STEP 2 - FOOTER AND NAV BAR:
 - Fix footer fonts and style

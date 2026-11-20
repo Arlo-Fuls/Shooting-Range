@@ -7,7 +7,7 @@ $bp-large: 75rem;
 
 .rules {
   &__mainHeader {
-    min-height: 20rem;
+    min-height: 23rem;
     width: 100%;
     height: 100%;
     position: relative;
@@ -30,7 +30,7 @@ $bp-large: 75rem;
       background-color: var(--black);
       z-index: -1;
       // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
-      clip-path: polygon(3% 0, 100% 0, 100% 100%, 10% 100%);
+      clip-path: polygon(3% 0, 100% 0, 100% 100%, 23% 100%);
 
       // @media screen and (max-width: $bp-large) {
       //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
@@ -222,7 +222,7 @@ $bp-large: 75rem;
 
   &__divider {
     width: 100%;
-    height: 5.75rem;
+    height: 6rem;
     background-color: var(--black);
   }
 }
