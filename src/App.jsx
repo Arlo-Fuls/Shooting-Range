@@ -23,27 +23,33 @@ function App() {
       </Routes>
 
       <footer inert={pageInert}>
-        <nav className="navFooter">
+        <div className="navFooter">
           <div className="navFooter__header">
             <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
             <h1>Assegai Shooting Range</h1>
           </div>
 
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/About">About Us</Link>
-            </li>
-            <li>
-              <Link to="/Location">Range Guide</Link>
-            </li>
-            <li>
-              <Link to="/Rules">Rules</Link>
-            </li>
-          </ul>
-        </nav>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/About">About Us</Link>
+              </li>
+              <li>
+                <Link to="/Location">Range Guide</Link>
+              </li>
+              <li>
+                <Link to="/Rules">Rules</Link>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+
+
+
         <p>est 2008</p>
       </footer>
     </>
