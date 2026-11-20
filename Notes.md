@@ -39,13 +39,11 @@
 # ANKIA PLAN OF ACTION
 
 STEP 2 - FOOTER AND NAV BAR:
-- Fix footer fonts and style
-- Update SVG for Nav and Footer
+- Update SVG for Nav
 - Update NavBar style, including breakpoints
 - Add dropshadow to NavBar
 - Check why sticky nav not working on other pages, most likely because of position relative missing
 - Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
-- Check section linking met aria
 - Check all alt text for images and aria-hidden
 
 
