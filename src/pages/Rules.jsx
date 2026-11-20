@@ -81,7 +81,7 @@ function RulesPage({ pageInert, setPageInert }) {
 
         <section className="rules--safe mainSection" aria-labelledby="rules-safe-section">
           <div className="rules--safe__container">
-            <h3 className="large-heading funky" id="rules-safe-section">Stay safe!</h3>
+            <h3 className="large-heading funky" id="rules-safe-section">Stay Safe!</h3>
             <img className="rules__img--target" src="src/assets/photos/svgs/rules-target.svg" alt="" aria-hidden="true" loading="lazy" />
           </div>
 

@@ -117,7 +117,9 @@ $bp-large: 75rem;
       display: flex;
       align-items: center;
 
-      filter: drop-shadow(0 0 0.0625rem var(--white));
+      color: var(--yellow);
+
+      // filter: drop-shadow(0 0 0.25rem var(--white));
     }
   }
 
@@ -131,6 +133,28 @@ $bp-large: 75rem;
 
     &:nth-of-type(2) {
       flex-direction: row-reverse;
+
+      .rules__text {
+        text-align: end;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+        }
+
+        li {
+          padding-inline-start: unset;
+          padding-inline-end: 3rem;
+
+          width: 80%;
+        }
+
+        li:before {
+          left: unset;
+          right: 0;
+        }
+      }
     }
   }
 
@@ -149,8 +173,9 @@ $bp-large: 75rem;
       position: absolute;
       left: 0;
       top: 0;
-      height: 25rem;
-      width: 18.75rem;
+      height: 30rem;
+      width: 22.5rem;
+      transform: translateY(-10%);
 
       z-index: -1;
     }
@@ -182,13 +207,14 @@ $bp-large: 75rem;
       }
 
       li:before {
-        content: "\27A3";
-        font-size: 140%;
+        // content: "\27A3";
+        content: "\1F7B6";
+        font-size: 110%;
         /* or whatever */
 
         position: absolute;
         left: 0;
-        top: 20%;
+        top: 30%;
       }
     }
 
