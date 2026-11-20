@@ -38,12 +38,8 @@
 # ANKIA PLAN OF ACTION
 
 STEP 1 - ABOUT SECTIONS:
-- Revise styles
-- Optimize images
-- Check accessibility
 - Check section linking met aria
-- Check all alt text for images and aria-hidden
-- Check lazy loading for images
+
 
 
 STEP 2 - FOOTER AND NAV BAR:
