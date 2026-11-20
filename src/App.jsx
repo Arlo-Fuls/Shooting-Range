@@ -25,7 +25,7 @@ function App() {
       <footer inert={pageInert}>
         <div className="navFooter">
           <div className="navFooter__header">
-            <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
+            <img className="logo" alt="Buisness Logo" src="src/assets/photos/svgs/logo-v1.svg" aria-hidden="true" loading="lazy" />
             <p>Assegai Shooting Range</p>
           </div>
 
