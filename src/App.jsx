@@ -26,7 +26,7 @@ function App() {
         <div className="navFooter">
           <div className="navFooter__header">
             <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
-            <h1>Assegai Shooting Range</h1>
+            <p>Assegai Shooting Range</p>
           </div>
 
           <nav>
@@ -50,7 +50,7 @@ function App() {
 
 
 
-        <p>est 2008</p>
+        <p className="footer__est">est 2008</p>
       </footer>
     </>
   );
