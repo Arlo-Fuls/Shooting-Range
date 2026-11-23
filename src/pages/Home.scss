@@ -352,6 +352,8 @@ $bp-large: 75rem;
     // Selected image display and description + buttons
     justify-content: space-between;
 
+    padding-bottom: 1rem;
+
     .image-container {
       width: 65%;
       height: 24rem;
@@ -500,6 +502,42 @@ $bp-large: 75rem;
   &__bottom {
     flex-direction: column;
     gap: 0.25rem;
+
+    align-items: center;
+
+    background-color: var(--green);
+    // background: linear-gradient(90deg, var(--white) 0%, var(--green) 30%, var(--green) 70%, var(--white) 100%);
+    background: linear-gradient(90deg, #6c7e4a 0%, var(--green) 40%, var(--green) 60%, #6c7e4a 100%);
+
+    padding: 1.25rem 1.25rem;
+
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 100%;
+      background-color: var(--white);
+
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+      will-change: transform;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 100%;
+      background-color: var(--white);
+
+      clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+      will-change: transform;
+    }
   }
 
   &__bottom-text {
@@ -507,10 +545,14 @@ $bp-large: 75rem;
     font-family: "Akshar", sans-serif;
     font-weight: 400;
     letter-spacing: 0.0625rem;
+    color: var(--white-2);
 
     &--decorative {
       font-family: 'Aclonica', sans-serif;
-      font-size: 1.35rem;
+      font-size: 1.5rem;
+      padding-bottom: 0.25rem;
+
+      color: var(--white);
 
       // font-family: Georgia, 'Times New Roman', Times, serif;
       // text-transform: uppercase;
