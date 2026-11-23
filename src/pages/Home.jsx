@@ -263,7 +263,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="card">
               <div className="card__top">
                 <h3>Open Most Days</h3>
-                <img className="icon" alt="" src="src\assets\SVGs\Calender.svg" />
+                <img className="icon" alt="" aria-hidden="true" src="src/assets/photos/svgs/pricing-calender.svg" />
               </div>
               <div className="card__bottom">
                 <p>Open Monday to Saturday from 8am to 4pm.</p>
@@ -275,7 +275,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="card">
               <div className="card__top">
                 <h3>Only R150 per person</h3>
-                <img className="icon icon--larger" alt="" src="src\assets\SVGs\Money.svg" />
+                <img className="icon icon--larger" alt="" aria-hidden="true" src="src/assets/photos/svgs/pricing-price.svg" />
               </div>
               <div className="card__bottom">
                 <p>Shoot for an entire day for only R150 per person.</p>
@@ -287,7 +287,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="card">
               <div className="card__top">
                 <h3>Targets available</h3>
-                <img className="icon icon--larger" alt="" src="src\assets\SVGs\Target.svg" />
+                <img className="icon icon--larger" alt="" aria-hidden="true" src="src/assets/photos/svgs/pricing-target.svg" />
               </div>
               <div className="card__bottom">
                 <p>Targets and cartons can be purchased at the office for R15 and R11 respectively. </p>
@@ -298,7 +298,7 @@ function HomePage({ pageInert, setPageInert }) {
             <div className="card">
               <div className="card__top">
                 <h3>Bring your own weapons</h3>
-                <img className="icon" alt="" src="src\assets\SVGs\Gun.svg" />
+                <img className="icon" alt="" aria-hidden="true" src="src/assets/photos/svgs/pricing-weapons.svg" />
               </div>
               <div className="card__bottom">
                 <p>Weapons and ammunition are not provided by us.</p>
@@ -364,21 +364,23 @@ function HomePage({ pageInert, setPageInert }) {
               <p>New to the range?</p>
               <p>
                 Check out our <Link to="/Rules">rules</Link>
-              </p>{" "}
+              </p>
               {/* Add modal on rules */}
             </div>
           </div>
           <div className="contact__bottom">
             <div className="contact__card">
               <div className="contact__image-container">
-                <img src="src/assets/SVGs/Phone.svg" alt="" />
+                <img aria-hidden="true" src="src/assets/photos/svgs/contact-phone.svg" alt="" />
               </div>
 
-              <p>(+27)69 581 0030</p>
+              <p>
+                <a href="tel:+27695810030">(+27)69 581 0030</a>
+              </p>
             </div>
             <div className="contact__card">
               <div className="contact__image-container">
-                <img src="src/assets/SVGs/Mail.svg" alt="" />
+                <img aria-hidden="true" src="src/assets/photos/svgs/contact-mail.svg" alt="" />
               </div>
               <p>
                 <a href="mailto:assegaishootingrange@gmail.com">assegaishootingrange@gmail.com</a>
@@ -386,7 +388,7 @@ function HomePage({ pageInert, setPageInert }) {
             </div>
             <div className="contact__card">
               <div className="contact__image-container">
-                <img src="src/assets/SVGs/Pindrop.svg" alt="" />
+                <img aria-hidden="true" src="src/assets/photos/svgs/contact-location.svg" alt="" />
               </div>
               <p>
                 <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">

@@ -616,28 +616,6 @@ $bp-large: 75rem;
   }
 
   &__bottom {
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-around;
-    // // gap: 5rem;
-
-    // width: 90%;
-
-    // // Rough attempt to create staircase display
-    // // Not right yet. Need to either fine tune values or use Pythagoras with parent's values to find good percentage values
-    // .contact__card:nth-child(1) {
-    //   padding-bottom: 12rem;
-    // }
-
-    // .contact__card:nth-child(2) {
-    //   padding-bottom: 7rem;
-    // }
-
-    // .contact__card:nth-child(3) {
-    //   padding-bottom: 2rem;
-    // }
-
-    // extra -- to be deleted
 
     width: 95%;
     max-width: 1200px;
@@ -681,6 +659,10 @@ $bp-large: 75rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+
+    font-family: "BIZ UDPGothic", sans-serif;
+    // letter-spacing: 0.0625rem;
+    font-weight: 700;
 
     img {
       max-width: 100%;
