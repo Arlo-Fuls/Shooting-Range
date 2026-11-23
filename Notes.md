@@ -36,12 +36,6 @@
 
 # ANKIA PLAN OF ACTION
 
-STEP 2 - NAV BAR:
-- Update NavBar style, including breakpoints
-- Add dropshadow to NavBar
-- Check all alt text for images and aria-hidden
-
-
 STEP 3 - HOME PAGE:
 - Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
 - Add css bubble in contact section
