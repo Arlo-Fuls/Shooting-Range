@@ -197,9 +197,13 @@ body:has(.inert) {
       height: 3rem;
       border-radius: 50%;
       border: none;
+      outline: 0.125rem solid var(--green);
       background-color: var(--white);
 
-      padding: 0.5rem;
+      padding: 0.625rem;
+      cursor: pointer;
+
+
     }
   }
 
@@ -219,7 +223,9 @@ body:has(.inert) {
       border: none;
       background-color: var(--white);
 
-      padding: 0.5rem;
+      padding: 0.625rem;
+
+      cursor: pointer;
 
       // align-self: end;
     }

@@ -109,18 +109,18 @@ function Navbar({ setPageInert }) {
     <header className={direction === "up" ? "navMain" : "navMain navMain--hidden"}>
       {/* SHOWN ON SMALL SCREENS, HIDDEN BIG */}
       <button id="btnOpen" className="navMain__open-btn" aria-expanded={openButtonExpanded} aria-label="Open Navigation Menu" onClick={openMenu} ref={focusOpen}>
-        <img src="src/assets/SVGs/Hamburger-menu.svg" alt="" />
+        <img src="src/assets/photos/svgs/hamburger-menu.svg" alt="" />
       </button>
 
       {/* Container of what is shown for both versions, shown by default for big screens, hidden until shown for small screens */}
 
       <div className="navMain__container" role="dialog" aria-labelledby="nav-label" inert={navMenuInert} style={{ transition: menuTransition ? "none" : "" }}>
         <button id="btnClose" className="navMain__close-btn dismiss" aria-label="Close Navigation Menu" onClick={(e) => closeMenu(e)} ref={focusClose}>
-          <img src="src/assets/SVGs/Close-4.svg" alt="" className="dismiss" />
+          <img src="src/assets/photos/svgs/menu-close-1.svg" alt="" className="dismiss" />
         </button>
 
         <div className="navMain__header">
-          <img className="logo" alt="Buisness Logo" src="src\assets\SVGs\Logo.svg" />
+          <img className="logo" alt="Buisness Logo" src="src/assets/photos/svgs/logo-v2.svg" aria-hidden="true" />
           <h1>Assegai Shooting Range</h1>
         </div>
 
