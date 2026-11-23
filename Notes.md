@@ -37,7 +37,6 @@
 # ANKIA PLAN OF ACTION
 
 STEP 2 - NAV BAR:
-- Update SVG for Nav
 - Update NavBar style, including breakpoints
 - Add dropshadow to NavBar
 - Check all alt text for images and aria-hidden
