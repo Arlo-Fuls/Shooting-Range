@@ -13,14 +13,14 @@ function LocationPage({ pageInert, setPageInert }) {
   return (
     <>
       <main className={pageInert ? "location-main inert" : "location-main"}>
-        <section className="rangerGuide__mainHeader mainSection" aria-labelledby="range-guide-header" inert={pageInert}>
+        <section className="rangerGuide__mainHeader mainSection" aria-labelledby="range-guide-header" >
           <Navbar setPageInert={setPageInert} />
 
           {/* Colour polygon */}
           <div className="header__background"></div>
 
           {/* Bottom of header section */}
-          <div className="header__bottom clamped">
+          <div className="header__bottom clamped" inert={pageInert}>
             <div className="header__left">
               <h2 className="large-heading funky" id="range-guide-header">Range Guide</h2>
               <p>Take a look at the path to the range with all of the most important stops on the way!</p>
@@ -29,7 +29,7 @@ function LocationPage({ pageInert, setPageInert }) {
             <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">Find us on Google Maps &rarr;</a>
           </div>
 
-          <div className="locationButtons__container">
+          <div className="locationButtons__container" inert={pageInert}>
             <button onClick={() => setSectionIndex(0)} className={sectionIndex == 0 ? "locationButtons__btn" : "locationButtons__btn locationButtons__btn--inactive"}>
               <p className="locationButtons__text">ARRIVAL</p>
               <picture className="locationButtons__btn--image">

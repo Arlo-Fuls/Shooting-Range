@@ -1,7 +1,13 @@
 import Navbar from "../components/Navbar.jsx";
+import { useEffect } from "react";
 import "./Rules.scss";
 
 function RulesPage({ pageInert, setPageInert }) {
+
+  useEffect(() => {
+    setPageInert(false);
+  }, []);
+
   return (
     <>
       <main className={pageInert ? "rules__main inert" : "rules__main"}>

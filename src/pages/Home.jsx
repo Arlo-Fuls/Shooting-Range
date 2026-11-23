@@ -236,13 +236,10 @@ function HomePage({ pageInert, setPageInert }) {
       {/* </header> */}
 
       <main className={pageInert ? "home-main inert" : "home-main"}>
-        {/* <div className="main__navbarContainer"> */}
-        {/* Nav bar header */}
-        <Navbar setPageInert={setPageInert} />
-        {/* </div> */}
-        {/* Pricing and time */}
-        <section className="pricing mainSection" inert={pageInert}>
-          <div className="pricing__top clamped">
+        <section className="pricing mainSection" >
+          <Navbar setPageInert={setPageInert} />
+
+          <div className="pricing__top clamped" inert={pageInert}>
             <div className="pricing__text">
               <h2 className="funky">
                 Welcome to <br /> Assegai Shooting Range
@@ -261,7 +258,7 @@ function HomePage({ pageInert, setPageInert }) {
             </picture>
           </div>
 
-          <div className="pricing__bottom">
+          <div className="pricing__bottom" inert={pageInert}>
             {/* TIME */}
             <div className="card">
               <div className="card__top">

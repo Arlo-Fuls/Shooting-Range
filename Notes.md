@@ -28,22 +28,18 @@
 - Look at fallback fonts for flashing
 
 <!-- FINISHING TOUCHES -->
-- Add jump to top button
-- Check to add load in animation
-- Check to remove hero section
-- Double check if design still matches the theme
 
+- Check to add load in animation
+- Double check if design still matches the theme
 
 
 
 # ANKIA PLAN OF ACTION
 
-STEP 2 - FOOTER AND NAV BAR:
+STEP 2 - NAV BAR:
 - Update SVG for Nav
 - Update NavBar style, including breakpoints
 - Add dropshadow to NavBar
-- Check why sticky nav not working on other pages, most likely because of position relative missing
-- Fix collapsed nav bar. If visible after scrolling up, rest of page is inert
 - Check all alt text for images and aria-hidden
 
 
@@ -78,6 +74,7 @@ STEP 4 - TRAINERS:
 - Media queries for other pages
 - Double check accessibility soos gaan
 - Double check of enige alt text gemis het
+- Add jump to top button for small screens
 
 
 
