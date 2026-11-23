@@ -38,7 +38,6 @@
 
 STEP 3 - HOME PAGE:
 - Add second image on pricing section, one at bottom left, other top right - photo van rooi trailer (tweak overall positioning)
-- Add css bubble in contact section
 - crop image on home page (bullets) to be more square
 - Optimize images
 - Check accessibility
