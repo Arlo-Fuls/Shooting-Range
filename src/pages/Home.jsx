@@ -427,35 +427,37 @@ function HomePage({ pageInert, setPageInert }) {
             </div>
 
             <div className="trainers__body ">
-              <p className="sr-only">Our featured trainers include: KMP Security and Training, Platinum Shooters, Golden Cat Safety and Security Academy, Kukama Security Services, G4S, Bambanani Security & Projects, G627 Tactical Group, Outdoor Adventure Center, and Bullzeye Training Academy.</p>
 
               <div className="trainers__logoContainer">
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/KMP.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-kmp.png" alt="KMP Training and Security" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/platinum-shooters-cleaned.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-platinum-shooters.png" alt="Platinum Shooters" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/golden-cat-cleaned.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-golden-cat.png" alt="Golden Cat Safety and Security Academy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/kukama-cleaned.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-kukama.png" alt="Kukama Security Services" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/G4S-Logo.wine.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-g4s.png" alt="G4S" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/bambani-cleaned.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-bambanani.png" alt="Bambanani Security and Projects" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/g627-tactical-group-logo-1-200x69.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-g627.png" alt="G627 Tactical Group Training Academy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/billy2.png" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-outdoor-adventure-center.png" alt="Outdoor Adventure Centre" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/logos/northam-traced.svg" alt="" />
+                  <img src="src/assets/photos/fallback/trainers-pase.png" alt="Pase ATC" />
+                </div>
+                <div className="trainers__logo">
+                  <img src="src/assets/photos/fallback/trainers-bullzeye.png" alt="Bullzeye Training Academy" />
                 </div>
               </div>
             </div>

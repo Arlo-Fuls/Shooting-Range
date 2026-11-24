@@ -960,7 +960,7 @@ $bp-large: 75rem;
       "kmp kmp kmp kmp"
       "platinum golden golden kukama"
       "g4s bam bam g627"
-      "billy billy bullzeye bullzeye";
+      "billy pase pase bullzeye";
   }
 
   // &__logos {
@@ -1036,16 +1036,25 @@ $bp-large: 75rem;
     &:nth-child(8) {
       grid-area: billy;
 
-      width: 50%;
+      width: 70%;
       justify-self: end;
-      padding-right: 2rem;
+      align-self: flex-start;
     }
 
     &:nth-child(9) {
+      grid-area: pase;
+
+      width: 70%;
+      justify-self: center;
+      padding-top: 2.5rem;
+    }
+
+    &:nth-child(10) {
       grid-area: bullzeye;
-      width: 50%;
+
+      width: 70%;
       justify-self: start;
-      padding-left: 2rem;
+      align-self: flex-start;
     }
   }
 }
