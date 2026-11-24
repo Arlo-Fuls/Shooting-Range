@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import Navbar from "../components/Navbar.jsx";
 import "./Home.scss";
@@ -186,10 +186,6 @@ function HomePage({ pageInert, setPageInert }) {
     }
   };
 
-  // SCROLL TO SECTION
-  const myRef = useRef(null);
-
-  const executeScroll = () => myRef.current.scrollIntoView();
 
   // FAQ ACCORDION TOGGLE
 
@@ -353,50 +349,57 @@ function HomePage({ pageInert, setPageInert }) {
         </section>
 
         {/* Contact Us */}
-        <section className="contact mainSection" inert={pageInert} ref={myRef}>
-          <div className="contact__top clamped-wider">
+        <section className="contact mainSection" inert={pageInert}>
+          <div className="contact__container clamped-wider">
             <div className="contact__intro">
               <h2 className="red-heading">CONTACT US</h2>
               <p className="large-heading">Ready to get started?</p>
               <p className="large-heading">Book a session today!</p>
             </div>
+
+            <div className="contact__details">
+              {/* Tel */}
+              <div className="contact__card">
+                <div className="contact__image-container">
+                  <img aria-hidden="true" src="src/assets/photos/svgs/contact-phone.svg" alt="" />
+                </div>
+                <p>
+                  <a href="tel:+27695810030">(+27)69 581 0030</a>
+                </p>
+              </div>
+
+              {/* Mail */}
+              <div className="contact__card">
+                <div className="contact__image-container">
+                  <img aria-hidden="true" src="src/assets/photos/svgs/contact-mail.svg" alt="" />
+                </div>
+                <p>
+                  <a href="mailto:assegaishootingrange@gmail.com">assegaishootingrange@gmail.com</a>
+                </p>
+              </div>
+
+              {/* Location */}
+              <div className="contact__card">
+                <div className="contact__image-container">
+                  <img aria-hidden="true" src="src/assets/photos/svgs/contact-location.svg" alt="" />
+                </div>
+                <p>
+                  <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">
+                    Plot 94 Rietvlei Rd, Rustenburg, 0300
+                  </a>
+                </p>
+              </div>
+            </div>
+
             <div className="contact__rules">
               <p>New to the range?</p>
               <p>
                 Check out our <Link to="/Rules">rules</Link>
               </p>
-              {/* Add modal on rules */}
             </div>
-          </div>
-          <div className="contact__bottom">
-            <div className="contact__card">
-              <div className="contact__image-container">
-                <img aria-hidden="true" src="src/assets/photos/svgs/contact-phone.svg" alt="" />
-              </div>
 
-              <p>
-                <a href="tel:+27695810030">(+27)69 581 0030</a>
-              </p>
-            </div>
-            <div className="contact__card">
-              <div className="contact__image-container">
-                <img aria-hidden="true" src="src/assets/photos/svgs/contact-mail.svg" alt="" />
-              </div>
-              <p>
-                <a href="mailto:assegaishootingrange@gmail.com">assegaishootingrange@gmail.com</a>
-              </p>
-            </div>
-            <div className="contact__card">
-              <div className="contact__image-container">
-                <img aria-hidden="true" src="src/assets/photos/svgs/contact-location.svg" alt="" />
-              </div>
-              <p>
-                <a href="https://maps.app.goo.gl/mheG3HnStRzCzQTG9" target="_blank">
-                  Plot 94 Rietvlei Rd, Rustenburg, 0300
-                </a>
-              </p>
-            </div>
           </div>
+
           <div className="contact__background"></div>
         </section>
 
