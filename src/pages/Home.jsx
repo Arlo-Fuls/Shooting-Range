@@ -405,7 +405,7 @@ function HomePage({ pageInert, setPageInert }) {
 
         {/* Trainers */}
         <section className="trainers mainSection" inert={pageInert}>
-          <img className="trainers__image--branch" src="src\assets\SVGs\Branch-1.svg" alt="" />
+          <img className="trainers__image--branch" src="src/assets/photos/svgs/trainers-branch.svg" alt="" loading="lazy" aria-hidden="true" />
           <div className="trainers__container clamped">
             <div className="trainers__header ">
               <div className="trainers__title">
@@ -417,46 +417,50 @@ function HomePage({ pageInert, setPageInert }) {
               <button className="trainers__btn">See Trainer Details</button>
 
               <picture className="trainers__image">
-                {/*  Mobile Image  */}
-                <source media="(max-width: 600px)" srcSet="src/assets/clutter/Billy-trees.jpg" />
-                {/*  Desktop Image */}
-                <source media="(min-width: 601px)" srcSet="src/assets/clutter/Billy-trees.jpg" />
+                {/*  <500   */}
+                <source media="(max-width: 31.25rem)" srcSet="src/assets/photos/large-screen/trainers-trees.webp" />
+                {/*  > 500  */}
+                <source media="(max-width: 50rem)" srcSet="src/assets/photos/large-screen/trainers-trees.webp" />
+                {/*  > 800  */}
+                <source media="(max-width: 75rem)" srcSet="src/assets/photos/large-screen/trainers-trees.webp" />
+                {/* >1200 */}
+                <source media="(min-width: 75.0625rem)" srcSet="src/assets/photos/large-screen/trainers-trees.webp" />
                 {/*  Fallback Image  */}
-                <img aria-hidden="true" decoding="async" loading="lazy" src="src/assets/clutter/Billy-trees.jpg" alt="Trees and cement-filled tires present on range 1." />
+                <img decoding="async" loading="lazy" src="src/assets/photos/fallback/trainers-trees.png" alt="Trees on Range 1 with cement-filled tires between them for seating. The container on Range 1 is visible in the background." aria-hidden="true" />
               </picture>
             </div>
 
             <div className="trainers__body ">
               <div className="trainers__logoContainer">
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-kmp.png" alt="KMP Training and Security" />
+                  <img src="src/assets/photos/fallback/trainers-kmp.png" alt="KMP Training and Security" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-platinum-shooters.png" alt="Platinum Shooters" />
+                  <img src="src/assets/photos/fallback/trainers-platinum-shooters.png" alt="Platinum Shooters" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-golden-cat.png" alt="Golden Cat Safety and Security Academy" />
+                  <img src="src/assets/photos/fallback/trainers-golden-cat.png" alt="Golden Cat Safety and Security Academy" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-kukama.png" alt="Kukama Security Services" />
+                  <img src="src/assets/photos/fallback/trainers-kukama.png" alt="Kukama Security Services" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-g4s.png" alt="G4S" />
+                  <img src="src/assets/photos/fallback/trainers-g4s.png" alt="G4S" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-bambanani.png" alt="Bambanani Security and Projects" />
+                  <img src="src/assets/photos/fallback/trainers-bambanani.png" alt="Bambanani Security and Projects" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-g627.png" alt="G627 Tactical Group Training Academy" />
+                  <img src="src/assets/photos/fallback/trainers-g627.png" alt="G627 Tactical Group Training Academy" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-outdoor-adventure-center.png" alt="Outdoor Adventure Centre" />
+                  <img src="src/assets/photos/fallback/trainers-outdoor-adventure-center.png" alt="Outdoor Adventure Centre" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-pase.png" alt="Pase ATC" />
+                  <img src="src/assets/photos/fallback/trainers-pase.png" alt="Pase ATC" loading="lazy" />
                 </div>
                 <div className="trainers__logo">
-                  <img src="src/assets/photos/fallback/trainers-bullzeye.png" alt="Bullzeye Training Academy" />
+                  <img src="src/assets/photos/fallback/trainers-bullzeye.png" alt="Bullzeye Training Academy" loading="lazy" />
                 </div>
               </div>
             </div>
