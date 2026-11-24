@@ -820,7 +820,7 @@ $bp-large: 75rem;
     display: grid !important;
     grid-template-columns: 35% 65%;
     // gap: 6rem;
-    gap: 7%;
+    gap: 5%;
 
     padding-bottom: 5rem;
 
@@ -829,6 +829,12 @@ $bp-large: 75rem;
       grid-template-rows: auto auto;
       gap: 0;
     }
+
+    @media screen and (max-width: $bp-small) {
+      padding-bottom: 1rem;
+    }
+
+
   }
 
   &__header {
@@ -843,10 +849,16 @@ $bp-large: 75rem;
     }
 
     @media screen and (max-width: $bp-large) {
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 2rem;
-      justify-content: space-between;
+      width: 70%;
+
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      width: clamp(20rem, 60%, 40rem);
+    }
+
+    @media screen and (max-width: $bp-small) {
+      width: 100%;
     }
   }
 
@@ -865,6 +877,15 @@ $bp-large: 75rem;
 
     position: relative;
 
+    @media screen and (max-width: $bp-large) {
+      width: 65%;
+
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -874,7 +895,7 @@ $bp-large: 75rem;
       height: 100%;
       background-color: var(--white);
 
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 100% 50%);
+      clip-path: polygon(0% 0%, 101% 0%, 101% 101%, 0% 101%, 101% 50%);
       will-change: transform;
 
 
@@ -912,22 +933,37 @@ $bp-large: 75rem;
     }
 
     @media screen and (max-width: $bp-large) {
-      width: 30%;
-      padding: 0;
-    }
-
-    @media screen and (max-width: $bp-medium) {
       display: none;
     }
+
   }
 
   &__image--branch {
     position: absolute;
-    width: 25%;
+    // width: 25%;
+    width: 26.25rem;
     // height: 40%;
     bottom: 0rem;
     right: 0;
     // z-index: -1;
+
+    @media screen and (max-width: $bp-large) {
+      display: block;
+      bottom: unset;
+      top: 5%;
+
+      width: 48%;
+      max-width: 30rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      top: 10%;
+      width: 40%;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__body {
@@ -935,13 +971,36 @@ $bp-large: 75rem;
 
     width: 100%;
     padding-inline: 4rem;
+    padding-block-start: 10rem;
     // width: 40rem;
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
+
+    @media screen and (max-width: $bp-large) {
+
+      padding-block-start: 3rem;
+      padding-inline: 0rem;
+
+      width: clamp(36.25rem, 80%, 50rem);
+
+      justify-self: flex-start;
+
+    }
 
     @media screen and (max-width: $bp-medium) {
-      padding-inline: 0;
+      justify-self: center;
+      width: clamp(25rem, 80%, 40rem);
+
+      padding-block-start: 5rem;
     }
+
+    @media screen and (max-width: $bp-small) {
+      width: 100%;
+
+      padding-block-start: 3rem;
+    }
+
+
   }
 
   &__logoContainer {
@@ -961,6 +1020,20 @@ $bp-large: 75rem;
       "platinum golden golden kukama"
       "g4s bam bam g627"
       "billy pase pase bullzeye";
+
+    @media screen and (max-width: $bp-small) {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(6, auto);
+      row-gap: 2rem;
+
+      grid-template-areas:
+        "kmp kmp"
+        "platinum bam"
+        "billy kukama"
+        "g627 g627"
+        "g4s bullzeye"
+        "pase golden";
+    }
   }
 
   // &__logos {
@@ -989,6 +1062,11 @@ $bp-large: 75rem;
       width: 60%;
       justify-self: center;
       align-self: end;
+
+      @media screen and (max-width: $bp-small) {
+        width: 100%;
+        align-self: center;
+      }
     }
 
     &:nth-child(2) {
@@ -997,12 +1075,21 @@ $bp-large: 75rem;
       width: 70%;
 
       justify-self: start;
+
+      @media screen and (max-width: $bp-small) {
+        width: 60%;
+        justify-self: center;
+      }
     }
 
     &:nth-child(3) {
       grid-area: golden;
 
       width: 80%;
+
+      @media screen and (max-width: $bp-small) {
+        width: 100%;
+      }
     }
 
     &:nth-child(4) {
@@ -1011,6 +1098,12 @@ $bp-large: 75rem;
       width: 80%;
 
       justify-self: end;
+
+      @media screen and (max-width: $bp-small) {
+        width: 70%;
+        justify-self: center;
+        align-self: flex-start;
+      }
     }
 
     &:nth-child(5) {
@@ -1025,6 +1118,10 @@ $bp-large: 75rem;
       grid-area: bam;
 
       width: 70%;
+
+      @media screen and (max-width: $bp-small) {
+        width: 80%;
+      }
     }
 
     &:nth-child(7) {
@@ -1039,6 +1136,11 @@ $bp-large: 75rem;
       width: 70%;
       justify-self: end;
       align-self: flex-start;
+
+      @media screen and (max-width: $bp-small) {
+        justify-self: center;
+        align-self: center;
+      }
     }
 
     &:nth-child(9) {
@@ -1047,6 +1149,10 @@ $bp-large: 75rem;
       width: 70%;
       justify-self: center;
       padding-top: 2.5rem;
+
+      @media screen and (max-width: $bp-small) {
+        padding-top: 0;
+      }
     }
 
     &:nth-child(10) {
@@ -1055,6 +1161,11 @@ $bp-large: 75rem;
       width: 70%;
       justify-self: start;
       align-self: flex-start;
+
+      @media screen and (max-width: $bp-small) {
+        justify-self: center;
+        align-self: center;
+      }
     }
   }
 }

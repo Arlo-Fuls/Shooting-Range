@@ -427,7 +427,6 @@ function HomePage({ pageInert, setPageInert }) {
             </div>
 
             <div className="trainers__body ">
-
               <div className="trainers__logoContainer">
                 <div className="trainers__logo">
                   <img src="src/assets/photos/fallback/trainers-kmp.png" alt="KMP Training and Security" />
