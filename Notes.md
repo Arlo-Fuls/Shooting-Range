@@ -28,7 +28,6 @@
 - Look at fallback fonts for flashing
 
 <!-- FINISHING TOUCHES -->
-
 - Check to add load in animation
 - Double check if design still matches the theme
 
@@ -47,14 +46,6 @@ STEP 3 - HOME PAGE:
 
 
 STEP 4 - TRAINERS:
-- Update style trainers section with new logo
-- Finish Trainer Section on home page (logos too small near 500px and below plus horizontal overflow @ around 505px)
-- Optimize images
-- Check accessibility
-- Check section linking met aria
-- Check all alt text for images and aria-hidden
-- Check lazy loading for images
-
 - Add button and modal to trainers, simple modal with names of trainers and their contact details
 
 
