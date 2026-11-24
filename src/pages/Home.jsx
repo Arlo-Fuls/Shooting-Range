@@ -414,6 +414,8 @@ function HomePage({ pageInert, setPageInert }) {
                 <p>We are honoured to have offered ourselves as a training facility for a wide variety of profesional training groups over the years. These trainers have had a strong hand in shaping the Assegai Shooting Range into what it is today. </p>
               </div>
 
+              <button className="trainers__btn">See Trainer Details</button>
+
               <picture className="trainers__image">
                 {/*  Mobile Image  */}
                 <source media="(max-width: 600px)" srcSet="src/assets/clutter/Billy-trees.jpg" />

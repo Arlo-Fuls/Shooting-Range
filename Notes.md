@@ -80,6 +80,7 @@ STEP 4 - TRAINERS:
 - [Special ul styling](https://stackoverflow.com/questions/61365526/how-to-customize-unordered-list-bullet-using-inline-css-only-for-emails) - Showed how to use unicode as bullets
 - [ul wrapping with special bullet](https://stackoverflow.com/questions/24685355/aligning-li-text-that-wraps-when-using-custom-bullet-point) - Showed to use position absolute and relative to position to avoid strange wrapping
 - [Background image gradient](https://stackoverflow.com/questions/17955536/adding-a-css-gradient-to-an-image-not-a-background-image) - Adding a gradient to the image
+- [Text wrap for links](https://stackoverflow.com/questions/3247358/how-do-i-wrap-text-with-no-whitespace-inside-a-td/5108367#5108367) - Text wrap for email adress
 
 # Log of specific changes made
 

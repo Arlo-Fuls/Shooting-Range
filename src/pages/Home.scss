@@ -850,6 +850,39 @@ $bp-large: 75rem;
     }
   }
 
+  &__btn {
+    font-family: "Akshar", sans-serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin-block: 2rem;
+    padding: 1rem;
+    border-radius: none;
+    border: 0.125rem solid var(--white);
+    background-color: var(--blue);
+    color: var(--white);
+
+    cursor: pointer;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 7%;
+      height: 100%;
+      background-color: var(--white);
+
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 100% 50%);
+      will-change: transform;
+
+
+    }
+
+
+  }
+
   &__title {
 
     .headerText {
